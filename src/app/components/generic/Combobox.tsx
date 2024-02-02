@@ -4,6 +4,7 @@ import React, {
   useEffect, useMemo, useRef, useState,
 } from 'react';
 import { Virtuoso, VirtuosoHandle } from 'react-virtuoso';
+import HIGH_PRIORITY_ITEMS from '@/lib/HighPriorityItems';
 
 type ComboboxItem = { label: string, version?: string, value: string | number };
 
@@ -70,6 +71,13 @@ const Combobox = <T extends ComboboxItem>(props: IComboboxProps<T>) => {
       if (customFilter !== undefined) {
         newFilteredItems = customFilter(newFilteredItems, inputValue);
       }
+
+      const getPriorityValue = (label: string) => {
+        const index = HIGH_PRIORITY_ITEMS.indexOf(label);
+        return index !== -1 ? index : HIGH_PRIORITY_ITEMS.length;
+      };
+
+      newFilteredItems = newFilteredItems.sort((a, b) => getPriorityValue(a.label) - getPriorityValue(b.label));
 
       return newFilteredItems;
     }
