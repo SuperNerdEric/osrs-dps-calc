@@ -113,9 +113,9 @@
     "defensive": {
       "crush": 40,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 30,
+      "standard": 30,
+      "light": 30,
       "slash": 40,
       "stab": 40
     },
@@ -532,9 +532,9 @@
     "defensive": {
       "crush": 70,
       "magic": 150,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 70,
+      "standard": 70,
+      "light": 70,
       "slash": 70,
       "stab": 70
     },
@@ -612,9 +612,9 @@
     "defensive": {
       "crush": 10,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 50,
       "stab": 50
     },
@@ -692,9 +692,9 @@
     "defensive": {
       "crush": 100,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 50,
       "stab": 50
     },
@@ -1520,9 +1520,9 @@
     "defensive": {
       "crush": 120,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 60,
+      "standard": 60,
+      "light": 60,
       "slash": 120,
       "stab": 60
     },
@@ -2014,9 +2014,9 @@
     "defensive": {
       "crush": 0,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 30,
+      "standard": 30,
+      "light": 30,
       "slash": 40,
       "stab": 40
     },
@@ -2054,9 +2054,9 @@
     "defensive": {
       "crush": 0,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 30,
+      "standard": 30,
+      "light": 30,
       "slash": 40,
       "stab": 40
     },
@@ -2216,9 +2216,9 @@
     "defensive": {
       "crush": 70,
       "magic": 170,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 120,
+      "standard": 120,
+      "light": 120,
       "slash": 70,
       "stab": 70
     },
@@ -2259,9 +2259,9 @@
     "defensive": {
       "crush": 20,
       "magic": 30,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 30,
+      "standard": 30,
+      "light": 30,
       "slash": 20,
       "stab": 20
     },
@@ -2299,9 +2299,9 @@
     "defensive": {
       "crush": 2,
       "magic": -3,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 2,
+      "standard": 2,
+      "light": 2,
       "slash": 3,
       "stab": 0
     },
@@ -2661,9 +2661,9 @@
     "defensive": {
       "crush": 19,
       "magic": 400,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 400,
+      "standard": 400,
+      "light": 400,
       "slash": 25,
       "stab": 50
     },
@@ -2781,9 +2781,9 @@
     "defensive": {
       "crush": 19,
       "magic": 400,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 400,
+      "standard": 400,
+      "light": 400,
       "slash": 25,
       "stab": 50
     },
@@ -2901,9 +2901,9 @@
     "defensive": {
       "crush": 19,
       "magic": 400,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 400,
+      "standard": 400,
+      "light": 400,
       "slash": 25,
       "stab": 50
     },
@@ -3524,9 +3524,9 @@
     "defensive": {
       "crush": 49,
       "magic": 18,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 45,
+      "standard": 45,
+      "light": 45,
       "slash": 50,
       "stab": 39
     },
@@ -3564,9 +3564,9 @@
     "defensive": {
       "crush": 80,
       "magic": 260,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 180,
+      "standard": 180,
+      "light": 180,
       "slash": 80,
       "stab": 80
     },
@@ -3604,9 +3604,9 @@
     "defensive": {
       "crush": 80,
       "magic": 260,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 180,
+      "standard": 180,
+      "light": 180,
       "slash": 80,
       "stab": 80
     },
@@ -3977,9 +3977,9 @@
     "defensive": {
       "crush": 110,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 40,
+      "standard": 40,
+      "light": 40,
       "slash": 110,
       "stab": 125
     },
@@ -4299,9 +4299,9 @@
     "defensive": {
       "crush": 50,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 50,
       "stab": 50
     },
@@ -5342,7 +5342,7 @@
     "skills": {
       "atk": 40,
       "def": 12,
-      "hp": 25,
+      "hp": 20,
       "magic": 40,
       "ranged": 40,
       "str": 40
@@ -5382,7 +5382,7 @@
     "skills": {
       "atk": 60,
       "def": 20,
-      "hp": 30,
+      "hp": 25,
       "magic": 60,
       "ranged": 40,
       "str": 60
@@ -5438,9 +5438,9 @@
     "defensive": {
       "crush": 900,
       "magic": 900,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -50,
+      "standard": -50,
+      "light": -50,
       "slash": 900,
       "stab": 900
     },
@@ -6512,9 +6512,9 @@
     "defensive": {
       "crush": 5,
       "magic": 1,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
       "slash": 8,
       "stab": 4
     },
@@ -6955,9 +6955,9 @@
     "defensive": {
       "crush": 15,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 20,
       "stab": 15
     },
@@ -7882,9 +7882,9 @@
     "defensive": {
       "crush": 10,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 50,
       "stab": 50
     },
@@ -8402,9 +8402,9 @@
     "defensive": {
       "crush": 2,
       "magic": -3,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 2,
+      "standard": 2,
+      "light": 2,
       "slash": 3,
       "stab": 0
     },
@@ -8804,9 +8804,9 @@
     "defensive": {
       "crush": 60,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 60,
+      "standard": 60,
+      "light": 60,
       "slash": 60,
       "stab": 60
     },
@@ -8844,9 +8844,9 @@
     "defensive": {
       "crush": 60,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 60,
+      "standard": 60,
+      "light": 60,
       "slash": 60,
       "stab": 60
     },
@@ -8884,9 +8884,9 @@
     "defensive": {
       "crush": 60,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 60,
+      "standard": 60,
+      "light": 60,
       "slash": 60,
       "stab": 60
     },
@@ -10004,9 +10004,9 @@
     "defensive": {
       "crush": -24,
       "magic": -24,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -24,
+      "standard": -24,
+      "light": -24,
       "slash": -24,
       "stab": -24
     },
@@ -10046,9 +10046,9 @@
     "defensive": {
       "crush": -24,
       "magic": -24,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -24,
+      "standard": -24,
+      "light": -24,
       "slash": -24,
       "stab": -24
     },
@@ -10168,9 +10168,9 @@
     "defensive": {
       "crush": 30,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 5,
       "stab": 5
     },
@@ -10208,9 +10208,9 @@
     "defensive": {
       "crush": 30,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 5,
       "stab": 5
     },
@@ -10288,9 +10288,9 @@
     "defensive": {
       "crush": 120,
       "magic": 300,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 55,
+      "standard": 55,
+      "light": 55,
       "slash": 80,
       "stab": 20
     },
@@ -10330,9 +10330,9 @@
     "defensive": {
       "crush": 120,
       "magic": 300,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 55,
+      "standard": 55,
+      "light": 55,
       "slash": 80,
       "stab": 20
     },
@@ -10493,9 +10493,9 @@
     "defensive": {
       "crush": 100,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 100,
       "stab": 20
     },
@@ -10536,9 +10536,9 @@
     "defensive": {
       "crush": 100,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 100,
       "stab": 20
     },
@@ -11820,9 +11820,9 @@
     "defensive": {
       "crush": 14,
       "magic": 18,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 5,
+      "standard": 5,
+      "light": 5,
       "slash": 14,
       "stab": 12
     },
@@ -14040,9 +14040,9 @@
     "defensive": {
       "crush": 15,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 5,
+      "standard": 5,
+      "light": 5,
       "slash": 15,
       "stab": 5
     },
@@ -14120,9 +14120,9 @@
     "defensive": {
       "crush": -12,
       "magic": -12,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -12,
+      "standard": -12,
+      "light": -12,
       "slash": -12,
       "stab": -12
     },
@@ -14250,9 +14250,9 @@
     "defensive": {
       "crush": 70,
       "magic": 70,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 70,
+      "standard": 70,
+      "light": 70,
       "slash": 70,
       "stab": 70
     },
@@ -14493,9 +14493,9 @@
     "defensive": {
       "crush": 25,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 35,
+      "standard": 35,
+      "light": 35,
       "slash": 34,
       "stab": 40
     },
@@ -15298,9 +15298,9 @@
     "defensive": {
       "crush": 200,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 200,
       "stab": 100
     },
@@ -15384,9 +15384,9 @@
     "defensive": {
       "crush": 2,
       "magic": -3,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 2,
+      "standard": 2,
+      "light": 2,
       "slash": 3,
       "stab": 0
     },
@@ -16155,9 +16155,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -16195,9 +16195,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -18179,9 +18179,9 @@
     "defensive": {
       "crush": 20,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 20,
       "stab": 20
     },
@@ -18540,9 +18540,9 @@
     "defensive": {
       "crush": 30,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 20,
       "stab": 20
     },
@@ -18580,9 +18580,9 @@
     "defensive": {
       "crush": 30,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 20,
       "stab": 20
     },
@@ -18620,9 +18620,9 @@
     "defensive": {
       "crush": 30,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 20,
       "stab": 20
     },
@@ -18660,9 +18660,9 @@
     "defensive": {
       "crush": 30,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 20,
       "stab": 20
     },
@@ -18700,9 +18700,9 @@
     "defensive": {
       "crush": 30,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 20,
       "stab": 20
     },
@@ -18740,9 +18740,9 @@
     "defensive": {
       "crush": 30,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 20,
       "stab": 20
     },
@@ -19500,9 +19500,9 @@
     "defensive": {
       "crush": 10,
       "magic": 255,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 550,
+      "standard": 550,
+      "light": 550,
       "slash": 10,
       "stab": 10
     },
@@ -19782,9 +19782,9 @@
     "defensive": {
       "crush": 0,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 0,
       "stab": 0
     },
@@ -19822,9 +19822,9 @@
     "defensive": {
       "crush": 0,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 0,
       "stab": 0
     },
@@ -20072,6 +20072,7 @@
       "stab": 0
     },
     "attributes": [
+      "spectral",
       "undead"
     ],
     "weakness": null
@@ -20108,9 +20109,9 @@
     "defensive": {
       "crush": 100,
       "magic": 90,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
       "slash": 40,
       "stab": 30
     },
@@ -20148,9 +20149,9 @@
     "defensive": {
       "crush": 10,
       "magic": -5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 10,
       "stab": 10
     },
@@ -21204,9 +21205,9 @@
     "defensive": {
       "crush": 50,
       "magic": 300,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 300,
+      "standard": 300,
+      "light": 300,
       "slash": 20,
       "stab": 20
     },
@@ -22148,9 +22149,9 @@
     "defensive": {
       "crush": -10,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -10,
+      "standard": -10,
+      "light": -10,
       "slash": -10,
       "stab": -10
     },
@@ -22276,9 +22277,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -23488,9 +23489,9 @@
     "defensive": {
       "crush": -12,
       "magic": -12,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -12,
+      "standard": -12,
+      "light": -12,
       "slash": -12,
       "stab": -12
     },
@@ -23648,9 +23649,9 @@
     "defensive": {
       "crush": -10,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -10,
+      "standard": -10,
+      "light": -10,
       "slash": -10,
       "stab": -10
     },
@@ -23768,9 +23769,9 @@
     "defensive": {
       "crush": -10,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -10,
+      "standard": -10,
+      "light": -10,
       "slash": -10,
       "stab": -10
     },
@@ -24130,9 +24131,9 @@
     "defensive": {
       "crush": 70,
       "magic": -30,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 70,
+      "standard": 70,
+      "light": 70,
       "slash": 70,
       "stab": 70
     },
@@ -24156,7 +24157,7 @@
     "skills": {
       "atk": 300,
       "def": 100,
-      "hp": 140,
+      "hp": 4500,
       "magic": 190,
       "ranged": 190,
       "str": 150
@@ -24172,9 +24173,9 @@
     "defensive": {
       "crush": 70,
       "magic": -30,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 70,
+      "standard": 70,
+      "light": 70,
       "slash": 70,
       "stab": 70
     },
@@ -24214,9 +24215,9 @@
     "defensive": {
       "crush": 20,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 40,
       "stab": 40
     },
@@ -24256,9 +24257,9 @@
     "defensive": {
       "crush": 20,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 40,
       "stab": 40
     },
@@ -24904,9 +24905,9 @@
     "defensive": {
       "crush": 40,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 40,
+      "standard": 40,
+      "light": 40,
       "slash": 60,
       "stab": 70
     },
@@ -26675,9 +26676,9 @@
     "defensive": {
       "crush": 0,
       "magic": 2,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 5,
       "stab": 5
     },
@@ -26717,9 +26718,9 @@
     "defensive": {
       "crush": 0,
       "magic": 2,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 5,
       "stab": 5
     },
@@ -26757,9 +26758,9 @@
     "defensive": {
       "crush": 15,
       "magic": 15,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 15,
+      "standard": 15,
+      "light": 15,
       "slash": 15,
       "stab": 15
     },
@@ -26797,9 +26798,9 @@
     "defensive": {
       "crush": 15,
       "magic": 15,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 15,
+      "standard": 15,
+      "light": 15,
       "slash": 15,
       "stab": 15
     },
@@ -26837,9 +26838,9 @@
     "defensive": {
       "crush": 15,
       "magic": 15,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 15,
+      "standard": 15,
+      "light": 15,
       "slash": 15,
       "stab": 15
     },
@@ -27508,7 +27509,7 @@
     "name": "Fremennik warband berserker",
     "version": "",
     "image": "Fremennik warband berserker.png",
-    "level": 104,
+    "level": 103,
     "speed": 6,
     "style": [
       "Stab"
@@ -27518,7 +27519,7 @@
     "skills": {
       "atk": 110,
       "def": 80,
-      "hp": 50,
+      "hp": 48,
       "magic": 110,
       "ranged": 110,
       "str": 110
@@ -27894,9 +27895,9 @@
     "defensive": {
       "crush": 10,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 10,
       "stab": 10
     },
@@ -29914,9 +29915,9 @@
     "defensive": {
       "crush": 12,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 10,
       "stab": 10
     },
@@ -29954,9 +29955,9 @@
     "defensive": {
       "crush": 12,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 10,
       "stab": 10
     },
@@ -30156,9 +30157,9 @@
     "defensive": {
       "crush": -15,
       "magic": -15,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -15,
+      "standard": -15,
+      "light": -15,
       "slash": -15,
       "stab": -15
     },
@@ -30236,9 +30237,9 @@
     "defensive": {
       "crush": 5,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 5,
+      "standard": 5,
+      "light": 5,
       "slash": 15,
       "stab": 5
     },
@@ -31059,9 +31060,9 @@
     "defensive": {
       "crush": 130,
       "magic": 125,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
       "slash": 110,
       "stab": 105
     },
@@ -31099,9 +31100,9 @@
     "defensive": {
       "crush": 130,
       "magic": 125,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
       "slash": 110,
       "stab": 105
     },
@@ -31263,9 +31264,9 @@
     "defensive": {
       "crush": -30,
       "magic": -30,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -30,
+      "standard": -30,
+      "light": -30,
       "slash": -30,
       "stab": -30
     },
@@ -31343,9 +31344,9 @@
     "defensive": {
       "crush": -42,
       "magic": -42,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -42,
+      "standard": -42,
+      "light": -42,
       "slash": -42,
       "stab": -42
     },
@@ -31383,9 +31384,9 @@
     "defensive": {
       "crush": -42,
       "magic": -42,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -42,
+      "standard": -42,
+      "light": -42,
       "slash": -42,
       "stab": -42
     },
@@ -31423,9 +31424,9 @@
     "defensive": {
       "crush": -42,
       "magic": -42,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -42,
+      "standard": -42,
+      "light": -42,
       "slash": -42,
       "stab": -42
     },
@@ -31785,9 +31786,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 10,
       "stab": 10
     },
@@ -31825,9 +31826,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 10,
       "stab": 10
     },
@@ -32185,9 +32186,9 @@
     "defensive": {
       "crush": 8,
       "magic": 4,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
       "slash": 6,
       "stab": 4
     },
@@ -32265,9 +32266,9 @@
     "defensive": {
       "crush": 18,
       "magic": 14,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 14,
+      "standard": 14,
+      "light": 14,
       "slash": 16,
       "stab": 14
     },
@@ -32745,9 +32746,9 @@
     "defensive": {
       "crush": -10,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -10,
+      "standard": -10,
+      "light": -10,
       "slash": -10,
       "stab": -10
     },
@@ -32826,9 +32827,9 @@
     "defensive": {
       "crush": 200,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 200,
       "stab": 200
     },
@@ -32869,9 +32870,9 @@
     "defensive": {
       "crush": 50,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 200,
+      "standard": 200,
+      "light": 200,
       "slash": 50,
       "stab": 50
     },
@@ -32912,9 +32913,9 @@
     "defensive": {
       "crush": 200,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 200,
+      "standard": 200,
+      "light": 200,
       "slash": 200,
       "stab": 200
     },
@@ -33039,9 +33040,9 @@
     "defensive": {
       "crush": 15,
       "magic": 156,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 184,
+      "standard": 184,
+      "light": 184,
       "slash": 101,
       "stab": 95
     },
@@ -33174,7 +33175,7 @@
     ],
     "weakness": {
       "element": "water",
-      "severity": 50
+      "severity": 40
     }
   },
   {
@@ -33219,7 +33220,7 @@
     ],
     "weakness": {
       "element": "water",
-      "severity": 50
+      "severity": 40
     }
   },
   {
@@ -33264,7 +33265,7 @@
     ],
     "weakness": {
       "element": "water",
-      "severity": 50
+      "severity": 40
     }
   },
   {
@@ -33309,7 +33310,7 @@
     ],
     "weakness": {
       "element": "water",
-      "severity": 50
+      "severity": 40
     }
   },
   {
@@ -33354,7 +33355,7 @@
     ],
     "weakness": {
       "element": "water",
-      "severity": 50
+      "severity": 40
     }
   },
   {
@@ -33804,9 +33805,9 @@
     "defensive": {
       "crush": 14,
       "magic": 18,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 5,
+      "standard": 5,
+      "light": 5,
       "slash": 14,
       "stab": 12
     },
@@ -34044,9 +34045,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34084,9 +34085,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34124,9 +34125,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34164,9 +34165,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34204,9 +34205,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34244,9 +34245,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34284,9 +34285,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34324,9 +34325,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34364,9 +34365,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34404,9 +34405,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34444,9 +34445,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34484,9 +34485,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34524,9 +34525,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34564,9 +34565,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34604,9 +34605,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34644,9 +34645,9 @@
     "defensive": {
       "crush": 7,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 8,
+      "standard": 8,
+      "light": 8,
       "slash": 9,
       "stab": 8
     },
@@ -34724,9 +34725,9 @@
     "defensive": {
       "crush": 19,
       "magic": -3,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 19,
+      "standard": 19,
+      "light": 19,
       "slash": 15,
       "stab": 17
     },
@@ -34764,9 +34765,9 @@
     "defensive": {
       "crush": 19,
       "magic": -3,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 19,
+      "standard": 19,
+      "light": 19,
       "slash": 15,
       "stab": 17
     },
@@ -34804,9 +34805,9 @@
     "defensive": {
       "crush": 19,
       "magic": -3,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 19,
+      "standard": 19,
+      "light": 19,
       "slash": 15,
       "stab": 17
     },
@@ -34844,9 +34845,9 @@
     "defensive": {
       "crush": 19,
       "magic": -3,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 19,
+      "standard": 19,
+      "light": 19,
       "slash": 15,
       "stab": 17
     },
@@ -34884,9 +34885,9 @@
     "defensive": {
       "crush": 19,
       "magic": -3,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 19,
+      "standard": 19,
+      "light": 19,
       "slash": 15,
       "stab": 17
     },
@@ -35084,9 +35085,9 @@
     "defensive": {
       "crush": 19,
       "magic": -4,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 25,
       "stab": 18
     },
@@ -35124,9 +35125,9 @@
     "defensive": {
       "crush": 19,
       "magic": -4,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 25,
       "stab": 18
     },
@@ -35164,9 +35165,9 @@
     "defensive": {
       "crush": 19,
       "magic": -4,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 25,
       "stab": 18
     },
@@ -35204,9 +35205,9 @@
     "defensive": {
       "crush": 19,
       "magic": -4,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 25,
       "stab": 18
     },
@@ -35244,9 +35245,9 @@
     "defensive": {
       "crush": 19,
       "magic": -4,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 25,
       "stab": 18
     },
@@ -35564,9 +35565,9 @@
     "defensive": {
       "crush": 27,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 19,
+      "standard": 19,
+      "light": 19,
       "slash": 23,
       "stab": 18
     },
@@ -36084,9 +36085,9 @@
     "defensive": {
       "crush": 5,
       "magic": 1,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
       "slash": 8,
       "stab": 4
     },
@@ -37327,16 +37328,19 @@
     "defensive": {
       "crush": 100,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 150,
+      "standard": 150,
+      "light": 150,
       "slash": 100,
       "stab": 60
     },
     "attributes": [
       "dragon"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "water",
+      "severity": 50
+    }
   },
   {
     "id": 3446,
@@ -38054,9 +38058,9 @@
     "defensive": {
       "crush": 15,
       "magic": 4,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 9,
+      "standard": 9,
+      "light": 9,
       "slash": 14,
       "stab": 8
     },
@@ -38518,7 +38522,10 @@
       "stab": 60
     },
     "attributes": [],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 100
+    }
   },
   {
     "id": 11192,
@@ -40339,7 +40346,10 @@
       "stab": 30
     },
     "attributes": [],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 100
+    }
   },
   {
     "id": 1876,
@@ -40379,7 +40389,10 @@
       "stab": 30
     },
     "attributes": [],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 100
+    }
   },
   {
     "id": 1877,
@@ -40459,7 +40472,10 @@
       "stab": 30
     },
     "attributes": [],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 100
+    }
   },
   {
     "id": 1875,
@@ -40499,7 +40515,10 @@
       "stab": 30
     },
     "attributes": [],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 100
+    }
   },
   {
     "id": 5828,
@@ -40539,7 +40558,10 @@
       "stab": 30
     },
     "attributes": [],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 50
+    }
   },
   {
     "id": 1874,
@@ -40579,7 +40601,10 @@
       "stab": 30
     },
     "attributes": [],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 50
+    }
   },
   {
     "id": 650,
@@ -41245,9 +41270,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -42470,9 +42495,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 25,
+      "standard": 25,
+      "light": 25,
       "slash": 0,
       "stab": 0
     },
@@ -42510,9 +42535,9 @@
     "defensive": {
       "crush": 65,
       "magic": 30,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 65,
       "stab": 65
     },
@@ -42590,9 +42615,9 @@
     "defensive": {
       "crush": 30,
       "magic": -20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 45,
+      "standard": 45,
+      "light": 45,
       "slash": 30,
       "stab": 30
     },
@@ -42630,9 +42655,9 @@
     "defensive": {
       "crush": -20,
       "magic": -20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -20,
+      "standard": -20,
+      "light": -20,
       "slash": -20,
       "stab": -20
     },
@@ -43555,9 +43580,9 @@
     "defensive": {
       "crush": 10,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 50,
       "stab": 50
     },
@@ -44250,9 +44275,9 @@
     "defensive": {
       "crush": 5,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 25,
       "stab": 25
     },
@@ -44292,9 +44317,9 @@
     "defensive": {
       "crush": 5,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 25,
       "stab": 25
     },
@@ -44334,9 +44359,9 @@
     "defensive": {
       "crush": 5,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 25,
       "stab": 25
     },
@@ -44879,9 +44904,9 @@
     "defensive": {
       "crush": 30,
       "magic": 250,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 30,
       "stab": 30
     },
@@ -45012,9 +45037,9 @@
     "weakness": null
   },
   {
-    "id": 11719,
+    "id": 11721,
     "name": "Kephri",
-    "version": "",
+    "version": "Aggressive",
     "image": "Kephri.png",
     "level": 341,
     "speed": 6,
@@ -45027,6 +45052,51 @@
       "atk": 0,
       "def": 80,
       "hp": 80,
+      "magic": 125,
+      "ranged": 0,
+      "str": 0
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 50,
+      "magic_str": 125,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 100,
+      "magic": 200,
+      "heavy": 300,
+      "standard": 300,
+      "light": 300,
+      "slash": 300,
+      "stab": 60
+    },
+    "attributes": [
+      "kalphite"
+    ],
+    "weakness": {
+      "element": "fire",
+      "severity": 35
+    }
+  },
+  {
+    "id": 11719,
+    "name": "Kephri",
+    "version": "Shielded",
+    "image": "Kephri.png",
+    "level": 341,
+    "speed": 6,
+    "style": [
+      "Magic"
+    ],
+    "size": 5,
+    "max_hit": "24",
+    "skills": {
+      "atk": 0,
+      "def": 80,
+      "hp": 150,
       "magic": 125,
       "ranged": 0,
       "str": 0
@@ -45169,9 +45239,9 @@
     "defensive": {
       "crush": 80,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 70,
+      "standard": 70,
+      "light": 70,
       "slash": 30,
       "stab": 60
     },
@@ -45211,9 +45281,9 @@
     "defensive": {
       "crush": 80,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 70,
+      "standard": 70,
+      "light": 70,
       "slash": 30,
       "stab": 60
     },
@@ -45574,9 +45644,9 @@
     "defensive": {
       "crush": 10,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -10,
+      "standard": -10,
+      "light": -10,
       "slash": 10,
       "stab": 10
     },
@@ -45615,9 +45685,9 @@
     "defensive": {
       "crush": 10,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -10,
+      "standard": -10,
+      "light": -10,
       "slash": 10,
       "stab": 10
     },
@@ -45862,9 +45932,9 @@
     "defensive": {
       "crush": 15,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 5,
+      "standard": 5,
+      "light": 5,
       "slash": 15,
       "stab": 5
     },
@@ -45944,9 +46014,9 @@
     "defensive": {
       "crush": 25,
       "magic": 15,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 5,
+      "standard": 5,
+      "light": 5,
       "slash": 25,
       "stab": 5
     },
@@ -45984,9 +46054,9 @@
     "defensive": {
       "crush": 40,
       "magic": 30,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 40,
       "stab": 20
     },
@@ -46024,9 +46094,9 @@
     "defensive": {
       "crush": 36,
       "magic": -11,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 36,
+      "standard": 36,
+      "light": 36,
       "slash": 40,
       "stab": 39
     },
@@ -46064,9 +46134,9 @@
     "defensive": {
       "crush": 36,
       "magic": -11,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 36,
+      "standard": 36,
+      "light": 36,
       "slash": 40,
       "stab": 39
     },
@@ -46104,9 +46174,9 @@
     "defensive": {
       "crush": 36,
       "magic": -11,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 36,
+      "standard": 36,
+      "light": 36,
       "slash": 40,
       "stab": 39
     },
@@ -46144,9 +46214,9 @@
     "defensive": {
       "crush": 36,
       "magic": -11,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 36,
+      "standard": 36,
+      "light": 36,
       "slash": 40,
       "stab": 39
     },
@@ -46264,9 +46334,9 @@
     "defensive": {
       "crush": 10,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 26,
       "stab": 28
     },
@@ -46784,9 +46854,9 @@
     "defensive": {
       "crush": 20,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 20,
       "stab": 20
     },
@@ -46824,9 +46894,9 @@
     "defensive": {
       "crush": 40,
       "magic": 40,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 40,
+      "standard": 40,
+      "light": 40,
       "slash": 40,
       "stab": 40
     },
@@ -46864,9 +46934,9 @@
     "defensive": {
       "crush": 60,
       "magic": 60,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 60,
+      "standard": 60,
+      "light": 60,
       "slash": 60,
       "stab": 60
     },
@@ -46944,9 +47014,9 @@
     "defensive": {
       "crush": 40,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 200,
+      "standard": 200,
+      "light": 200,
       "slash": 25,
       "stab": 25
     },
@@ -47826,7 +47896,7 @@
     ],
     "weakness": {
       "element": "water",
-      "severity": 50
+      "severity": 40
     }
   },
   {
@@ -47871,7 +47941,7 @@
     ],
     "weakness": {
       "element": "water",
-      "severity": 50
+      "severity": 40
     }
   },
   {
@@ -47916,7 +47986,7 @@
     ],
     "weakness": {
       "element": "water",
-      "severity": 50
+      "severity": 40
     }
   },
   {
@@ -47961,7 +48031,7 @@
     ],
     "weakness": {
       "element": "water",
-      "severity": 50
+      "severity": 40
     }
   },
   {
@@ -48893,9 +48963,9 @@
     "defensive": {
       "crush": 70,
       "magic": 140,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 120,
+      "standard": 120,
+      "light": 120,
       "slash": 70,
       "stab": 70
     },
@@ -48975,9 +49045,9 @@
     "defensive": {
       "crush": 7,
       "magic": -1,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
       "slash": 8,
       "stab": 6
     },
@@ -49095,9 +49165,9 @@
     "defensive": {
       "crush": 19,
       "magic": 4,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 16,
+      "standard": 16,
+      "light": 16,
       "slash": 14,
       "stab": 24
     },
@@ -50460,9 +50530,9 @@
     "defensive": {
       "crush": 30,
       "magic": 280,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 180,
+      "standard": 180,
+      "light": 180,
       "slash": 30,
       "stab": 5
     },
@@ -50902,9 +50972,9 @@
     "defensive": {
       "crush": 0,
       "magic": 2,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 5,
       "stab": 5
     },
@@ -50944,9 +51014,9 @@
     "defensive": {
       "crush": 0,
       "magic": 2,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 5,
       "stab": 5
     },
@@ -53355,9 +53425,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 62,
+      "standard": 62,
+      "light": 62,
       "slash": 50,
       "stab": 50
     },
@@ -53602,9 +53672,9 @@
     "defensive": {
       "crush": 60,
       "magic": 30,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 40,
       "stab": 20
     },
@@ -53762,9 +53832,9 @@
     "defensive": {
       "crush": -5,
       "magic": -5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -5,
+      "standard": -5,
+      "light": -5,
       "slash": -5,
       "stab": -5
     },
@@ -53802,9 +53872,9 @@
     "defensive": {
       "crush": -10,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -10,
+      "standard": -10,
+      "light": -10,
       "slash": -10,
       "stab": -10
     },
@@ -54663,9 +54733,9 @@
     "defensive": {
       "crush": 0,
       "magic": 850,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 80,
+      "standard": 80,
+      "light": 80,
       "slash": 0,
       "stab": 0
     },
@@ -55058,6 +55128,206 @@
       "magic_str": 505,
       "ranged": 0,
       "ranged_str": -30,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 0,
+      "magic": 0,
+      "heavy": 0,
+      "standard": 0,
+      "light": 0,
+      "slash": 0,
+      "stab": 0
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 10820,
+    "name": "Nylocas Matomenos",
+    "version": "Entry Mode Maiden",
+    "image": "Nylocas Matomenos.png",
+    "level": 68,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 2,
+    "max_hit": "11",
+    "skills": {
+      "atk": 100,
+      "def": 100,
+      "hp": 64,
+      "magic": 100,
+      "ranged": 100,
+      "str": 100
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 0,
+      "magic": 0,
+      "heavy": 0,
+      "standard": 0,
+      "light": 0,
+      "slash": 0,
+      "stab": 0
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 10828,
+    "name": "Nylocas Matomenos",
+    "version": "Hard Mode Maiden",
+    "image": "Nylocas Matomenos.png",
+    "level": 138,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 2,
+    "max_hit": "11",
+    "skills": {
+      "atk": 100,
+      "def": 100,
+      "hp": 100,
+      "magic": 100,
+      "ranged": 100,
+      "str": 100
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 0,
+      "magic": 0,
+      "heavy": 0,
+      "standard": 0,
+      "light": 0,
+      "slash": 0,
+      "stab": 0
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 10862,
+    "name": "Nylocas Matomenos",
+    "version": "Hard Mode Verzik",
+    "image": "Nylocas Matomenos.png",
+    "level": 138,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 2,
+    "max_hit": "11",
+    "skills": {
+      "atk": 100,
+      "def": 100,
+      "hp": 200,
+      "magic": 100,
+      "ranged": 100,
+      "str": 100
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 0,
+      "magic": 0,
+      "heavy": 0,
+      "standard": 0,
+      "light": 0,
+      "slash": 0,
+      "stab": 0
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 8366,
+    "name": "Nylocas Matomenos",
+    "version": "Normal Mode Maiden",
+    "image": "Nylocas Matomenos.png",
+    "level": 115,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 2,
+    "max_hit": "11",
+    "skills": {
+      "atk": 100,
+      "def": 100,
+      "hp": 100,
+      "magic": 100,
+      "ranged": 100,
+      "str": 100
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 0,
+      "magic": 0,
+      "heavy": 0,
+      "standard": 0,
+      "light": 0,
+      "slash": 0,
+      "stab": 0
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 8385,
+    "name": "Nylocas Matomenos",
+    "version": "Normal Mode Verzik",
+    "image": "Nylocas Matomenos.png",
+    "level": 115,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 2,
+    "max_hit": "1",
+    "skills": {
+      "atk": 1,
+      "def": 50,
+      "hp": 200,
+      "magic": 50,
+      "ranged": 1,
+      "str": 1
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
       "str": 0
     },
     "defensive": {
@@ -55590,9 +55860,9 @@
     "defensive": {
       "crush": -12,
       "magic": -12,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -12,
+      "standard": -12,
+      "light": -12,
       "slash": -12,
       "stab": -12
     },
@@ -56348,9 +56618,9 @@
     "defensive": {
       "crush": 13,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 13,
+      "standard": 13,
+      "light": 13,
       "slash": 14,
       "stab": 12
     },
@@ -56470,9 +56740,9 @@
     "defensive": {
       "crush": 20,
       "magic": -5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 15,
+      "standard": 15,
+      "light": 15,
       "slash": 10,
       "stab": 15
     },
@@ -57073,9 +57343,9 @@
     "defensive": {
       "crush": 20,
       "magic": 120,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 120,
+      "standard": 120,
+      "light": 120,
       "slash": 80,
       "stab": 60
     },
@@ -57114,9 +57384,9 @@
     "defensive": {
       "crush": 10,
       "magic": 100,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
       "slash": 70,
       "stab": 50
     },
@@ -58913,9 +59183,9 @@
     "defensive": {
       "crush": 70,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 70,
       "stab": 70
     },
@@ -59160,7 +59430,7 @@
     },
     "defensive": {
       "crush": 120,
-      "magic": 40,
+      "magic": 34,
       "heavy": 261,
       "standard": 261,
       "light": 261,
@@ -60023,9 +60293,9 @@
     "defensive": {
       "crush": 15,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 5,
+      "standard": 5,
+      "light": 5,
       "slash": 15,
       "stab": 5
     },
@@ -60183,9 +60453,9 @@
     "defensive": {
       "crush": 19,
       "magic": -4,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 25,
       "stab": 18
     },
@@ -60233,6 +60503,326 @@
     "attributes": [
       "demon"
     ],
+    "weakness": null
+  },
+  {
+    "id": 1740,
+    "name": "Portal (Pest Control)",
+    "version": "Blue, intermediate/veteran",
+    "image": "Blue Portal.png",
+    "level": 0,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 3,
+    "max_hit": "0 (Does not attack)",
+    "skills": {
+      "atk": 0,
+      "def": 120,
+      "hp": 250,
+      "magic": 0,
+      "ranged": 0,
+      "str": 0
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 100,
+      "magic": 0,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
+      "slash": 100,
+      "stab": 100
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 1748,
+    "name": "Portal (Pest Control)",
+    "version": "Blue, novice",
+    "image": "Blue Portal.png",
+    "level": 0,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 3,
+    "max_hit": "0 (Does not attack)",
+    "skills": {
+      "atk": 0,
+      "def": 120,
+      "hp": 200,
+      "magic": 0,
+      "ranged": 0,
+      "str": 0
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 100,
+      "magic": 0,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
+      "slash": 100,
+      "stab": 100
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 1739,
+    "name": "Portal (Pest Control)",
+    "version": "Purple, intermediate/veteran",
+    "image": "Pink Portal.png",
+    "level": 0,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 3,
+    "max_hit": "0 (Does not attack)",
+    "skills": {
+      "atk": 0,
+      "def": 120,
+      "hp": 250,
+      "magic": 0,
+      "ranged": 0,
+      "str": 0
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 100,
+      "magic": 100,
+      "heavy": 0,
+      "standard": 0,
+      "light": 0,
+      "slash": 100,
+      "stab": 100
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 1747,
+    "name": "Portal (Pest Control)",
+    "version": "Purple, novice",
+    "image": "Pink Portal.png",
+    "level": 0,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 3,
+    "max_hit": "0 (Does not attack)",
+    "skills": {
+      "atk": 0,
+      "def": 120,
+      "hp": 200,
+      "magic": 0,
+      "ranged": 0,
+      "str": 0
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 100,
+      "magic": 100,
+      "heavy": 0,
+      "standard": 0,
+      "light": 0,
+      "slash": 100,
+      "stab": 100
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 1742,
+    "name": "Portal (Pest Control)",
+    "version": "Red, intermediate/veteran",
+    "image": "Red Portal.png",
+    "level": 0,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 3,
+    "max_hit": "0 (Does not attack)",
+    "skills": {
+      "atk": 0,
+      "def": 120,
+      "hp": 250,
+      "magic": 0,
+      "ranged": 0,
+      "str": 0
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 0,
+      "magic": 100,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
+      "slash": 100,
+      "stab": 100
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 1750,
+    "name": "Portal (Pest Control)",
+    "version": "Red, novice",
+    "image": "Red Portal.png",
+    "level": 0,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 3,
+    "max_hit": "0 (Does not attack)",
+    "skills": {
+      "atk": 0,
+      "def": 120,
+      "hp": 200,
+      "magic": 0,
+      "ranged": 0,
+      "str": 0
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 0,
+      "magic": 100,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
+      "slash": 100,
+      "stab": 100
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 1741,
+    "name": "Portal (Pest Control)",
+    "version": "Yellow, intermediate/veteran",
+    "image": "Yellow Portal.png",
+    "level": 0,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 3,
+    "max_hit": "0 (Does not attack)",
+    "skills": {
+      "atk": 0,
+      "def": 120,
+      "hp": 250,
+      "magic": 0,
+      "ranged": 0,
+      "str": 0
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 100,
+      "magic": 100,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
+      "slash": 0,
+      "stab": 0
+    },
+    "attributes": [],
+    "weakness": null
+  },
+  {
+    "id": 1749,
+    "name": "Portal (Pest Control)",
+    "version": "Yellow, novice",
+    "image": "Yellow Portal.png",
+    "level": 0,
+    "speed": -1,
+    "style": [
+      "None"
+    ],
+    "size": 3,
+    "max_hit": "0 (Does not attack)",
+    "skills": {
+      "atk": 0,
+      "def": 120,
+      "hp": 200,
+      "magic": 0,
+      "ranged": 0,
+      "str": 0
+    },
+    "offensive": {
+      "atk": 0,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 0
+    },
+    "defensive": {
+      "crush": 100,
+      "magic": 100,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
+      "slash": 0,
+      "stab": 0
+    },
+    "attributes": [],
     "weakness": null
   },
   {
@@ -60307,9 +60897,9 @@
     "defensive": {
       "crush": 5,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 10,
       "stab": 15
     },
@@ -60347,9 +60937,9 @@
     "defensive": {
       "crush": 5,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 10,
       "stab": 15
     },
@@ -60603,9 +61193,9 @@
     "defensive": {
       "crush": 150,
       "magic": 150,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 200,
+      "standard": 200,
+      "light": 200,
       "slash": 150,
       "stab": 150
     },
@@ -60763,9 +61353,9 @@
     "defensive": {
       "crush": 19,
       "magic": -4,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 25,
       "stab": 18
     },
@@ -61250,9 +61840,9 @@
     "defensive": {
       "crush": -12,
       "magic": -12,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -12,
+      "standard": -12,
+      "light": -12,
       "slash": -12,
       "stab": -12
     },
@@ -62023,9 +62613,9 @@
     "defensive": {
       "crush": 40,
       "magic": 60,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 20,
       "stab": 5
     },
@@ -62103,9 +62693,9 @@
     "defensive": {
       "crush": -15,
       "magic": -15,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -15,
+      "standard": -15,
+      "light": -15,
       "slash": -15,
       "stab": -15
     },
@@ -62785,9 +63375,9 @@
     "defensive": {
       "crush": 5,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 10,
       "stab": 10
     },
@@ -63399,9 +63989,9 @@
     "defensive": {
       "crush": 146,
       "magic": 50,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 148,
+      "standard": 148,
+      "light": 148,
       "slash": 150,
       "stab": 148
     },
@@ -65089,9 +65679,9 @@
     "defensive": {
       "crush": 10,
       "magic": 150,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 300,
+      "standard": 300,
+      "light": 300,
       "slash": 40,
       "stab": 60
     },
@@ -65425,9 +66015,9 @@
     "defensive": {
       "crush": -100,
       "magic": -100,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -100,
+      "standard": -100,
+      "light": -100,
       "slash": -100,
       "stab": -100
     },
@@ -66100,9 +66690,9 @@
     "defensive": {
       "crush": 284,
       "magic": 44,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 284,
+      "standard": 284,
+      "light": 284,
       "slash": 284,
       "stab": 246
     },
@@ -67494,7 +68084,10 @@
     "attributes": [
       "dragon"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "earth",
+      "severity": 50
+    }
   },
   {
     "id": 10398,
@@ -67537,7 +68130,10 @@
     "attributes": [
       "dragon"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "earth",
+      "severity": 50
+    }
   },
   {
     "id": 3016,
@@ -68210,9 +68806,9 @@
     "defensive": {
       "crush": 76,
       "magic": -10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 79,
+      "standard": 79,
+      "light": 79,
       "slash": 84,
       "stab": 87
     },
@@ -68833,9 +69429,9 @@
     "defensive": {
       "crush": -2,
       "magic": 1,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
       "slash": 11,
       "stab": 9
     },
@@ -70291,6 +70887,300 @@
     "weakness": null
   },
   {
+    "id": 13495,
+    "name": "Skeleton (Wilderness Agility Course)",
+    "version": "1",
+    "image": "Skeleton Lvl18.png",
+    "level": 18,
+    "speed": 4,
+    "style": [
+      "Slash"
+    ],
+    "size": 1,
+    "max_hit": "1",
+    "skills": {
+      "atk": 24,
+      "def": 24,
+      "hp": 17,
+      "magic": 1,
+      "ranged": 1,
+      "str": 1
+    },
+    "offensive": {
+      "atk": 15,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 14
+    },
+    "defensive": {
+      "crush": -2,
+      "magic": 1,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
+      "slash": 11,
+      "stab": 9
+    },
+    "attributes": [
+      "undead"
+    ],
+    "weakness": null
+  },
+  {
+    "id": 13496,
+    "name": "Skeleton (Wilderness Agility Course)",
+    "version": "2",
+    "image": "Skeleton Lvl18 (1).png",
+    "level": 18,
+    "speed": 4,
+    "style": [
+      "Slash"
+    ],
+    "size": 1,
+    "max_hit": "1",
+    "skills": {
+      "atk": 24,
+      "def": 24,
+      "hp": 17,
+      "magic": 1,
+      "ranged": 1,
+      "str": 1
+    },
+    "offensive": {
+      "atk": 15,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 14
+    },
+    "defensive": {
+      "crush": -2,
+      "magic": 1,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
+      "slash": 11,
+      "stab": 9
+    },
+    "attributes": [
+      "undead"
+    ],
+    "weakness": null
+  },
+  {
+    "id": 13497,
+    "name": "Skeleton (Wilderness Agility Course)",
+    "version": "3",
+    "image": "Skeleton Lvl18 (2).png",
+    "level": 18,
+    "speed": 4,
+    "style": [
+      "Slash"
+    ],
+    "size": 1,
+    "max_hit": "1",
+    "skills": {
+      "atk": 24,
+      "def": 24,
+      "hp": 17,
+      "magic": 1,
+      "ranged": 1,
+      "str": 1
+    },
+    "offensive": {
+      "atk": 15,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 14
+    },
+    "defensive": {
+      "crush": -2,
+      "magic": 1,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
+      "slash": 11,
+      "stab": 9
+    },
+    "attributes": [
+      "undead"
+    ],
+    "weakness": null
+  },
+  {
+    "id": 13498,
+    "name": "Skeleton (Wilderness Agility Course)",
+    "version": "4",
+    "image": "Skeleton Lvl18 (3).png",
+    "level": 18,
+    "speed": 4,
+    "style": [
+      "Slash"
+    ],
+    "size": 1,
+    "max_hit": "1",
+    "skills": {
+      "atk": 24,
+      "def": 24,
+      "hp": 17,
+      "magic": 1,
+      "ranged": 1,
+      "str": 1
+    },
+    "offensive": {
+      "atk": 15,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 14
+    },
+    "defensive": {
+      "crush": -2,
+      "magic": 1,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
+      "slash": 11,
+      "stab": 9
+    },
+    "attributes": [
+      "undead"
+    ],
+    "weakness": null
+  },
+  {
+    "id": 13499,
+    "name": "Skeleton (Wilderness Agility Course)",
+    "version": "5",
+    "image": "Skeleton Lvl18 (4).png",
+    "level": 18,
+    "speed": 4,
+    "style": [
+      "Slash"
+    ],
+    "size": 1,
+    "max_hit": "1",
+    "skills": {
+      "atk": 24,
+      "def": 24,
+      "hp": 17,
+      "magic": 1,
+      "ranged": 1,
+      "str": 1
+    },
+    "offensive": {
+      "atk": 15,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 14
+    },
+    "defensive": {
+      "crush": -2,
+      "magic": 1,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
+      "slash": 11,
+      "stab": 9
+    },
+    "attributes": [
+      "undead"
+    ],
+    "weakness": null
+  },
+  {
+    "id": 13500,
+    "name": "Skeleton (Wilderness Agility Course)",
+    "version": "6",
+    "image": "Skeleton Lvl18.png",
+    "level": 18,
+    "speed": 4,
+    "style": [
+      "Slash"
+    ],
+    "size": 1,
+    "max_hit": "1",
+    "skills": {
+      "atk": 24,
+      "def": 24,
+      "hp": 17,
+      "magic": 1,
+      "ranged": 1,
+      "str": 1
+    },
+    "offensive": {
+      "atk": 15,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 14
+    },
+    "defensive": {
+      "crush": -2,
+      "magic": 1,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
+      "slash": 11,
+      "stab": 9
+    },
+    "attributes": [
+      "undead"
+    ],
+    "weakness": null
+  },
+  {
+    "id": 13501,
+    "name": "Skeleton (Wilderness Agility Course)",
+    "version": "7",
+    "image": "Skeleton Lvl18 (1).png",
+    "level": 18,
+    "speed": 4,
+    "style": [
+      "Slash"
+    ],
+    "size": 1,
+    "max_hit": "1",
+    "skills": {
+      "atk": 24,
+      "def": 24,
+      "hp": 17,
+      "magic": 1,
+      "ranged": 1,
+      "str": 1
+    },
+    "offensive": {
+      "atk": 15,
+      "magic": 0,
+      "magic_str": 0,
+      "ranged": 0,
+      "ranged_str": 0,
+      "str": 14
+    },
+    "defensive": {
+      "crush": -2,
+      "magic": 1,
+      "heavy": 4,
+      "standard": 4,
+      "light": 4,
+      "slash": 11,
+      "stab": 9
+    },
+    "attributes": [
+      "undead"
+    ],
+    "weakness": null
+  },
+  {
     "id": 6441,
     "name": "Skeleton (mage)",
     "version": "",
@@ -70943,9 +71833,9 @@
     "defensive": {
       "crush": 2,
       "magic": -3,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 2,
+      "standard": 2,
+      "light": 2,
       "slash": 3,
       "stab": 0
     },
@@ -71211,7 +72101,10 @@
     "attributes": [
       "undead"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "air",
+      "severity": 35
+    }
   },
   {
     "id": 11268,
@@ -71369,9 +72262,9 @@
     "defensive": {
       "crush": -12,
       "magic": -12,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -12,
+      "standard": -12,
+      "light": -12,
       "slash": -12,
       "stab": -12
     },
@@ -71409,9 +72302,9 @@
     "defensive": {
       "crush": -12,
       "magic": -12,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -12,
+      "standard": -12,
+      "light": -12,
       "slash": -12,
       "stab": -12
     },
@@ -71449,9 +72342,9 @@
     "defensive": {
       "crush": -12,
       "magic": -12,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -12,
+      "standard": -12,
+      "light": -12,
       "slash": -12,
       "stab": -12
     },
@@ -71489,9 +72382,9 @@
     "defensive": {
       "crush": -12,
       "magic": -12,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -12,
+      "standard": -12,
+      "light": -12,
       "slash": -12,
       "stab": -12
     },
@@ -71652,9 +72545,9 @@
     "defensive": {
       "crush": -100,
       "magic": -100,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -100,
+      "standard": -100,
+      "light": -100,
       "slash": -100,
       "stab": -100
     },
@@ -72093,9 +72986,9 @@
     "defensive": {
       "crush": 5,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 10,
       "stab": 10
     },
@@ -72413,9 +73306,9 @@
     "defensive": {
       "crush": 5,
       "magic": 5,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 10,
       "stab": 10
     },
@@ -73631,7 +74524,10 @@
       "stab": -53
     },
     "attributes": [],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 50
+    }
   },
   {
     "id": 2478,
@@ -73671,7 +74567,10 @@
       "stab": 53
     },
     "attributes": [],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 50
+    }
   },
   {
     "id": 4561,
@@ -73711,7 +74610,10 @@
       "stab": -53
     },
     "attributes": [],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 50
+    }
   },
   {
     "id": 3602,
@@ -74242,7 +75144,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 2244,
@@ -74284,7 +75189,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 2212,
@@ -74326,7 +75234,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 3161,
@@ -74368,7 +75279,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 11292,
@@ -74408,10 +75322,12 @@
       "stab": 420
     },
     "attributes": [
-      "icy",
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 200
+    }
   },
   {
     "id": 3167,
@@ -74453,7 +75369,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 2242,
@@ -74495,7 +75414,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 2211,
@@ -74537,7 +75459,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 3160,
@@ -74579,7 +75504,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 11291,
@@ -74619,10 +75547,12 @@
       "stab": 20
     },
     "attributes": [
-      "icy",
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 200
+    }
   },
   {
     "id": 3166,
@@ -74664,7 +75594,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 2243,
@@ -74706,7 +75639,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 2210,
@@ -74748,7 +75684,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 3159,
@@ -74790,7 +75729,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "none",
+      "severity": 0
+    }
   },
   {
     "id": 11290,
@@ -74830,10 +75772,12 @@
       "stab": 100
     },
     "attributes": [
-      "icy",
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "fire",
+      "severity": 200
+    }
   },
   {
     "id": 11725,
@@ -75729,7 +76673,7 @@
       "Slash"
     ],
     "size": 1,
-    "max_hit": "115% of targeted player's max hit'\"`UNIQ--ref-0000002E-QINU`\"'",
+    "max_hit": "115% of targeted player's max hit'\"`UNIQ--ref-00000313-QINU`\"'",
     "skills": {
       "atk": 90,
       "def": 80,
@@ -75749,9 +76693,9 @@
     "defensive": {
       "crush": 98,
       "magic": 1,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 82,
+      "standard": 82,
+      "light": 82,
       "slash": 93,
       "stab": 81
     },
@@ -76311,9 +77255,9 @@
     "defensive": {
       "crush": 10,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 200,
+      "standard": 200,
+      "light": 200,
       "slash": 50,
       "stab": 50
     },
@@ -76353,9 +77297,9 @@
     "defensive": {
       "crush": 10,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 200,
+      "standard": 200,
+      "light": 200,
       "slash": 50,
       "stab": 50
     },
@@ -76436,9 +77380,9 @@
     "defensive": {
       "crush": 70,
       "magic": 90,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 70,
       "stab": 50
     },
@@ -76477,9 +77421,9 @@
     "defensive": {
       "crush": 70,
       "magic": 90,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 70,
       "stab": 50
     },
@@ -76518,9 +77462,9 @@
     "defensive": {
       "crush": 70,
       "magic": 90,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 70,
       "stab": 50
     },
@@ -76559,9 +77503,9 @@
     "defensive": {
       "crush": 70,
       "magic": 90,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 70,
       "stab": 50
     },
@@ -76600,9 +77544,9 @@
     "defensive": {
       "crush": 70,
       "magic": 90,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 70,
       "stab": 50
     },
@@ -76641,9 +77585,9 @@
     "defensive": {
       "crush": 70,
       "magic": 90,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 70,
       "stab": 50
     },
@@ -76682,9 +77626,9 @@
     "defensive": {
       "crush": 70,
       "magic": 90,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 70,
       "stab": 50
     },
@@ -76722,9 +77666,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -76762,9 +77706,9 @@
     "defensive": {
       "crush": 100,
       "magic": 100,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -55,
+      "standard": -55,
+      "light": -55,
       "slash": 100,
       "stab": 100
     },
@@ -76802,9 +77746,9 @@
     "defensive": {
       "crush": 100,
       "magic": 100,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -55,
+      "standard": -55,
+      "light": -55,
       "slash": 100,
       "stab": 100
     },
@@ -76842,9 +77786,9 @@
     "defensive": {
       "crush": 100,
       "magic": 100,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -55,
+      "standard": -55,
+      "light": -55,
       "slash": 100,
       "stab": 100
     },
@@ -77573,9 +78517,9 @@
     "defensive": {
       "crush": 10,
       "magic": 25,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 20,
+      "standard": 20,
+      "light": 20,
       "slash": 30,
       "stab": 20
     },
@@ -78542,9 +79486,9 @@
     "defensive": {
       "crush": 0,
       "magic": 10000,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10000,
+      "standard": 10000,
+      "light": 10000,
       "slash": 0,
       "stab": 0
     },
@@ -79433,9 +80377,9 @@
     "defensive": {
       "crush": 5,
       "magic": 65,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -5,
+      "standard": -5,
+      "light": -5,
       "slash": 6,
       "stab": 5
     },
@@ -81905,7 +82849,7 @@
     "skills": {
       "atk": 300,
       "def": 100,
-      "hp": 140,
+      "hp": 4500,
       "magic": 190,
       "ranged": 190,
       "str": 150
@@ -82297,9 +83241,9 @@
     "defensive": {
       "crush": 10,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 200,
+      "standard": 200,
+      "light": 200,
       "slash": 0,
       "stab": 0
     },
@@ -82337,9 +83281,9 @@
     "defensive": {
       "crush": 10,
       "magic": 200,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 200,
+      "standard": 200,
+      "light": 200,
       "slash": 0,
       "stab": 0
     },
@@ -82377,9 +83321,9 @@
     "defensive": {
       "crush": 15,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 15,
+      "standard": 15,
+      "light": 15,
       "slash": 15,
       "stab": 15
     },
@@ -82461,9 +83405,9 @@
     "defensive": {
       "crush": 76,
       "magic": -10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 79,
+      "standard": 79,
+      "light": 79,
       "slash": 84,
       "stab": 87
     },
@@ -82884,7 +83828,7 @@
       "Typeless Ranged"
     ],
     "size": 7,
-    "max_hit": "148&thinsp;'\"`UNIQ--ref-00000001-QINU`\"'",
+    "max_hit": "148&thinsp;'\"`UNIQ--ref-00000030-QINU`\"'",
     "skills": {
       "atk": 350,
       "def": 260,
@@ -82925,7 +83869,7 @@
       "Typeless Ranged"
     ],
     "size": 7,
-    "max_hit": "148&thinsp;'\"`UNIQ--ref-00000001-QINU`\"'",
+    "max_hit": "148&thinsp;'\"`UNIQ--ref-00000030-QINU`\"'",
     "skills": {
       "atk": 350,
       "def": 260,
@@ -83150,9 +84094,9 @@
     "defensive": {
       "crush": 80,
       "magic": 140,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 40,
+      "standard": 40,
+      "light": 40,
       "slash": 30,
       "stab": 40
     },
@@ -83692,9 +84636,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -84689,9 +85633,9 @@
     "defensive": {
       "crush": 400,
       "magic": 110,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 50,
+      "standard": 50,
+      "light": 50,
       "slash": 340,
       "stab": 315
     },
@@ -84731,9 +85675,9 @@
     "defensive": {
       "crush": 150,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 400,
+      "standard": 400,
+      "light": 400,
       "slash": 150,
       "stab": 150
     },
@@ -84773,9 +85717,9 @@
     "defensive": {
       "crush": 100,
       "magic": 400,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 300,
+      "standard": 300,
+      "light": 300,
       "slash": 60,
       "stab": 55
     },
@@ -84899,9 +85843,9 @@
     "defensive": {
       "crush": 85,
       "magic": 580,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 580,
+      "standard": 580,
+      "light": 580,
       "slash": 65,
       "stab": 215
     },
@@ -84919,7 +85863,7 @@
       "Slash"
     ],
     "size": 2,
-    "max_hit": "32-43 (Melee)'\"`UNIQ--ref-00000008-QINU`\"'",
+    "max_hit": "32-43 (Melee)'\"`UNIQ--ref-00000007-QINU`\"'",
     "skills": {
       "atk": 280,
       "def": 0,
@@ -84939,9 +85883,9 @@
     "defensive": {
       "crush": 85,
       "magic": 580,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 580,
+      "standard": 580,
+      "light": 580,
       "slash": 65,
       "stab": 215
     },
@@ -84959,7 +85903,7 @@
       "Slash"
     ],
     "size": 2,
-    "max_hit": "30-37 (Melee)'\"`UNIQ--ref-0000000A-QINU`\"'",
+    "max_hit": "30-37 (Melee)'\"`UNIQ--ref-00000009-QINU`\"'",
     "skills": {
       "atk": 260,
       "def": 0,
@@ -84979,9 +85923,9 @@
     "defensive": {
       "crush": 50,
       "magic": 560,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 560,
+      "standard": 560,
+      "light": 560,
       "slash": 25,
       "stab": 150
     },
@@ -85196,7 +86140,10 @@
     "attributes": [
       "spectral"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "air",
+      "severity": 50
+    }
   },
   {
     "id": 10830,
@@ -85379,7 +86326,7 @@
     "skills": {
       "atk": 400,
       "def": 200,
-      "hp": 3250,
+      "hp": 3500,
       "magic": 400,
       "ranged": 400,
       "str": 400
@@ -85421,7 +86368,7 @@
     "skills": {
       "atk": 400,
       "def": 150,
-      "hp": 3250,
+      "hp": 3500,
       "magic": 300,
       "ranged": 300,
       "str": 400
@@ -85503,7 +86450,7 @@
     "skills": {
       "atk": 400,
       "def": 200,
-      "hp": 3250,
+      "hp": 3500,
       "magic": 400,
       "ranged": 400,
       "str": 400
@@ -85545,7 +86492,7 @@
     "skills": {
       "atk": 400,
       "def": 150,
-      "hp": 3250,
+      "hp": 3500,
       "magic": 300,
       "ranged": 300,
       "str": 400
@@ -85690,9 +86637,9 @@
     "defensive": {
       "crush": -10,
       "magic": 250,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 270,
+      "standard": 270,
+      "light": 270,
       "slash": 200,
       "stab": 201
     },
@@ -85733,9 +86680,9 @@
     "defensive": {
       "crush": -10,
       "magic": 250,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 270,
+      "standard": 270,
+      "light": 270,
       "slash": 200,
       "stab": 201
     },
@@ -86098,9 +87045,9 @@
     "defensive": {
       "crush": 126,
       "magic": 204,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 80,
+      "standard": 80,
+      "light": 80,
       "slash": 126,
       "stab": 66
     },
@@ -86145,9 +87092,9 @@
     "defensive": {
       "crush": 108,
       "magic": 240,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 26,
+      "standard": 26,
+      "light": 26,
       "slash": 108,
       "stab": 26
     },
@@ -86895,9 +87842,9 @@
     "defensive": {
       "crush": 175,
       "magic": 250,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -10,
+      "standard": -10,
+      "light": -10,
       "slash": 150,
       "stab": 100
     },
@@ -86935,9 +87882,9 @@
     "defensive": {
       "crush": 175,
       "magic": 250,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 150,
       "stab": 100
     },
@@ -87016,9 +87963,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 62,
+      "standard": 62,
+      "light": 62,
       "slash": 50,
       "stab": 50
     },
@@ -87057,9 +88004,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 62,
+      "standard": 62,
+      "light": 62,
       "slash": 50,
       "stab": 50
     },
@@ -88669,9 +89616,9 @@
     "defensive": {
       "crush": 70,
       "magic": -11,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 74,
+      "standard": 74,
+      "light": 74,
       "slash": 76,
       "stab": 83
     },
@@ -90027,9 +90974,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -90347,9 +91294,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -90387,9 +91334,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -90427,9 +91374,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -90467,9 +91414,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -90507,9 +91454,9 @@
     "defensive": {
       "crush": -21,
       "magic": -21,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": -21,
+      "standard": -21,
+      "light": -21,
       "slash": -21,
       "stab": -21
     },
@@ -90688,7 +91635,10 @@
     "attributes": [
       "dragon"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "earth",
+      "severity": 50
+    }
   },
   {
     "id": 13031,
@@ -90730,7 +91680,10 @@
     "attributes": [
       "dragon"
     ],
-    "weakness": null
+    "weakness": {
+      "element": "earth",
+      "severity": 50
+    }
   },
   {
     "id": 10951,
@@ -90763,9 +91716,9 @@
     "defensive": {
       "crush": 180,
       "magic": 260,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 30,
+      "standard": 30,
+      "light": 30,
       "slash": 180,
       "stab": 180
     },
@@ -90784,7 +91737,7 @@
       "Poison"
     ],
     "size": 5,
-    "max_hit": "6",
+    "max_hit": "6 (38+ recoil)",
     "skills": {
       "atk": 1,
       "def": 100,
@@ -90804,9 +91757,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 100,
+      "standard": 100,
+      "light": 100,
       "slash": 0,
       "stab": 0
     },
@@ -90825,7 +91778,7 @@
       "Poison"
     ],
     "size": 5,
-    "max_hit": "11",
+    "max_hit": "11 (50+ recoil)",
     "skills": {
       "atk": 1,
       "def": 200,
@@ -90845,9 +91798,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 160,
+      "standard": 160,
+      "light": 160,
       "slash": 0,
       "stab": 0
     },
@@ -90886,9 +91839,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 160,
+      "standard": 160,
+      "light": 160,
       "slash": 0,
       "stab": 0
     },
@@ -95007,9 +95960,9 @@
     "defensive": {
       "crush": 12,
       "magic": 10,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 11,
+      "standard": 11,
+      "light": 11,
       "slash": 8,
       "stab": 9
     },
@@ -95133,9 +96086,9 @@
     "defensive": {
       "crush": 0,
       "magic": 20,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 21,
+      "standard": 21,
+      "light": 21,
       "slash": 18,
       "stab": 19
     },
@@ -95175,9 +96128,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 20,
       "stab": 20
     },
@@ -95217,9 +96170,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 20,
       "stab": 20
     },
@@ -95259,9 +96212,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 20,
       "stab": 20
     },
@@ -95301,9 +96254,9 @@
     "defensive": {
       "crush": 0,
       "magic": 0,
-      "heavy": 0,
-      "standard": 0,
-      "light": 0,
+      "heavy": 10,
+      "standard": 10,
+      "light": 10,
       "slash": 20,
       "stab": 20
     },

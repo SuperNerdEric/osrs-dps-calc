@@ -42100,7 +42100,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 0,
+      "magic_str": 10,
       "prayer": 0
     },
     "offensive": {
@@ -42130,7 +42130,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 0,
+      "magic_str": 10,
       "prayer": 0
     },
     "offensive": {
@@ -42160,7 +42160,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 0,
+      "magic_str": 10,
       "prayer": 0
     },
     "offensive": {
@@ -51396,7 +51396,7 @@
     "slot": "weapon",
     "image": "Eclipse atlatl.png",
     "speed": 4,
-    "category": "Thrown",
+    "category": "Bow",
     "bonuses": {
       "str": 40,
       "ranged_str": 0,
@@ -52000,7 +52000,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 0,
+      "magic_str": 10,
       "prayer": 0
     },
     "offensive": {
@@ -52060,7 +52060,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 0,
+      "magic_str": 10,
       "prayer": 0
     },
     "offensive": {
@@ -52120,7 +52120,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 0,
+      "magic_str": 10,
       "prayer": 0
     },
     "offensive": {
@@ -78940,7 +78940,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 0,
+      "magic_str": 10,
       "prayer": 0
     },
     "offensive": {
@@ -78970,7 +78970,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 0,
+      "magic_str": 10,
       "prayer": 0
     },
     "offensive": {
@@ -79000,7 +79000,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 0,
+      "magic_str": 10,
       "prayer": 0
     },
     "offensive": {
@@ -80770,7 +80770,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 0,
+      "magic_str": 20,
       "prayer": 0
     },
     "offensive": {
@@ -89410,7 +89410,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 100,
+      "magic_str": 50,
       "prayer": 2
     },
     "offensive": {
@@ -92970,131 +92970,11 @@
     "isTwoHanded": false
   },
   {
-    "name": "Prince leggings",
-    "id": 6185,
-    "version": "",
-    "slot": "legs",
-    "image": "Prince leggings.png",
-    "speed": 0,
-    "category": "",
-    "bonuses": {
-      "str": 0,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": 0,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": false
-  },
-  {
-    "name": "Prince tunic",
-    "id": 6184,
-    "version": "",
-    "slot": "body",
-    "image": "Prince tunic.png",
-    "speed": 0,
-    "category": "",
-    "bonuses": {
-      "str": 0,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": 0,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": false
-  },
-  {
     "name": "Princely monkey",
     "id": 24867,
     "version": "",
     "slot": "cape",
     "image": "Princely monkey.png",
-    "speed": 0,
-    "category": "",
-    "bonuses": {
-      "str": 0,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": 0,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": false
-  },
-  {
-    "name": "Princess blouse",
-    "id": 6186,
-    "version": "",
-    "slot": "body",
-    "image": "Princess blouse.png",
-    "speed": 0,
-    "category": "",
-    "bonuses": {
-      "str": 0,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": 0,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": false
-  },
-  {
-    "name": "Princess skirt",
-    "id": 6187,
-    "version": "",
-    "slot": "legs",
-    "image": "Princess skirt.png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -94588,6 +94468,546 @@
       "ranged": 0
     },
     "isTwoHanded": true
+  },
+  {
+    "name": "Rainbow cape",
+    "id": 29493,
+    "version": "Asexual",
+    "slot": "cape",
+    "image": "Colourful cape (asexual).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow cape",
+    "id": 29491,
+    "version": "Bisexual",
+    "slot": "cape",
+    "image": "Colourful cape (bisexual).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow cape",
+    "id": 29505,
+    "version": "Gay",
+    "slot": "cape",
+    "image": "Colourful cape (gay).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow cape",
+    "id": 29501,
+    "version": "Genderqueer",
+    "slot": "cape",
+    "image": "Colourful cape (genderqueer).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow cape",
+    "id": 29503,
+    "version": "Lesbian",
+    "slot": "cape",
+    "image": "Colourful cape (lesbian).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow cape",
+    "id": 29499,
+    "version": "Non-binary",
+    "slot": "cape",
+    "image": "Colourful cape (non-binary).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow cape",
+    "id": 29497,
+    "version": "Pansexual",
+    "slot": "cape",
+    "image": "Colourful cape (pansexual).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow cape",
+    "id": 29489,
+    "version": "Pride",
+    "slot": "cape",
+    "image": "Rainbow cape.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow cape",
+    "id": 29495,
+    "version": "Transgender",
+    "slot": "cape",
+    "image": "Colourful cape (transgender).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow crown shirt",
+    "id": 29510,
+    "version": "Asexual",
+    "slot": "body",
+    "image": "Colourful crown shirt (asexual).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow crown shirt",
+    "id": 29509,
+    "version": "Bisexual",
+    "slot": "body",
+    "image": "Colourful crown shirt (bisexual).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow crown shirt",
+    "id": 29516,
+    "version": "Gay",
+    "slot": "body",
+    "image": "Colourful crown shirt (gay).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow crown shirt",
+    "id": 29514,
+    "version": "Genderqueer",
+    "slot": "body",
+    "image": "Colourful crown shirt (genderqueer).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow crown shirt",
+    "id": 29515,
+    "version": "Lesbian",
+    "slot": "body",
+    "image": "Colourful crown shirt (lesbian).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow crown shirt",
+    "id": 29513,
+    "version": "Non-binary",
+    "slot": "body",
+    "image": "Colourful crown shirt (non-binary).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow crown shirt",
+    "id": 29512,
+    "version": "Pansexual",
+    "slot": "body",
+    "image": "Colourful crown shirt (pansexual).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow crown shirt",
+    "id": 29507,
+    "version": "Pride",
+    "slot": "body",
+    "image": "Rainbow crown shirt.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rainbow crown shirt",
+    "id": 29511,
+    "version": "Transgender",
+    "slot": "body",
+    "image": "Colourful crown shirt (transgender).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
   },
   {
     "name": "Rainbow jumper",
@@ -99725,6 +100145,126 @@
     "version": "",
     "slot": "head",
     "image": "Royal crown.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Royal frog blouse",
+    "id": 6186,
+    "version": "",
+    "slot": "body",
+    "image": "Royal frog blouse.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Royal frog leggings",
+    "id": 6185,
+    "version": "",
+    "slot": "legs",
+    "image": "Royal frog leggings.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Royal frog skirt",
+    "id": 6187,
+    "version": "",
+    "slot": "legs",
+    "image": "Royal frog skirt.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Royal frog tunic",
+    "id": 6184,
+    "version": "",
+    "slot": "body",
+    "image": "Royal frog tunic.png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -107380,7 +107920,7 @@
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
-      "magic_str": 5,
+      "magic_str": 2,
       "prayer": 0
     },
     "offensive": {
