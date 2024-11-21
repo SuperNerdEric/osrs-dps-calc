@@ -1,5 +1,7 @@
-import { CombatStyleType } from '@/types/PlayerCombatStyle';
+import { CombatStyleType, RangedDamageType } from '@/types/PlayerCombatStyle';
 import { MonsterAttribute } from '@/enums/MonsterAttribute';
+import { Spellement } from '@/types/Spell';
+import { TD_PHASES } from '@/lib/constants';
 
 // For now this is the same as player combat styles, but it may support other stuff in future like "typeless"
 export type MonsterCombatStyle = CombatStyleType;
@@ -30,13 +32,18 @@ export interface Monster {
     str: number;
   }
   defensive: {
-    [k in Exclude<CombatStyleType, null>]: number;
+    [k in Exclude<CombatStyleType, null | 'ranged'> | Exclude<RangedDamageType, 'mixed'>]: number;
   }
   /**
    * The attributes the monster has
    * @see https://oldschool.runescape.wiki/w/Monster_attribute
    */
   attributes: MonsterAttribute[];
+
+  weakness: {
+    element: Spellement;
+    severity: number;
+  } | null
 
   /**
    * Fields that users have control over in the UI, which may affect buff applicability, monster scaling, etc.
@@ -83,9 +90,14 @@ export interface Monster {
     defenceReductions: {
       vulnerability: boolean;
       accursed: boolean;
+      elderMaul: number;
       dwh: number;
       arclight: number;
+      emberlight: number;
       bgs: number;
-    }
+      tonalztic: number;
+    };
+
+    tormentedDemonPhase?: typeof TD_PHASES[number];
   }
 }

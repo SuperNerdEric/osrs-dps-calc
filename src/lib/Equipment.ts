@@ -1,7 +1,7 @@
 import { EquipmentPiece, Player, PlayerEquipment } from '@/types/Player';
 import { Monster } from '@/types/Monster';
 import { keys } from '@/utils';
-import { TOMBS_OF_AMASCUT_MONSTER_IDS } from '@/lib/constants';
+import { BLOWPIPE_IDS, CAST_STANCES, TOMBS_OF_AMASCUT_MONSTER_IDS } from '@/lib/constants';
 import { sum } from 'd3-array';
 import equipment from '../../cdn/json/equipment.json';
 import generatedEquipmentAliases from './EquipmentAliases';
@@ -43,6 +43,7 @@ const commonAmmoCategories = () => {
     bow_t1: [
       882, 883, 5616, 5622, 598, 942, // Bronze arrow + variants
       884, 885, 5617, 5623, 2532, 2533, // Iron arrow + variants
+      22227, 22228, 22229, 22230, // barb assault
     ],
     cb_t1: [
       877, 878, 6061, 6062, 879, 9236, // Bronze bolts + variants, opal bolts + (e)
@@ -83,6 +84,7 @@ const commonAmmoCategories = () => {
  * Empty arrays indicate that the item should not be used with any ammo in the ammo slot at all.
  */
 const ammoForRangedWeapons: { [weapon: number]: number[] } = {
+  // todo(wgs): scorching bow arrows
   11708: commonAmmoCategories().bow_t1, // Cursed goblin bow
   23357: commonAmmoCategories().bow_t1, // Rain bow
   9705: [9706], // Training bow
@@ -113,6 +115,7 @@ const ammoForRangedWeapons: { [weapon: number]: number[] } = {
   27610: commonAmmoCategories().bow_t60, // Venator bow
   27612: commonAmmoCategories().bow_t60, // Venator bow (uncharged)
   20997: commonAmmoCategories().bow_t60, // Twisted bow
+  29591: commonAmmoCategories().bow_t60, // Scorching bow
   837: commonAmmoCategories().cb_t1, // Crossbow
   767: commonAmmoCategories().cb_t1, // Phoenix crossbow
   9174: commonAmmoCategories().cb_t1, // Bronze crossbow
@@ -145,7 +148,8 @@ const ammoForRangedWeapons: { [weapon: number]: number[] } = {
   10149: [10142], // Swamp lizard, Guam tar
   10146: [10143], // Orange salamander, Marrentill tar
   10147: [10144], // Red salamander, Tarromin tar
-  10148: [10145], // Black salamander, Guam tar
+  10148: [10145], // Black salamander, Harralander tar
+  28834: [28837], // Tecu salamander, Irit tar
   28869: [28872, 28878], // Hunters' sunlight crossbow
   29000: [28991], // Eclipse atlatl
 };
@@ -276,6 +280,15 @@ export const calculateEquipmentBonusesFromGear = (player: Player, monster: Monst
     });
   });
 
+  if (BLOWPIPE_IDS.includes(playerEquipment.weapon?.id || 0)) {
+    const dart = availableEquipment.find((e) => e.id === playerEquipment.weapon?.itemVars?.blowpipeDartId);
+    if (dart) {
+      totals.bonuses.ranged_str += dart.bonuses.ranged_str;
+    } else {
+      // todo warn user
+    }
+  }
+
   if (playerEquipment.weapon?.name === "Tumeken's shadow" && player.style.stance !== 'Manual Cast') {
     const factor = TOMBS_OF_AMASCUT_MONSTER_IDS.includes(monster.id) ? 4 : 3;
     totals.bonuses.magic_str *= factor;
@@ -288,13 +301,22 @@ export const calculateEquipmentBonusesFromGear = (player: Player, monster: Monst
     totals.bonuses.str += Math.max(0, Math.trunc((defenceSum - 800) / 12) - 38);
   }
 
-  if (player.spell?.spellbook === 'ancient') {
+  if (player.spell?.spellbook === 'ancient' && CAST_STANCES.includes(player.style.stance)) {
     const virtusPieces = sum([playerEquipment.head?.name, playerEquipment.body?.name, playerEquipment.legs?.name], (i) => (i?.includes('Virtus') ? 1 : 0));
-    totals.bonuses.magic_str += 3 * virtusPieces;
+    totals.bonuses.magic_str += 30 * virtusPieces;
+  }
+
+  // void mage is a visible bonus of 5%
+  if (playerEquipment.head?.name === 'Void mage helm'
+    && playerEquipment.body?.name === 'Elite void top'
+    && playerEquipment.legs?.name === 'Elite void robe'
+    && playerEquipment.hands?.name === 'Void knight gloves') {
+    totals.bonuses.magic_str += 50;
   }
 
   const cape = playerEquipment.cape;
-  const dizanasQuiverCharged = cape?.name === "Blessed dizana's quiver"
+  const dizanasQuiverCharged = cape?.name === "Dizana's max cape"
+    || cape?.name === "Blessed dizana's quiver"
     || (cape?.name === "Dizana's quiver" && cape?.version === 'Charged');
   if (dizanasQuiverCharged && ammoApplicability(player.equipment.weapon?.id, player.equipment.ammo?.id) === AmmoApplicability.INCLUDED) {
     totals.offensive.ranged += 10;
@@ -303,3 +325,50 @@ export const calculateEquipmentBonusesFromGear = (player: Player, monster: Monst
 
   return totals;
 };
+
+/* eslint-disable quote-props */
+export const WEAPON_SPEC_COSTS: { [canonicalName: string]: number } = {
+  'Abyssal dagger': 25,
+  'Dragon dagger': 25,
+  "Osmumten's fang": 25,
+  "Osmumten's fang (or)": 25,
+  'Dual macuahuitl': 25,
+  'Scorching bow': 25,
+  'Purging staff': 25,
+
+  'Dawnbringer': 30,
+  'Dragon halberd': 30,
+  'Crystal halberd': 30,
+  'Burning claws': 30,
+
+  'Magic longbow': 35,
+  'Magic comp bow': 35,
+
+  'Elder maul': 50,
+  'Dragon warhammer': 50,
+  'Bandos godsword': 50,
+  'Saradomin godsword': 50,
+  'Accursed sceptre': 50,
+  'Accursed sceptre (a)': 50,
+  'Arclight': 50,
+  'Emberlight': 50,
+  'Tonalztics of ralos': 50,
+  'Dragon claws': 50,
+  'Voidwaker': 50,
+  'Toxic blowpipe': 50,
+  'Blazing blowpipe': 50,
+  'Webweaver bow': 50,
+  'Magic shortbow (i)': 50,
+  'Ancient godsword': 50,
+  'Armadyl godsword': 50,
+  'Zamorak godsword': 50,
+  'Abyssal bludgeon': 50,
+
+  'Magic shortbow': 55,
+  'Dark bow': 55,
+  'Eldritch nightmare staff': 55,
+  'Volatile nightmare staff': 55,
+
+  'Zaryte crossbow': 75,
+};
+/* eslint-enable quote-props */

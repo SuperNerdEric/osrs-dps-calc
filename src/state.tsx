@@ -1,39 +1,34 @@
 import {
-  IReactionPublic, makeAutoObservable, reaction, toJS,
+  autorun, IReactionDisposer, IReactionPublic, makeAutoObservable, reaction, toJS,
 } from 'mobx';
 import React, { createContext, useContext } from 'react';
 import { PartialDeep } from 'type-fest';
 import * as localforage from 'localforage';
 import {
-  CalculatedLoadout, Calculator, ImportableData, Preferences, State, UI, UserIssue,
+  CalculatedLoadout, Calculator, IMPORT_VERSION, ImportableData, PlayerVsNPCCalculatedLoadout, Preferences, State, UI, UserIssue,
 } from '@/types/State';
 import merge from 'lodash.mergewith';
-import { Player, PlayerEquipment, PlayerSkills } from '@/types/Player';
+import {
+  EquipmentPiece, Player, PlayerEquipment, PlayerSkills,
+} from '@/types/Player';
 import { Monster } from '@/types/Monster';
 import { MonsterAttribute } from '@/enums/MonsterAttribute';
 import { toast } from 'react-toastify';
 import {
-  Debouncer, fetchPlayerSkills, fetchShortlinkData, getCombatStylesForCategory, PotionMap,
+  fetchPlayerSkills, fetchShortlinkData, getCombatStylesForCategory, PotionMap,
 } from '@/utils';
 import { ComputeBasicRequest, ComputeReverseRequest, WorkerRequestType } from '@/worker/CalcWorkerTypes';
-import getMonsters from '@/lib/Monsters';
+import { getMonsters, INITIAL_MONSTER_INPUTS } from '@/lib/Monsters';
 import { availableEquipment, calculateEquipmentBonusesFromGear } from '@/lib/Equipment';
 import { CalcWorker } from '@/worker/CalcWorker';
 import { spellByName } from '@/types/Spell';
-import UserIssueType from '@/enums/UserIssueType';
+import { NUMBER_OF_LOADOUTS } from '@/lib/constants';
 import { EquipmentCategory } from './enums/EquipmentCategory';
 import {
-  ARM_PRAYERS,
-  BRAIN_PRAYERS,
-  DEFENSIVE_PRAYERS,
-  OFFENSIVE_PRAYERS,
-  OVERHEAD_PRAYERS,
-  Prayer,
+  ARM_PRAYERS, BRAIN_PRAYERS, DEFENSIVE_PRAYERS, OFFENSIVE_PRAYERS, OVERHEAD_PRAYERS, Prayer,
 } from './enums/Prayer';
 import Potion from './enums/Potion';
-import { WikiSyncer } from './wikisync/WikiSyncer';
-
-const CALC_DEBOUNCE_MS: number = 250;
+import { startPollingForRuneLite, WikiSyncer } from './wikisync/WikiSyncer';
 
 const EMPTY_CALC_LOADOUT = {} as CalculatedLoadout;
 
@@ -54,9 +49,8 @@ const generateInitialEquipment = () => {
   return initialEquipment;
 };
 
-export const generateEmptyPlayer = (name?: string) => ({
+export const generateEmptyPlayer = (name?: string): Player => ({
   name: name ?? 'Loadout 1',
-  username: '',
   style: getCombatStylesForCategory(EquipmentCategory.NONE)[0],
   skills: {
     atk: 99,
@@ -109,20 +103,32 @@ export const generateEmptyPlayer = (name?: string) => ({
     markOfDarknessSpell: false,
     forinthrySurge: false,
     soulreaperStacks: 0,
+    baAttackerLevel: 0,
+    chinchompaDistance: 4, // 4 tiles is the optimal range for "medium fuse" (rapid), which is the default selected stance
     usingSunfireRunes: false,
   },
   spell: null,
 });
 
 export const parseLoadoutsFromImportedData = (data: ImportableData) => data.loadouts.map((loadout, i) => {
-  // For each item, if only an item ID is available, load the other data.
+  // For each item, reload the most current data using the item ID to ensure we're not using stale data.
   if (loadout.equipment) {
     for (const [k, v] of Object.entries(loadout.equipment)) {
       if (v === null) continue;
-      if (Object.keys(v).length === 1 && Object.hasOwn(v, 'id')) {
-        const item = availableEquipment.find((eq) => eq.id === v.id);
-        loadout.equipment[k as keyof typeof loadout.equipment] = item || null;
+      let item: EquipmentPiece | undefined;
+      if (Object.hasOwn(v, 'id')) {
+        item = availableEquipment.find((eq) => eq.id === v.id);
+        if (item) {
+          // include the hidden itemVars inputs that are not present on the availableEquipment store
+          if (Object.hasOwn(v, 'itemVars')) {
+            item = { ...item, itemVars: v.itemVars };
+          }
+        } else {
+          console.warn(`[parseLoadoutsFromImportedData] No item found for item ID ${v.id}`);
+        }
       }
+      // The following line will remove the item entirely if it seems to no longer exist.
+      loadout.equipment[k as keyof typeof loadout.equipment] = item || null;
     }
   }
 
@@ -135,6 +141,8 @@ export const parseLoadoutsFromImportedData = (data: ImportableData) => data.load
 });
 
 class GlobalState implements State {
+  serializationVersion = IMPORT_VERSION;
+
   monster: Monster = {
     id: 415,
     name: 'Abyssal demon',
@@ -160,30 +168,17 @@ class GlobalState implements State {
       str: 0,
     },
     defensive: {
+      stab: 20,
+      slash: 20,
       crush: 20,
       magic: 0,
-      ranged: 20,
-      slash: 20,
-      stab: 20,
+      light: 20,
+      standard: 20,
+      heavy: 20,
     },
     attributes: [MonsterAttribute.DEMON],
-    inputs: {
-      isFromCoxCm: false,
-      toaInvocationLevel: 0,
-      toaPathLevel: 0,
-      partyMaxCombatLevel: 126,
-      partyAvgMiningLevel: 99,
-      partyMaxHpLevel: 99,
-      partySize: 1,
-      monsterCurrentHp: 150,
-      defenceReductions: {
-        vulnerability: false,
-        accursed: false,
-        dwh: 0,
-        arclight: 0,
-        bgs: 0,
-      },
-    },
+    weakness: null,
+    inputs: { ...INITIAL_MONSTER_INPUTS },
   };
 
   loadouts: Player[] = [
@@ -196,6 +191,7 @@ class GlobalState implements State {
     showPreferencesModal: false,
     showShareModal: false,
     username: '',
+    isDefensiveReductionsExpanded: false,
   };
 
   prefs: Preferences = {
@@ -206,6 +202,8 @@ class GlobalState implements State {
     showTtkComparison: false,
     showNPCVersusPlayerResults: false,
     hitDistsHideZeros: false,
+    hitDistShowSpec: false,
+    resultsExpanded: false,
   };
 
   calc: Calculator = {
@@ -240,6 +238,8 @@ class GlobalState implements State {
    * RuneLite client to the DPS calculator.
    */
   wikisync: Map<number, WikiSyncer> = new Map();
+
+  private storageUpdater?: IReactionDisposer;
 
   constructor() {
     makeAutoObservable(this, {}, { autoBind: true });
@@ -280,16 +280,9 @@ class GlobalState implements State {
       }
     }));
 
-    // reset monster current hp when selecting a new monster
-    const monsterHpTriggers: ((r: IReactionPublic) => unknown)[] = [
-      () => toJS(this.monster.id),
-    ];
-    monsterHpTriggers.map((t) => reaction(t, () => {
-      this.monster.inputs.monsterCurrentHp = this.monster.skills.hp;
-    }));
-
-    // this.wikisync = startPollingForRuneLite();
-    this.wikisync = new Map(); // temp disabled until we're ready
+    if ((process.env.NEXT_PUBLIC_DISABLE_WS || 'false') !== 'true') {
+      this.wikisync = startPollingForRuneLite();
+    }
   }
 
   set debug(debug: boolean) {
@@ -298,6 +291,18 @@ class GlobalState implements State {
 
   get debug(): boolean {
     return this._debug;
+  }
+
+  /**
+   * Get the importable version of the current UI state
+   */
+  get asImportableData(): ImportableData {
+    return {
+      serializationVersion: IMPORT_VERSION,
+      loadouts: toJS(this.loadouts),
+      monster: toJS(this.monster),
+      selectedLoadout: this.selectedLoadout,
+    };
   }
 
   /**
@@ -321,9 +326,7 @@ class GlobalState implements State {
     let is: UserIssue[] = [];
 
     // Determine the current global/UI-related issues
-    if ([13011, 13012, 13013, 13033, 13029].includes(this.monster.id)) {
-      is.push({ type: UserIssueType.MONSTER_UNIQUE_EFFECTS, message: 'This monster has unique effects that are not yet accounted for. Results may be inaccurate.' });
-    }
+    // ex. is.push({ type: UserIssueType.MONSTER_UNIQUE_EFFECTS, message: 'This monster has unique effects that are not yet accounted for. Results may be inaccurate.' });
 
     // Add in the issues returned from the calculator
     for (const l of Object.values(this.calc.loadouts)) {
@@ -357,12 +360,27 @@ class GlobalState implements State {
     return new Map([...this.wikisync].filter(([, v]) => v.username));
   }
 
+  /**
+   * Initialises the autorun function for updating dps-calc-state when something changes.
+   * This should only ever be called once.
+   */
+  startStorageUpdater() {
+    if (this.storageUpdater) {
+      console.warn('[GlobalState] StorageUpdater is already set!');
+      return;
+    }
+    this.storageUpdater = autorun(() => {
+      // Save their application state to browser storage
+      localforage.setItem('dps-calc-state', toJS(this.asImportableData)).catch(() => {});
+    });
+  }
+
   setCalcWorker(worker: CalcWorker) {
     if (this.calcWorker) {
       console.warn('[GlobalState] CalcWorker is already set!');
+      this.calcWorker.shutdown();
     }
     worker.initWorker();
-    worker.setDebouncer(new Debouncer(CALC_DEBOUNCE_MS));
     this.calcWorker = worker;
   }
 
@@ -386,13 +404,11 @@ class GlobalState implements State {
   }
 
   updateCalcResults(calc: PartialDeep<Calculator>) {
-    this.calc = merge(this.calc, calc, (obj, src, key) => {
-      // When we're handling the details array, merge the obj + src together instead of replacing
-      if (key === 'details' && Array.isArray(src) && Array.isArray(obj)) {
-        return [...obj, ...src];
-      }
-      return undefined;
-    });
+    this.calc = merge(this.calc, calc);
+  }
+
+  updateCalcTtkDist(loadoutIx: number, ttkDist: PlayerVsNPCCalculatedLoadout['ttkDist']) {
+    this.calc.loadouts[loadoutIx].ttkDist = ttkDist;
   }
 
   async loadShortlink(linkId: string) {
@@ -422,20 +438,45 @@ class GlobalState implements State {
   }
 
   updateImportedData(data: ImportableData) {
-    if (data.monster && data.monster.id) {
-      const monsterById = getMonsters().find((m) => m.id === data.monster.id);
-      if (!monsterById) {
-        throw new Error(`Failed to find monster by id '${data.monster.id}' from shortlink`);
+    if (data.monster) {
+      let newMonster: PartialDeep<Monster> = {};
+
+      if (data.monster.id > -1) {
+        const monstersById = getMonsters().filter((m) => m.id === data.monster.id);
+        if ((monstersById?.length || 0) === 0) {
+          throw new Error(`Failed to find monster by id '${data.monster.id}' from shortlink`);
+        }
+
+        if (monstersById.length === 1) {
+          newMonster = monstersById[0];
+        } else {
+          const version = monstersById.find((m) => m.version === data.monster.version);
+          if (version) {
+            newMonster = version;
+          } else {
+            newMonster = monstersById[0];
+          }
+        }
+      } else {
+        newMonster = data.monster;
+      }
+
+      // If the passed monster def reductions are different to the defaults, expand the UI section.
+      for (const [k, v] of Object.entries(data.monster.inputs?.defenceReductions)) {
+        if (v !== undefined && v !== INITIAL_MONSTER_INPUTS.defenceReductions[k as keyof typeof INITIAL_MONSTER_INPUTS.defenceReductions]) {
+          this.updateUIState({ isDefensiveReductionsExpanded: true });
+          break;
+        }
       }
 
       // only use the shortlink for user-input fields, trust cdn for others in case they change
       this.updateMonster({
-        ...monsterById,
+        ...newMonster,
         inputs: data.monster.inputs,
       });
     }
 
-    // Expand some minified fields with thier full metadata
+    // Expand some minified fields with their full metadata
     const loadouts = parseLoadoutsFromImportedData(data);
 
     // manually recompute equipment in case their metadata has changed since the shortlink was created
@@ -576,7 +617,15 @@ class GlobalState implements State {
         const newWeaponCat = newWeapon?.category || EquipmentCategory.NONE;
         if ((newWeaponCat !== undefined) && (newWeaponCat !== oldWeaponCat) && !player.style) {
           // If the weapon slot category was changed, we should reset the player's selected combat style to the first one that exists.
-          player.style = getCombatStylesForCategory(newWeaponCat)[0];
+          const styles = getCombatStylesForCategory(newWeaponCat);
+          const rapid = styles.find((e) => e.stance === 'Rapid');
+          if (rapid !== undefined) {
+            player.style = rapid;
+          } else {
+            // Would perhaps be worth it to make a similar thing for looking up
+            // aggressive?
+            player.style = styles[0];
+          }
         }
       }
 
@@ -595,7 +644,7 @@ class GlobalState implements State {
 
     this.loadouts[loadoutIx] = merge(this.loadouts[loadoutIx], player);
     if (!this.prefs.manualMode) {
-      if (eq || Object.hasOwn(player, 'spell')) {
+      if (eq || Object.hasOwn(player, 'spell') || Object.hasOwn(player, 'style')) {
         this.recalculateEquipmentBonusesFromGear(loadoutIx);
       }
     }
@@ -608,6 +657,18 @@ class GlobalState implements State {
   updateMonster(monster: PartialDeep<Monster>) {
     // If monster attributes were passed to this function, clear the existing ones
     if (monster.attributes !== undefined) this.monster.attributes = [];
+
+    // If the monster ID was changed, reset all the inputs.
+    if (
+      monster.id !== undefined
+      && monster.id !== this.monster.id
+      && !Object.hasOwn(monster, 'inputs')
+    ) {
+      monster = {
+        ...monster,
+        inputs: INITIAL_MONSTER_INPUTS,
+      };
+    }
 
     this.monster = merge(this.monster, monster, (obj, src) => {
       // This check is to ensure that empty arrays always override existing arrays, even if they have values.
@@ -662,7 +723,7 @@ class GlobalState implements State {
   }
 
   get canCreateLoadout() {
-    return (this.loadouts.length < 5);
+    return this.loadouts.length < NUMBER_OF_LOADOUTS;
   }
 
   createLoadout(selected?: boolean, cloneIndex?: number) {
@@ -688,12 +749,12 @@ class GlobalState implements State {
     this.calc.loadouts = calculatedLoadouts;
 
     const data: Extract<ComputeBasicRequest['data'], ComputeReverseRequest['data']> = {
-      loadouts: this.loadouts,
-      monster: this.monster,
+      loadouts: toJS(this.loadouts),
+      monster: toJS(this.monster),
       calcOpts: {
-        includeTtkDist: this.prefs.showTtkComparison,
+        hitDistHideMisses: this.prefs.hitDistsHideZeros,
         detailedOutput: this.debug,
-        disableMonsterScaling: this.prefs.manualMode,
+        disableMonsterScaling: this.monster.id === -1,
       },
     };
     const request = async (type: WorkerRequestType.COMPUTE_BASIC | WorkerRequestType.COMPUTE_REVERSE) => {
@@ -706,8 +767,29 @@ class GlobalState implements State {
       this.updateCalcResults({ loadouts: resp.payload });
     };
 
-    await request(WorkerRequestType.COMPUTE_BASIC);
-    await request(WorkerRequestType.COMPUTE_REVERSE);
+    const promises: Promise<void>[] = [];
+    promises.push(
+      request(WorkerRequestType.COMPUTE_BASIC),
+      request(WorkerRequestType.COMPUTE_REVERSE),
+    );
+
+    if (this.prefs.showTtkComparison) {
+      promises.push(
+        (async () => {
+          const parallel = process.env.NEXT_PUBLIC_SERIAL_TTK !== 'true';
+          const resp = await this.calcWorker.do({
+            type: parallel ? WorkerRequestType.COMPUTE_TTK_PARALLEL : WorkerRequestType.COMPUTE_TTK,
+            data,
+          });
+
+          for (const [ix, loadout] of resp.payload.entries()) {
+            this.updateCalcTtkDist(ix, loadout.ttkDist);
+          }
+        })(),
+      );
+    }
+
+    await Promise.all(promises);
   }
 }
 

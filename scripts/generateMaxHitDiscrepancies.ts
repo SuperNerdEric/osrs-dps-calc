@@ -1,4 +1,4 @@
-import getMonsters from '@/lib/Monsters';
+import { getMonsters } from '@/lib/Monsters';
 import NPCVsPlayerCalc from '@/lib/NPCVsPlayerCalc';
 import { generateEmptyPlayer } from '@/state';
 
@@ -37,9 +37,12 @@ const generateMaxHitDiscrepancies = () => {
         defenceReductions: {
           vulnerability: false,
           accursed: false,
+          elderMaul: 0,
           dwh: 0,
+          emberlight: 0,
           arclight: 0,
           bgs: 0,
+          tonalztic: 0,
         },
       },
     });

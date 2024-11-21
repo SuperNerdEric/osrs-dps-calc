@@ -1,11 +1,10 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import {
   BarChart, XAxis, YAxis, Tooltip, ResponsiveContainer, Bar, TooltipProps, CartesianGrid,
 } from 'recharts';
 import { NameType, ValueType } from 'recharts/types/component/DefaultTooltipContent';
 import hitsplat from '@/public/img/hitsplat.webp';
 import zero_hitsplat from '@/public/img/zero_hitsplat.png';
-import { ChartEntry } from '@/types/State';
 import { useTheme } from 'next-themes';
 import { useStore } from '@/state';
 import LazyImage from '@/app/components/generic/LazyImage';
@@ -13,6 +12,8 @@ import SectionAccordion from '@/app/components/generic/SectionAccordion';
 import Toggle from '@/app/components/generic/Toggle';
 import { observer } from 'mobx-react-lite';
 import { max } from 'd3-array';
+import { toJS } from 'mobx';
+import { isDefined } from '@/utils';
 
 const CustomTooltip: React.FC<TooltipProps<ValueType, NameType>> = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
@@ -40,10 +41,21 @@ const CustomTooltip: React.FC<TooltipProps<ValueType, NameType>> = ({ active, pa
   return null;
 };
 
-const HitDistribution: React.FC<{ dist: ChartEntry[] }> = observer(({ dist }) => {
+const HitDistribution: React.FC = observer(() => {
   const store = useStore();
-  const { prefs } = store;
-  const data = prefs.hitDistsHideZeros ? dist.slice(1) : dist;
+  const { prefs, calc, selectedLoadout } = store;
+
+  const loadouts = toJS(calc.loadouts);
+  const thisLoadoutResult = loadouts[selectedLoadout];
+  const [specAvailable, setSpecAvailable] = useState<boolean>(false);
+  useEffect(() => {
+    // only update when data is unavailable
+    if (thisLoadoutResult?.accuracy !== undefined) {
+      setSpecAvailable(isDefined(thisLoadoutResult?.specHitDist));
+    }
+  }, [thisLoadoutResult]);
+
+  const data = useMemo(() => ((prefs.hitDistShowSpec && specAvailable) ? thisLoadoutResult?.specHitDist : thisLoadoutResult?.hitDist) || [], [thisLoadoutResult, prefs.hitDistShowSpec, specAvailable]);
 
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === 'dark';
@@ -76,12 +88,23 @@ const HitDistribution: React.FC<{ dist: ChartEntry[] }> = observer(({ dist }) =>
       )}
     >
       <div className="px-6 py-4">
-        <Toggle
-          checked={prefs.hitDistsHideZeros}
-          setChecked={(c) => store.updatePreferences({ hitDistsHideZeros: c })}
-          label="Hide 0s"
-          className="text-black dark:text-white mb-4"
-        />
+        <div
+          className="flex items-center gap-4"
+        >
+          <Toggle
+            checked={prefs.hitDistsHideZeros}
+            setChecked={(c) => store.updatePreferences({ hitDistsHideZeros: c })}
+            label="Hide misses"
+            className="text-black dark:text-white mb-4"
+          />
+          <Toggle
+            disabled={!specAvailable}
+            checked={prefs.hitDistShowSpec}
+            setChecked={(c) => store.updatePreferences({ hitDistShowSpec: c })}
+            label="Show special attack"
+            className="text-black dark:text-white mb-4"
+          />
+        </div>
         <ResponsiveContainer width="100%" height={225}>
           <BarChart
             data={data}

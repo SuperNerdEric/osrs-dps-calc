@@ -2,43 +2,32 @@ import React, { createRef, useEffect, useState } from 'react';
 import { observer } from 'mobx-react-lite';
 import { useStore } from '@/state';
 import Modal from '@/app/components/generic/Modal';
-import { ImportableData } from '@/types/State';
-import { toJS } from 'mobx';
-import { generateShortlink, isDevServer } from '@/utils';
+import { generateShortlink } from '@/utils';
 import { toast } from 'react-toastify';
-import { IconClipboardCopy } from '@tabler/icons-react';
+import { IconClipboardCopy, IconExternalLink } from '@tabler/icons-react';
 
 const ShareModal: React.FC = observer(() => {
   const store = useStore();
-  const { ui } = store;
+  const { ui, debug } = store;
   const inputRef = createRef<HTMLInputElement>();
 
-  const domain = isDevServer() ? 'http://localhost:3000/' : 'https://dps.osrs.wiki/';
+  const domain = process.env.NEXT_PUBLIC_SHORTLINK_URL;
   const [shareId, setShareId] = useState('');
   const [error, setError] = useState(false);
 
-  const generateShareLink = async () => {
-    setShareId('');
-    setError(false);
-
-    // Get the data we need from the internal store
-    const data: ImportableData = {
-      loadouts: toJS(store.loadouts),
-      monster: toJS(store.monster),
-      selectedLoadout: store.selectedLoadout,
-    };
-
-    // Make an API call to generate a share link
-    try {
-      setShareId(await generateShortlink(data));
-    } catch (e) {
-      setError(true);
-    }
-  };
-
   useEffect(() => {
+    async function generate() {
+      setShareId('');
+      setError(false);
+      try {
+        setShareId(await generateShortlink(store.asImportableData));
+      } catch (e) {
+        setError(true);
+      }
+    }
+
     if (ui.showShareModal) {
-      generateShareLink();
+      generate();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ui.showShareModal]);
@@ -65,11 +54,22 @@ const ShareModal: React.FC = observer(() => {
             <IconClipboardCopy className="w-5" />
             Copy
           </button>
+          {debug && (
+            <a
+              className="form-control flex items-center gap-1 hover:scale-105 no-underline"
+              type="button"
+              href={`https://dps.osrs.wiki?id=${shareId}`}
+              target="_blank"
+            >
+              <IconExternalLink className="w-5" />
+              Prod
+            </a>
+          )}
         </div>
         {error && (
-        <p className="mt-2 text-red-400 dark:text-red-200">
-          There was a problem generating a share link. Please try again.
-        </p>
+          <p className="mt-2 text-red-400 dark:text-red-200">
+            There was a problem generating a share link. Please try again.
+          </p>
         )}
       </div>
     </Modal>

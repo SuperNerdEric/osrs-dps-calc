@@ -2,6 +2,7 @@ import { Monster } from '@/types/Monster';
 import { P3_WARDEN_IDS } from '@/lib/constants';
 import { keys } from '@/utils';
 import { MonsterAttribute } from '@/enums/MonsterAttribute';
+import { Factor } from '@/lib/Math';
 
 const getDefenceFloor = (m: Monster): number => {
   if (m.name === 'Verzik Vitur' || m.name === 'Vardorvis') {
@@ -71,39 +72,57 @@ const applyDefenceReductions = (m: Monster): Monster => {
     });
   }
 
+  for (let i = 0; i < reductions.elderMaul; i++) {
+    m = newSkills(m, {
+      def: m.skills.def - Math.trunc(m.skills.def * 35 / 100),
+    });
+  }
   for (let i = 0; i < reductions.dwh; i++) {
     m = newSkills(m, {
       def: m.skills.def - Math.trunc(m.skills.def * 3 / 10),
     });
   }
 
-  if (reductions.arclight > 0) {
-    // arclight always applies against base stats
-    // https://discord.com/channels/177206626514632704/1098698914498101368/1201061390727794728 (wiki server)
-    const arclightDivisor = m.attributes.includes(MonsterAttribute.DEMON) ? 10 : 20;
+  const reduceArclight = (monster: Monster, iter: number, [num, den]: Factor): Monster => {
+    if (iter === 0) {
+      return monster;
+    }
+
+    return newSkills(monster, {
+      atk: monster.skills.atk - (iter * (Math.trunc(num * baseSkills.atk / den) + 1)),
+      str: monster.skills.str - (iter * (Math.trunc(num * baseSkills.str / den) + 1)),
+      def: monster.skills.def - (iter * (Math.trunc(num * baseSkills.def / den) + 1)),
+    });
+  };
+  m = reduceArclight(m, reductions.arclight, m.attributes.includes(MonsterAttribute.DEMON) ? [2, 20] : [1, 20]);
+  m = reduceArclight(m, reductions.emberlight, m.attributes.includes(MonsterAttribute.DEMON) ? [3, 20] : [1, 20]);
+
+  for (let i = 0; i < reductions.tonalztic; i++) {
     m = newSkills(m, {
-      atk: m.skills.atk - (reductions.arclight * (Math.trunc(baseSkills.atk / arclightDivisor) + 1)),
-      str: m.skills.str - (reductions.arclight * (Math.trunc(baseSkills.str / arclightDivisor) + 1)),
-      def: m.skills.def - (reductions.arclight * (Math.trunc(baseSkills.def / arclightDivisor) + 1)),
+      def: m.skills.def - Math.trunc(m.skills.magic / 10),
     });
   }
 
   let bgsDmg = reductions.bgs;
   if (bgsDmg > 0) {
-    const applyBgsDmg = (skill: number): number => {
-      const newValue = Math.max(0, skill - bgsDmg);
-      bgsDmg -= skill - newValue;
-      return newValue;
+    const applyBgsDmg = (monster: Monster, k: keyof Monster['skills']): Monster => {
+      const startLevel = monster.skills[k];
+      const newMonster = newSkills(monster, { [k]: startLevel - bgsDmg });
+      if (newMonster.skills[k] > 0) {
+        // if a skill fails to drain to 0, even if because of a drain floor, the bgs does not propagate further
+        bgsDmg = 0;
+      } else {
+        bgsDmg -= startLevel;
+      }
+      return newMonster;
     };
 
-    m = newSkills(m, {
-      // order matters here
-      def: applyBgsDmg(m.skills.def),
-      str: applyBgsDmg(m.skills.str),
-      atk: applyBgsDmg(m.skills.atk),
-      magic: applyBgsDmg(m.skills.magic),
-      ranged: applyBgsDmg(m.skills.ranged),
-    });
+    // order matters here
+    m = applyBgsDmg(m, 'def');
+    m = applyBgsDmg(m, 'str');
+    m = applyBgsDmg(m, 'atk');
+    m = applyBgsDmg(m, 'magic');
+    m = applyBgsDmg(m, 'ranged');
   }
 
   return m;

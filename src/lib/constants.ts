@@ -1,5 +1,13 @@
 import { CombatStyleStance } from '@/types/PlayerCombatStyle';
 
+export const BLOWPIPE_IDS: number[] = [
+  12926, // regular
+  28688, // blazing
+];
+
+// The maximum number of loadouts that users can have. Do not lower it, else it will cause share link issues.
+export const NUMBER_OF_LOADOUTS = 5;
+
 export const AKKHA_IDS = [
   11789, 11790, 11791, 11792, 11793, 11794, 11795, 11796,
 ];
@@ -10,39 +18,6 @@ export const AKKHA_SHADOW_IDS = [
 
 export const BABA_IDS = [
   11778, 11779, 11780,
-];
-
-export const STANDARD_BABOON_SMALL_IDS = [
-  11709, 11710, 11711,
-];
-
-export const STANDARD_BABOON_LARGE_IDS = [
-  11712, 11713, 11714,
-];
-
-export const BABOON_SHAMAN_IDS = [
-  11715,
-];
-
-export const VOLATILE_BABOON_IDS = [
-  11716,
-];
-
-export const CURSED_BABOON_IDS = [
-  11717,
-];
-
-export const BABOON_THRALL_IDS = [
-  11718,
-];
-
-export const APMEKEN_BABOON_IDS = [
-  ...STANDARD_BABOON_SMALL_IDS,
-  ...STANDARD_BABOON_LARGE_IDS,
-  ...BABOON_SHAMAN_IDS,
-  ...VOLATILE_BABOON_IDS,
-  ...CURSED_BABOON_IDS,
-  ...BABOON_THRALL_IDS,
 ];
 
 export const KEPHRI_SHIELDED_IDS = [
@@ -66,8 +41,8 @@ export const TOA_OBELISK_IDS = [
 ];
 
 export const P2_WARDEN_IDS = [
-  11753, 11754, 11755, // elidinis
-  11756, 11757, 11758, // tumeken
+  11753, 11754, // elidinis
+  11756, 11757, // tumeken
 ];
 
 export const P3_WARDEN_IDS = [
@@ -75,8 +50,9 @@ export const P3_WARDEN_IDS = [
   11762, 11764, // tumeken
 ];
 
-export const TOA_CORE_IDS = [
-  11770, 11771,
+export const TOA_WARDEN_CORE_EJECTED_IDS = [
+  11755, // elidinis
+  11758, // tumeken
 ];
 
 /**
@@ -86,7 +62,6 @@ export const TOMBS_OF_AMASCUT_PATH_MONSTER_IDS = [
   ...AKKHA_IDS,
   ...AKKHA_SHADOW_IDS,
   ...BABA_IDS,
-  ...APMEKEN_BABOON_IDS,
   ...KEPHRI_SHIELDED_IDS,
   ...KEPHRI_UNSHIELDED_IDS,
   ...KEPHRI_OVERLORD_IDS,
@@ -98,7 +73,7 @@ export const TOMBS_OF_AMASCUT_MONSTER_IDS = [
   ...TOMBS_OF_AMASCUT_PATH_MONSTER_IDS,
   ...TOA_OBELISK_IDS,
   ...P2_WARDEN_IDS,
-  ...TOA_CORE_IDS,
+  ...TOA_WARDEN_CORE_EJECTED_IDS,
   ...P3_WARDEN_IDS,
 ];
 
@@ -250,6 +225,17 @@ export const FRAGMENT_OF_SEREN_IDS = [
 ];
 
 /**
+ * IDs of the totems in the Nightmare / Phosani's Nightmare fight.
+ * They take double damage from magic sources.
+ *
+ * @see https://oldschool.runescape.wiki/w/Totem_(The_Nightmare)#Uncharged
+ */
+export const NIGHTMARE_TOTEM_IDS = [
+  9434, 9437, 9440, 9443,
+  9435, 9438, 9441, 9444,
+];
+
+/**
  * IDs of monsters that calculate their magical defence using the defence stat.
  * https://twitter.com/JagexAsh/status/1689566945635438592
  * */
@@ -267,6 +253,12 @@ export const USES_DEFENCE_LEVEL_FOR_MAGIC_DEFENCE_NPC_IDS = [
 const DUSK_IDS = [
   7851, 7854, 7855, 7882, 7883, 7886, // dusk first form
   7887, 7888, 7889, // dusk second form
+];
+
+const WARRIORS_GUILD_CYCLOPES = [
+  2463, 2465, 2467, // L56
+  2464, 2466, 2468, // L76
+  2137, 2138, 2139, 2140, 2141, 2142, // L106
 ];
 
 /**
@@ -296,6 +288,7 @@ export const IMMUNE_TO_RANGED_DAMAGE_NPC_IDS = [
   ...TEKTON_IDS,
   ...DUSK_IDS,
   ...GLOWING_CRYSTAL_IDS,
+  ...WARRIORS_GUILD_CYCLOPES,
 ];
 
 /**
@@ -303,6 +296,7 @@ export const IMMUNE_TO_RANGED_DAMAGE_NPC_IDS = [
  */
 export const IMMUNE_TO_MAGIC_DAMAGE_NPC_IDS = [
   ...DUSK_IDS,
+  ...WARRIORS_GUILD_CYCLOPES,
 ];
 
 export const PARTY_SIZE_REQUIRED_MONSTER_IDS = [
@@ -311,8 +305,35 @@ export const PARTY_SIZE_REQUIRED_MONSTER_IDS = [
   ...TOB_EM_MONSTER_IDS,
 ];
 
+export const BA_ATTACKER_MONSTERS = [
+  // fighters
+  1667,
+  5739,
+  5740,
+  5741,
+  5742,
+  5743,
+  5744,
+  5745,
+  5746,
+  5747,
+
+  // rangers
+  1668,
+  5757,
+  5758,
+  5759,
+  5760,
+  5761,
+  5762,
+  5763,
+  5764,
+  5765,
+];
+
 export const ACCURACY_PRECISION = 2;
 export const DPS_PRECISION = 3;
+export const EXPECTED_HIT_PRECISION = 1;
 
 export const AUTOCAST_STANCES: CombatStyleStance[] = ['Autocast', 'Defensive Autocast'];
 export const CAST_STANCES: CombatStyleStance[] = [...AUTOCAST_STANCES, 'Manual Cast'];
@@ -325,6 +346,22 @@ export const ONE_HIT_MONSTERS: number[] = [
   8584, // Flower
   11193, // Flower (A Night at the Theatre)
 ];
+
+export const ALWAYS_MAX_HIT_MONSTERS = {
+  melee: [
+    11710, 11713, // baboon thrower
+    12814, // frem warband archer
+    ...TOA_WARDEN_CORE_EJECTED_IDS,
+  ],
+  ranged: [
+    11711, 11714, // baboon mage
+    12815, // frem warband seer
+  ],
+  magic: [
+    11709, 11712, // baboon brawler
+    12816, // frem warband berserker
+  ],
+};
 
 /**
  * NPCs that will always hit the player with their attacks, no matter what gear they are wearing
@@ -346,3 +383,14 @@ export const NPC_HARDCODED_MAX_HIT: { [npcId: number]: number } = {
   5947: 10, // Spinolyp (1)
   5961: 10, // Spinolyp (2)
 };
+
+// https://oldschool.runescape.wiki/w/Flat_armour
+export const FLAT_ARMOUR: { [npcId: number]: number } = {
+  13011: -2, // blood moon
+  13012: 6, // eclipse moon (this actually drops to 4 during the clone special attack, should we handle that?)
+  13013: -5, // blue moon
+  13033: -4, // sulphur nagua
+  13029: -2, // grimy lizard
+};
+
+export const TD_PHASES = ['Shielded', 'Shielded (Defenceless)', 'Unshielded'] as const;

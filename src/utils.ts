@@ -25,6 +25,34 @@ import { PlayerCombatStyle } from '@/types/PlayerCombatStyle';
 import { PartialDeep } from 'type-fest';
 import merge from 'lodash.mergewith';
 
+/**
+ * Can be reused in a number of locations where we partially support a feature
+ * and want to distinguish to users whether that feature is expected, and is implemented.
+ */
+export enum FeatureStatus {
+  /**
+   * The feature is fully implemented and is expected to give accurate and comprehensive results.
+   */
+  IMPLEMENTED,
+
+  /**
+   * The feature is partially but not wholly implemented, and may or may not be accurate.
+   * Example: a special attack that has an increased max hit, and applies damage over time, where only the increased max hit is implemented.
+   */
+  PARTIALLY_IMPLEMENTED,
+
+  /**
+   * The feature is known to exist, but has not been implemented.
+   * Example: A new weapon has been implemented with a unique effect and is selectable in the UI, but it is not yet implemented in the calculator. */
+  UNIMPLEMENTED,
+
+  /**
+   * The feature does not apply to the given conditions.
+   * Example: Querying whether the special attack of a weapon has been implemented, but the weapon does not have a special attack.
+   */
+  NOT_APPLICABLE,
+}
+
 export const classNames = (...classes: string[]) => classes.filter(Boolean).join(' ');
 
 const SHORTLINK_API = 'https://tools.runescape.wiki/osrs-dps/shortlink';
@@ -69,6 +97,11 @@ export const generateShortlink = async (data: ImportableData): Promise<string> =
   });
   return res.data.data;
 };
+
+// for type narrowing
+export function isDefined<T>(id: T | undefined | null): id is T {
+  return !!id;
+}
 
 /**
  * Calculates a player's combat level using their skills
@@ -130,75 +163,26 @@ export class Debouncer {
     this.delay = ms;
   }
 
+  /* eslint-disable no-restricted-globals */
   async debounce(): Promise<void> {
     if (this.windowTimeoutId) {
-      window.clearTimeout(this.windowTimeoutId);
+      self.clearTimeout(this.windowTimeoutId);
     }
 
     const p = new DeferredPromise<void>();
-    this.windowTimeoutId = window.setTimeout(() => {
+    this.windowTimeoutId = self.setTimeout(() => {
       p.resolve(undefined);
     }, this.delay);
 
     return p.promise;
   }
+  /* eslint-enable no-restricted-globals */
 }
 
-export const PotionMap: { [k in Potion]: { name: string, image: StaticImageData, calculateFn: (skills: PlayerSkills) => Partial<PlayerSkills> } } = {
-  [Potion.ANCIENT]: {
-    name: 'Ancient brew',
-    image: Ancient,
-    calculateFn: (skills) => ({
-      magic: Math.floor(3 + (skills.magic * 0.05)),
-      atk: Math.floor(-2 - (skills.atk * 0.1)),
-      str: Math.floor(-2 - (skills.str * 0.1)),
-      def: Math.floor(-2 - (skills.def * 0.1)),
-    }),
-  },
-  [Potion.ATTACK]: {
-    name: 'Attack potion',
-    image: Attack,
-    calculateFn: (skills) => ({
-      atk: Math.floor(3 + (skills.atk * 0.1)),
-    }),
-  },
-  [Potion.FORGOTTEN_BREW]: {
-    name: 'Forgotten brew',
-    image: Forgotten,
-    calculateFn: (skills) => ({
-      magic: Math.floor(3 + (skills.magic * 0.08)),
-      atk: Math.floor(-2 - (skills.atk * 0.1)),
-      str: Math.floor(-2 - (skills.str * 0.1)),
-      def: Math.floor(-2 - (skills.def * 0.1)),
-    }),
-  },
-  [Potion.IMBUED_HEART]: {
-    name: 'Imbued heart',
-    image: Imbued,
-    calculateFn: (skills) => ({
-      magic: Math.floor(1 + (skills.magic * 0.1)),
-    }),
-  },
-  [Potion.MAGIC]: {
-    name: 'Magic potion',
-    image: Magic,
-    calculateFn: () => ({
-      magic: 4,
-    }),
-  },
-  [Potion.OVERLOAD]: {
-    name: 'Overload',
-    image: Overload,
-    calculateFn: (skills) => ({
-      atk: Math.floor(5 + (skills.atk * 0.13)),
-      str: Math.floor(5 + (skills.str * 0.13)),
-      def: Math.floor(5 + (skills.def * 0.13)),
-      magic: Math.floor(5 + (skills.magic * 0.13)),
-      ranged: Math.floor(5 + (skills.ranged * 0.13)),
-    }),
-  },
+export const PotionMap: { [k in Potion]: { name: string, order: number, image: StaticImageData, calculateFn: (skills: PlayerSkills) => Partial<PlayerSkills> } } = {
   [Potion.OVERLOAD_PLUS]: {
     name: 'Overload (+)',
+    order: 0,
     image: Overload,
     calculateFn: (skills) => ({
       atk: Math.floor(6 + (skills.atk * 0.16)),
@@ -208,22 +192,9 @@ export const PotionMap: { [k in Potion]: { name: string, image: StaticImageData,
       ranged: Math.floor(6 + (skills.ranged * 0.16)),
     }),
   },
-  [Potion.RANGING]: {
-    name: 'Ranging potion',
-    image: Ranging,
-    calculateFn: (skills) => ({
-      ranged: Math.floor(4 + (skills.ranged * 0.1)),
-    }),
-  },
-  [Potion.SATURATED_HEART]: {
-    name: 'Saturated heart',
-    image: Saturated,
-    calculateFn: (skills) => ({
-      magic: Math.floor(4 + (skills.magic * 0.1)),
-    }),
-  },
   [Potion.SMELLING_SALTS]: {
     name: 'Smelling salts',
+    order: 1,
     image: Salts,
     calculateFn: (skills) => ({
       atk: Math.floor(11 + (skills.atk * 0.16)),
@@ -233,36 +204,9 @@ export const PotionMap: { [k in Potion]: { name: string, image: StaticImageData,
       ranged: Math.floor(11 + (skills.ranged * 0.16)),
     }),
   },
-  [Potion.STRENGTH]: {
-    name: 'Strength potion',
-    image: Strength,
-    calculateFn: (skills) => ({
-      str: Math.floor(3 + (skills.str * 0.1)),
-    }),
-  },
-  [Potion.SUPER_ATTACK]: {
-    name: 'Super attack',
-    image: SuperAttack,
-    calculateFn: (skills) => ({
-      atk: Math.floor(5 + (skills.atk * 0.15)),
-    }),
-  },
-  [Potion.SUPER_STRENGTH]: {
-    name: 'Super strength',
-    image: SuperStrength,
-    calculateFn: (skills) => ({
-      str: Math.floor(5 + (skills.str * 0.15)),
-    }),
-  },
-  [Potion.SUPER_RANGING]: {
-    name: 'Super ranging',
-    image: SuperRanging,
-    calculateFn: (skills) => ({
-      ranged: Math.floor(5 + (skills.ranged * 0.15)),
-    }),
-  },
   [Potion.SUPER_COMBAT]: {
     name: 'Super combat',
+    order: 2,
     image: SuperCombat,
     calculateFn: (skills) => ({
       atk: Math.floor(5 + (skills.atk * 0.15)),
@@ -270,8 +214,115 @@ export const PotionMap: { [k in Potion]: { name: string, image: StaticImageData,
       def: Math.floor(5 + (skills.def * 0.15)),
     }),
   },
+  [Potion.RANGING]: {
+    name: 'Ranging potion',
+    order: 3,
+    image: Ranging,
+    calculateFn: (skills) => ({
+      ranged: Math.floor(4 + (skills.ranged * 0.1)),
+    }),
+  },
+  [Potion.SATURATED_HEART]: {
+    name: 'Saturated heart',
+    order: 4,
+    image: Saturated,
+    calculateFn: (skills) => ({
+      magic: Math.floor(4 + (skills.magic * 0.1)),
+    }),
+  },
+  [Potion.IMBUED_HEART]: {
+    name: 'Imbued heart',
+    order: 5,
+    image: Imbued,
+    calculateFn: (skills) => ({
+      magic: Math.floor(1 + (skills.magic * 0.1)),
+    }),
+  },
+  [Potion.FORGOTTEN_BREW]: {
+    name: 'Forgotten brew',
+    order: 6,
+    image: Forgotten,
+    calculateFn: (skills) => ({
+      magic: Math.floor(3 + (skills.magic * 0.08)),
+      atk: Math.floor(-2 - (skills.atk * 0.1)),
+      str: Math.floor(-2 - (skills.str * 0.1)),
+      def: Math.floor(-2 - (skills.def * 0.1)),
+    }),
+  },
+  [Potion.SUPER_ATTACK]: {
+    name: 'Super attack',
+    order: 7,
+    image: SuperAttack,
+    calculateFn: (skills) => ({
+      atk: Math.floor(5 + (skills.atk * 0.15)),
+    }),
+  },
+  [Potion.SUPER_STRENGTH]: {
+    name: 'Super strength',
+    order: 8,
+    image: SuperStrength,
+    calculateFn: (skills) => ({
+      str: Math.floor(5 + (skills.str * 0.15)),
+    }),
+  },
+  [Potion.ANCIENT]: {
+    name: 'Ancient brew',
+    order: 9,
+    image: Ancient,
+    calculateFn: (skills) => ({
+      magic: Math.floor(3 + (skills.magic * 0.05)),
+      atk: Math.floor(-2 - (skills.atk * 0.1)),
+      str: Math.floor(-2 - (skills.str * 0.1)),
+      def: Math.floor(-2 - (skills.def * 0.1)),
+    }),
+  },
+  [Potion.OVERLOAD]: {
+    name: 'Overload',
+    order: 10,
+    image: Overload,
+    calculateFn: (skills) => ({
+      atk: Math.floor(5 + (skills.atk * 0.13)),
+      str: Math.floor(5 + (skills.str * 0.13)),
+      def: Math.floor(5 + (skills.def * 0.13)),
+      magic: Math.floor(5 + (skills.magic * 0.13)),
+      ranged: Math.floor(5 + (skills.ranged * 0.13)),
+    }),
+  },
+  [Potion.MAGIC]: {
+    name: 'Magic potion',
+    order: 11,
+    image: Magic,
+    calculateFn: () => ({
+      magic: 4,
+    }),
+  },
+  [Potion.ATTACK]: {
+    name: 'Attack potion',
+    order: 12,
+    image: Attack,
+    calculateFn: (skills) => ({
+      atk: Math.floor(3 + (skills.atk * 0.1)),
+    }),
+  },
+  [Potion.STRENGTH]: {
+    name: 'Strength potion',
+    order: 13,
+    image: Strength,
+    calculateFn: (skills) => ({
+      str: Math.floor(3 + (skills.str * 0.1)),
+    }),
+  },
+  [Potion.SUPER_RANGING]: {
+    name: 'Super ranging',
+    order: 14,
+    image: SuperRanging,
+    calculateFn: (skills) => ({
+      ranged: Math.floor(5 + (skills.ranged * 0.15)),
+    }),
+  },
   [Potion.SUPER_MAGIC]: {
     name: 'Super magic',
+    order: 15,
     image: SuperMagic,
     calculateFn: (skills) => ({
       magic: Math.floor(5 + (skills.magic * 0.15)),
@@ -279,6 +330,7 @@ export const PotionMap: { [k in Potion]: { name: string, image: StaticImageData,
   },
   [Potion.DEFENCE]: {
     name: 'Defence potion',
+    order: 16,
     image: Defence,
     calculateFn: (skills) => ({
       def: Math.floor(3 + (skills.def * 0.1)),
@@ -286,6 +338,7 @@ export const PotionMap: { [k in Potion]: { name: string, image: StaticImageData,
   },
   [Potion.SUPER_DEFENCE]: {
     name: 'Super defence',
+    order: 17,
     image: SuperDefence,
     calculateFn: (skills) => ({
       def: Math.floor(5 + (skills.def * 0.15)),
@@ -542,7 +595,7 @@ export const getCombatStylesForCategory = (style: EquipmentCategory): PlayerComb
     case EquipmentCategory.SALAMANDER:
       ret = [
         { name: 'Scorch', type: 'slash', stance: 'Aggressive' },
-        { name: 'Flare', type: 'ranged', stance: 'Accurate' },
+        { name: 'Flare', type: 'ranged', stance: 'Rapid' },
         { name: 'Blaze', type: 'magic', stance: 'Defensive' },
       ];
       break;

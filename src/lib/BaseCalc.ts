@@ -8,11 +8,15 @@ import { UserIssue } from '@/types/State';
 import { CalcDetails, DetailEntry } from '@/lib/CalcDetails';
 import { Factor } from '@/lib/Math';
 import { scaleMonster } from '@/lib/MonsterScaling';
+import { getCombatStylesForCategory, isDefined } from '@/utils';
+import { EquipmentCategory } from '@/enums/EquipmentCategory';
+import { getRangedDamageType } from '@/types/PlayerCombatStyle';
 
 export interface CalcOpts {
   loadoutName?: string,
   detailedOutput?: boolean,
   disableMonsterScaling?: boolean,
+  usingSpecialAttack?: boolean,
   overrides?: {
     accuracy?: number,
     attackRoll?: number,
@@ -32,6 +36,7 @@ const DEFAULT_OPTS: Required<InternalOpts> = {
   loadoutName: 'unknown',
   detailedOutput: false,
   disableMonsterScaling: false,
+  usingSpecialAttack: false,
   noInit: false,
   overrides: {},
 };
@@ -54,7 +59,7 @@ export default class BaseCalc {
   protected baseMonster: Monster;
 
   // Array of the names of all equipped items (for quick checks)
-  protected allEquippedItems!: string[];
+  protected allEquippedItems: string[] = [];
 
   userIssues: UserIssue[] = [];
 
@@ -101,7 +106,7 @@ export default class BaseCalc {
 
   protected trackAdd(label: Parameters<CalcDetails['track']>[0], base: number, addend: number): number {
     const result = Math.trunc(base + addend);
-    this.track(label, result, `${base} ${addend >= 0 ? '+' : '-'} ${addend} = ${result}`);
+    this.track(label, result, `${base} ${addend >= 0 ? '+' : '-'} ${-addend} = ${result}`);
     return result;
   }
 
@@ -308,6 +313,18 @@ export default class BaseCalc {
     return this.wearing(["Osmumten's fang", "Osmumten's fang (or)"]);
   }
 
+  protected isWearingAccursedSceptre(): boolean {
+    return this.wearing(['Accursed sceptre', 'Accursed sceptre (a)']);
+  }
+
+  protected isWearingBlowpipe(): boolean {
+    return this.wearing(['Toxic blowpipe', 'Blazing blowpipe']);
+  }
+
+  protected isWearingGodsword(): boolean {
+    return this.wearing(['Ancient godsword', 'Armadyl godsword', 'Bandos godsword', 'Saradomin godsword', 'Zamorak godsword']);
+  }
+
   /**
    * Whether the player is using any variant of the scythe of vitur.
    * @see https://oldschool.runescape.wiki/w/Scythe_of_vitur
@@ -365,6 +382,10 @@ export default class BaseCalc {
     return this.wearingAll(["Torag's helm", "Torag's platebody", "Torag's platelegs", "Torag's hammers", 'Amulet of the damned']);
   }
 
+  protected isWearingBloodMoonSet(): boolean {
+    return this.wearingAll(['Dual macuahuitl', 'Blood moon helm', 'Blood moon chestplate', 'Blood moon tassets']);
+  }
+
   /**
    * Whether the player is wearing a silver weapon.
    * @see https://oldschool.runescape.wiki/w/Silver_weaponry
@@ -406,6 +427,14 @@ export default class BaseCalc {
       'Blisterwood sickle',
       'Blisterwood flail',
     ]);
+  }
+
+  protected isWearingMsb(): boolean {
+    return this.wearing(['Magic shortbow', 'Magic shortbow (i)']);
+  }
+
+  protected isWearingMlb(): boolean {
+    return this.wearing(['Magic longbow', 'Magic comp bow']);
   }
 
   /**
@@ -528,6 +557,44 @@ export default class BaseCalc {
     ]);
   }
 
+  protected isUsingDemonbane(): boolean {
+    switch (this.player.style.type) {
+      case 'magic':
+        return this.player.spell?.name.includes('Demonbane') || false;
+
+      case 'ranged':
+        return this.wearing(['Scorching bow']);
+
+      default:
+        return this.wearing(['Silverlight', 'Darklight', 'Arclight', 'Emberlight', 'Bone claws', 'Burning claws']);
+    }
+  }
+
+  protected isUsingAbyssal(): boolean {
+    return this.isUsingMeleeStyle()
+      && this.wearing(['Abyssal bludgeon', 'Abyssal dagger', 'Abyssal whip', 'Abyssal tentacle']);
+  }
+
+  protected tdUnshieldedBonusApplies(): boolean {
+    if (this.monster.name !== 'Tormented Demon' || this.monster.inputs.tormentedDemonPhase !== 'Unshielded') {
+      return false;
+    }
+
+    switch (this.player.style.type) {
+      case 'magic':
+        return isDefined(this.player.spell);
+
+      case 'ranged':
+        return getRangedDamageType(this.player.equipment.weapon!.category) === 'heavy';
+
+      case 'crush':
+        return true;
+
+      default:
+        return false;
+    }
+  }
+
   protected addIssue(type: UserIssueType, message: string) {
     this.userIssues.push({ type, message, loadout: this.opts.loadoutName });
   }
@@ -544,6 +611,26 @@ export default class BaseCalc {
           monsterCurrentHp: this.monster.skills.hp,
         },
       };
+    }
+
+    // specs are never manual cast, although the base loadout can be at the same time
+    if (this.opts.usingSpecialAttack) {
+      if (this.player.style.stance === 'Manual Cast') {
+        this.player = {
+          ...this.player,
+          style: getCombatStylesForCategory(eq.weapon?.category || EquipmentCategory.UNARMED)[0],
+          spell: null,
+        };
+      }
+
+      // these staves use a built-in spell for their spec
+      if (['Accursed sceptre (a)', 'Eldritch nightmare staff', 'Volatile nightmare staff'].includes(eq.weapon?.name || '')) {
+        this.player = {
+          ...this.player,
+          style: getCombatStylesForCategory(EquipmentCategory.POWERED_STAFF)[0],
+          spell: null,
+        };
+      }
     }
 
     // we should do clone-edits here to prevent affecting ui state
@@ -590,10 +677,16 @@ export default class BaseCalc {
       this.addIssue(UserIssueType.SPELL_WRONG_MONSTER, 'This spell cannot be cast on the selected monster.');
     }
 
+    // some weapons are only available to use against certain monsters
+    if (
+      this.wearing('Dawnbringer') && (this.monster.name !== 'Verzik Vitur' || !this.monster.version?.includes('Phase 1'))
+    ) {
+      this.addIssue(UserIssueType.WEAPON_WRONG_MONSTER, 'This weapon cannot be used against the select monster.');
+    }
+
     // Some set effects are currently not accounted for
     if (
-      this.wearingAll(['Blood moon helm', 'Blood moon chestplate', 'Blood moon tassets', 'Dual macuahuitl'])
-      || this.wearingAll(['Blue moon helm', 'Blue moon chestplate', 'Blue moon tassets', 'Blue moon spear'])
+      this.wearingAll(['Blue moon helm', 'Blue moon chestplate', 'Blue moon tassets', 'Blue moon spear'])
       || this.wearingAll(['Eclipse moon helm', 'Eclipse moon chestplate', 'Eclipse moon tassets', 'Eclipse atlatl'])
     ) {
       this.addIssue(UserIssueType.EQUIPMENT_SET_EFFECT_UNSUPPORTED, 'The calculator currently does not account for your equipment set effect.');

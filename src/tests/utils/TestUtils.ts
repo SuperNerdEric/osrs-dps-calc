@@ -1,4 +1,4 @@
-import getMonsters from '@/lib/Monsters';
+import { getMonsters } from '@/lib/Monsters';
 import { Monster } from '@/types/Monster';
 import { EquipmentPiece, Player } from '@/types/Player';
 import PlayerVsNPCCalc from '@/lib/PlayerVsNPCCalc';
@@ -9,6 +9,8 @@ import { PartialDeep } from 'type-fest';
 import { calculateEquipmentBonusesFromGear } from '@/lib/Equipment';
 import { Spell, spells } from '@/types/Spell';
 import NPCVsPlayerCalc from '@/lib/NPCVsPlayerCalc';
+import { getCombatStylesForCategory } from '@/utils';
+import { EquipmentCategory } from '@/enums/EquipmentCategory';
 import eq from '../../../cdn/json/equipment.json';
 
 const monsters = getMonsters().map((m) => ({
@@ -25,6 +27,7 @@ const monsters = getMonsters().map((m) => ({
     defenceReductions: {
       vulnerability: false,
       accursed: false,
+      elderMaul: 0,
       dwh: 0,
       arclight: 0,
       bgs: 0,
@@ -51,6 +54,10 @@ export function getTestPlayer(monster: Monster, overrides: PartialDeep<Player> =
   player.offensive = overrides.offensive || calculated.offensive;
   player.defensive = overrides.defensive || calculated.defensive;
 
+  if (!overrides.style && overrides?.equipment?.weapon) {
+    player.style = getCombatStylesForCategory(overrides.equipment.weapon.category || EquipmentCategory.NONE)[0];
+  }
+
   return player;
 }
 
@@ -66,17 +73,21 @@ const DEFAULT_MONSTER_INPUTS: Monster['inputs'] = {
   defenceReductions: {
     vulnerability: false,
     accursed: false,
+    elderMaul: 0,
     dwh: 0,
     arclight: 0,
+    emberlight: 0,
     bgs: 0,
+    tonalztic: 0,
   },
 };
 
-export function getTestMonster(name: string, version: string, overrides: PartialDeep<Monster> = {}): Monster {
+export function getTestMonster(name: string = 'Abyssal demon', version: string = '', overrides: PartialDeep<Monster> = {}): Monster {
   const monster = merge(
+    {},
     find(
       monsters,
-      (m) => m.name === name && m.version === version,
+      (m) => m.name === name && (!version || m.version === version),
       `Monster not found for name '${name}' and version '${version}'`,
     ),
     { inputs: DEFAULT_MONSTER_INPUTS },

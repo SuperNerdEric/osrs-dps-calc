@@ -31,6 +31,11 @@ const Footer: React.FC = observer(() => {
           >
             <IconBrandGithub size={15} />
           </a>
+          {process.env.GIT_SHA && (
+            <a href={`https://github.com/weirdgloop/osrs-dps-calc/tree/${process.env.GIT_SHA}`} target="_blank">
+              {`${process.env.GIT_SHA_SHORT}${process.env.GIT_DIRTY === 'true' ? '*' : ''}`}
+            </a>
+          )}
         </div>
         <div>
           <button
@@ -95,7 +100,7 @@ const Footer: React.FC = observer(() => {
           </div>
           <div className="text-sm">
             <p>
-              Manual mode allows you to edit various player stats, equipment bonuses, and monster stats manually.
+              Manual mode allows you to edit various player stats and equipment bonuses manually.
               This is
               {' '}
               <strong>likely</strong>

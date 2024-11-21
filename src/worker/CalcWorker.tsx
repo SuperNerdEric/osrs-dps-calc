@@ -5,7 +5,8 @@ import {
   CalcResponse,
   CalcResponsesUnion,
   WORKER_JSON_REPLACER,
-  WORKER_JSON_REVIVER, WorkerRequestType,
+  WORKER_JSON_REVIVER,
+  WorkerRequestType,
 } from '@/worker/CalcWorkerTypes';
 import { Debouncer, DeferredPromise } from '@/utils';
 import React, {
@@ -19,18 +20,21 @@ export class CalcWorker {
   private id: number;
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private pendingPromise?: DeferredPromise<any>;
+  private pendingPromises: { [k in WorkerRequestType]?: DeferredPromise<any> } = {};
 
   private worker?: Worker;
 
-  // optional
-  private debouncer?: Debouncer;
+  private debouncers: { [k in WorkerRequestType]?: Debouncer } = {};
 
-  private sequenceId: number = 0;
+  private sequenceIds: { [k in WorkerRequestType ]?: number } = {};
 
   constructor() {
     this.id = CalcWorker.SELF_ID;
     CalcWorker.SELF_ID += 1;
+
+    for (const t of Object.values(WorkerRequestType)) {
+      this.debouncers[t as WorkerRequestType] = new Debouncer(250);
+    }
   }
 
   public initWorker() {
@@ -49,10 +53,6 @@ export class CalcWorker {
     }
   }
 
-  public setDebouncer(debouncer: Debouncer) {
-    this.debouncer = debouncer;
-  }
-
   public isReady(): boolean {
     return this.worker !== undefined;
   }
@@ -66,42 +66,42 @@ export class CalcWorker {
       return Promise.reject(new Error('worker is not initialized and cannot handle requests'));
     }
 
-    if (this.debouncer) {
-      await this.debouncer.debounce();
-    }
+    await this.debouncers[req.type]?.debounce();
 
     // we use these ids to map the response back to the promise
-    this.sequenceId += 1;
-    req.sequenceId = this.sequenceId;
+    this.sequenceIds[req.type] = (this.sequenceIds[req.type] || 0) + 1;
+    req.sequenceId = this.sequenceIds[req.type];
 
     // deferred promise so that we can invoke the callback in onResponse
-    this.pendingPromise = new DeferredPromise<Resp>();
+    const deferred = new DeferredPromise<Resp>();
+    this.pendingPromises[req.type] = deferred;
 
     const payload = JSON.stringify(req, WORKER_JSON_REPLACER);
     this.worker.postMessage(payload);
     console.debug(`[CalcWorker ${this.id}] OUTBOUND ${req.sequenceId} ${WorkerRequestType[req.type]} | ${payload}`);
 
-    return this.pendingPromise.promise;
+    return deferred.promise;
   }
 
   private onResponse(e: MessageEvent<string>) {
     const data = JSON.parse(e.data, WORKER_JSON_REVIVER) as CalcResponsesUnion;
-    const { sequenceId, error } = data;
+    const { type, sequenceId, error } = data;
     console.debug(`[CalcWorker ${this.id}] INBOUND ${sequenceId} ${WorkerRequestType[data.type]} | ${e.data}`);
 
-    if (sequenceId !== this.sequenceId) {
+    const expectedSeqId = this.sequenceIds[type];
+    if (sequenceId !== expectedSeqId) {
       // another request has been sent off before this one returned
       console.debug(`[CalcWorker ${this.id}] Ignoring response ${sequenceId} as stale`);
       return;
     }
 
     // fetch the deferred promise, id must match
-    const promise = this.pendingPromise;
+    const promise = this.pendingPromises[type];
     if (!promise) {
       console.warn(`[CalcWorker ${this.id}] Request ID ${sequenceId} did not have a matching promise!`);
       return;
     }
-    this.pendingPromise = undefined;
+    this.pendingPromises[type] = undefined;
 
     // fail early on error, none of the other properties should be considered valid
     if (error) {

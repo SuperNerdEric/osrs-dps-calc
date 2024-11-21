@@ -188,6 +188,10 @@ tbody th:first-child {
   @apply text-white;
 }
 
+tbody th.t-group-header {
+  @apply px-4 italic pl-6 border-r bg-btns-500 dark:bg-dark-600 select-none text-body-300;
+}
+
 /* Toasts */
 :root {
   --toastify-icon-color-success: theme(backgroundColor.green.200);
@@ -217,4 +221,13 @@ tbody th:first-child {
 .Toastify__toast--error {
   @apply bg-red-500;
   @apply text-red-200;
+}
+
+/* Lists */
+.changelog-list li {
+  margin: 1em 0;
+}
+
+.changelog-list li:first-child {
+  margin-top: 0;
 }

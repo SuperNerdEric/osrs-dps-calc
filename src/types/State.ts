@@ -17,6 +17,7 @@ export interface UI {
   showPreferencesModal: boolean;
   showShareModal: boolean;
   username: string;
+  isDefensiveReductionsExpanded: boolean;
 }
 
 /**
@@ -30,7 +31,9 @@ export interface Preferences {
   showLoadoutComparison: boolean;
   showTtkComparison: boolean;
   showNPCVersusPlayerResults: boolean;
-  hitDistsHideZeros: boolean;
+  hitDistsHideZeros: boolean; // legacy name
+  hitDistShowSpec: boolean;
+  resultsExpanded: boolean;
 }
 
 export interface ChartEntry {
@@ -47,9 +50,17 @@ export interface ChartAnnotation {
  * The result of running the calculator on a specific player loadout.
  */
 export interface CalculatedLoadout {
+  userIssues?: UserIssue[],
+}
+
+export interface PlayerVsNPCCalculatedLoadout extends CalculatedLoadout {
+  details?: DetailEntry[],
+  specDetails?: DetailEntry[],
+
   // Player vs NPC metrics
   npcDefRoll?: number,
   maxHit?: number,
+  expectedHit?: number,
   maxAttackRoll?: number,
   accuracy?: number,
   dps?: number,
@@ -57,31 +68,47 @@ export interface CalculatedLoadout {
   hitDist?: ChartEntry[],
   ttkDist?: Map<number, number>,
 
-  // NPC vs Player metrics
+  specAccuracy?: number,
+  specMaxHit?: number,
+  specExpected?: number,
+  specMomentDps?: number,
+  specFullDps?: number,
+  specHitDist?: ChartEntry[],
+}
+
+// NPC vs Player metrics
+export interface NPCVsPlayerCalculatedLoadout extends CalculatedLoadout {
+  npcDetails?: DetailEntry[],
+
   playerDefRoll?: number,
   npcMaxAttackRoll?: number,
   npcMaxHit?: number,
   npcDps?: number,
   npcAccuracy?: number,
   avgDmgTaken?: number,
-
-  // Misc
-  details?: DetailEntry[],
-  userIssues?: UserIssue[],
 }
-
-export type PlayerVsNPCCalculatedLoadout = Pick<CalculatedLoadout, 'npcDefRoll' | 'maxHit' | 'maxAttackRoll' | 'accuracy' | 'dps' | 'ttk' | 'hitDist' | 'ttkDist' | 'details' | 'userIssues'>;
-export type NPCVsPlayerCalculatedLoadout = Pick<CalculatedLoadout, 'playerDefRoll' | 'npcMaxAttackRoll' | 'npcMaxHit' | 'npcDps' | 'npcAccuracy' | 'avgDmgTaken' | 'details' | 'userIssues'>;
 
 export interface Calculator {
-  loadouts: CalculatedLoadout[]
+  loadouts: (PlayerVsNPCCalculatedLoadout & NPCVsPlayerCalculatedLoadout)[]
 }
+
+/**
+ * The exported data version, which can be used to perform lazy migrations on load,
+ * if the application changes since the data was written to storage.
+ * This value should be incremented every time {@link ImportableData},
+ * or any of its subproperties, are updated in a non-backwards-compatible manner,
+ * or also in any manner that could affect the migrations required on load.
+ */
+export const IMPORT_VERSION = 1 as const;
 
 /**
  * This is the state that can be exported and imported (through shortlinks).
  * If you change the schema here without taking precautions, you **will** break existing shortlinks.
  */
 export interface ImportableData {
+  // can be any number <= IMPORT_VERSION
+  serializationVersion: number;
+
   loadouts: PartialDeep<Player>[];
   selectedLoadout: number;
 
