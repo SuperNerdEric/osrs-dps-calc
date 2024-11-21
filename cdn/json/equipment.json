@@ -780,6 +780,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "3rd age mage hat (Last Man Standing)",
+    "id": 27183,
+    "version": "",
+    "slot": "head",
+    "image": "3rd age mage hat (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 10,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 8,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 8,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "3rd age pickaxe",
     "id": 20014,
     "version": "",
@@ -930,11 +960,71 @@
     "isTwoHanded": false
   },
   {
+    "name": "3rd age range coif (Last Man Standing)",
+    "id": 27201,
+    "version": "",
+    "slot": "head",
+    "image": "3rd age range coif (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -2,
+      "ranged": 9
+    },
+    "defensive": {
+      "stab": 4,
+      "slash": 7,
+      "crush": 10,
+      "magic": 5,
+      "ranged": 8
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "3rd age range legs",
     "id": 10332,
     "version": "",
     "slot": "legs",
     "image": "3rd age range legs.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -10,
+      "ranged": 17
+    },
+    "defensive": {
+      "stab": 31,
+      "slash": 25,
+      "crush": 33,
+      "magic": 30,
+      "ranged": 31
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "3rd age range legs (Last Man Standing)",
+    "id": 27200,
+    "version": "",
+    "slot": "legs",
+    "image": "3rd age range legs (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -990,6 +1080,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "3rd age range top (Last Man Standing)",
+    "id": 27199,
+    "version": "",
+    "slot": "body",
+    "image": "3rd age range top (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -15,
+      "ranged": 30
+    },
+    "defensive": {
+      "stab": 55,
+      "slash": 47,
+      "crush": 60,
+      "magic": 60,
+      "ranged": 55
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "3rd age robe",
     "id": 10340,
     "version": "",
@@ -1020,11 +1140,71 @@
     "isTwoHanded": false
   },
   {
+    "name": "3rd age robe (Last Man Standing)",
+    "id": 20577,
+    "version": "",
+    "slot": "legs",
+    "image": "3rd age robe (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 10,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 19,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 19,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "3rd age robe top",
     "id": 10338,
     "version": "",
     "slot": "body",
     "image": "3rd age robe top.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 10,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 24,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 24,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "3rd age robe top (Last Man Standing)",
+    "id": 20576,
+    "version": "",
+    "slot": "body",
+    "image": "3rd age robe top (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -7560,6 +7740,216 @@
     "isTwoHanded": false
   },
   {
+    "name": "Alchemist gloves",
+    "id": 29986,
+    "version": "",
+    "slot": "hands",
+    "image": "Alchemist gloves.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Alchemist labcoat",
+    "id": 29978,
+    "version": "Apron off",
+    "slot": "body",
+    "image": "Alchemist labcoat (apron off).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Alchemist labcoat",
+    "id": 29980,
+    "version": "Apron on",
+    "slot": "body",
+    "image": "Alchemist labcoat (apron on).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Alchemist pants",
+    "id": 29982,
+    "version": "Apron off",
+    "slot": "legs",
+    "image": "Alchemist pants (apron off).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Alchemist pants",
+    "id": 29984,
+    "version": "Apron on",
+    "slot": "legs",
+    "image": "Alchemist pants (apron on).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Alchemist's amulet",
+    "id": 29990,
+    "version": "Charged",
+    "slot": "neck",
+    "image": "Alchemist's amulet (charged).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Alchemist's amulet",
+    "id": 29988,
+    "version": "Uncharged",
+    "slot": "neck",
+    "image": "Alchemist's amulet (uncharged).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Ale of the gods",
     "id": 20056,
     "version": "",
@@ -9000,6 +9390,66 @@
     "isTwoHanded": false
   },
   {
+    "name": "Amulet of rancour",
+    "id": 29801,
+    "version": "",
+    "slot": "neck",
+    "image": "Amulet of rancour.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 12,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 25,
+      "slash": 25,
+      "crush": 25,
+      "magic": -6,
+      "ranged": -8
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Amulet of rancour (s)",
+    "id": 29804,
+    "version": "",
+    "slot": "neck",
+    "image": "Amulet of rancour (s).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 12,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 25,
+      "slash": 25,
+      "crush": 25,
+      "magic": -6,
+      "ranged": -8
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Amulet of strength",
     "id": 1725,
     "version": "",
@@ -9240,6 +9690,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Amulet of torture (Last Man Standing)",
+    "id": 27173,
+    "version": "",
+    "slot": "neck",
+    "image": "Amulet of torture (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 10,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 15,
+      "slash": 15,
+      "crush": 15,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Amulet of torture (or)",
     "id": 20366,
     "version": "",
@@ -9294,6 +9774,36 @@
       "stab": 0,
       "slash": 2,
       "crush": 1,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Amy's saw (off-hand)",
+    "id": 29774,
+    "version": "",
+    "slot": "shield",
+    "image": "Amy's saw (off-hand).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
       "magic": 0,
       "ranged": 0
     },
@@ -9390,11 +9900,71 @@
     "isTwoHanded": false
   },
   {
+    "name": "Ancestral robe bottom (Last Man Standing)",
+    "id": 27194,
+    "version": "",
+    "slot": "Legs",
+    "image": "Ancestral robe bottom (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 30,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 26,
+      "ranged": -7
+    },
+    "defensive": {
+      "stab": 27,
+      "slash": 24,
+      "crush": 30,
+      "magic": 20,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Ancestral robe top",
     "id": 21021,
     "version": "",
     "slot": "body",
     "image": "Ancestral robe top.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 30,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 35,
+      "ranged": -8
+    },
+    "defensive": {
+      "stab": 42,
+      "slash": 31,
+      "crush": 51,
+      "magic": 28,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Ancestral robe top (Last Man Standing)",
+    "id": 27193,
+    "version": "",
+    "slot": "body",
+    "image": "Ancestral robe top (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -9900,6 +10470,36 @@
     "isTwoHanded": true
   },
   {
+    "name": "Ancient godsword (Last Man Standing)",
+    "id": 27184,
+    "version": "",
+    "slot": "weapon",
+    "image": "Ancient godsword (Last Man Standing).png",
+    "speed": 6,
+    "category": "2h sword",
+    "bonuses": {
+      "str": 132,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 8
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 132,
+      "crush": 80,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": true
+  },
+  {
     "name": "Ancient gorilla greegree",
     "id": 4028,
     "version": "",
@@ -10327,6 +10927,36 @@
     "image": "Ancient staff.png",
     "speed": 4,
     "category": "Staff",
+    "bonuses": {
+      "str": 50,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": -1
+    },
+    "offensive": {
+      "stab": 10,
+      "slash": -1,
+      "crush": 40,
+      "magic": 15,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 2,
+      "slash": 3,
+      "crush": 1,
+      "magic": 15,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Ancient staff (Last Man Standing)",
+    "id": 20431,
+    "version": "",
+    "slot": "weapon",
+    "image": "Ancient staff (Last Man Standing).png",
+    "speed": 4,
+    "category": "staff",
     "bonuses": {
       "str": 50,
       "ranged_str": 0,
@@ -11100,11 +11730,161 @@
     "isTwoHanded": false
   },
   {
-    "name": "Arcane grimoire",
+    "name": "Aranea boots",
+    "id": 29806,
+    "version": "",
+    "slot": "feet",
+    "image": "Aranea boots.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 4,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 1
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 5,
+      "ranged": 6
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Araxyte slayer helmet",
+    "id": 29816,
+    "version": "",
+    "slot": "head",
+    "image": "Araxyte slayer helmet.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -6,
+      "ranged": -2
+    },
+    "defensive": {
+      "stab": 30,
+      "slash": 32,
+      "crush": 27,
+      "magic": -1,
+      "ranged": 30
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Araxyte slayer helmet (i)",
+    "id": 29822,
+    "version": "Emir's Arena",
+    "slot": "head",
+    "image": "Araxyte slayer helmet (i).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 3,
+      "ranged": 3
+    },
+    "defensive": {
+      "stab": 30,
+      "slash": 32,
+      "crush": 27,
+      "magic": 10,
+      "ranged": 30
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Araxyte slayer helmet (i)",
+    "id": 29818,
+    "version": "",
+    "slot": "head",
+    "image": "Araxyte slayer helmet (i).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 3,
+      "ranged": 3
+    },
+    "defensive": {
+      "stab": 30,
+      "slash": 32,
+      "crush": 27,
+      "magic": 10,
+      "ranged": 30
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Araxyte slayer helmet (i)",
+    "id": 29820,
+    "version": "Soul Wars",
+    "slot": "head",
+    "image": "Araxyte slayer helmet (i).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 3,
+      "ranged": 3
+    },
+    "defensive": {
+      "stab": 30,
+      "slash": 32,
+      "crush": 27,
+      "magic": 10,
+      "ranged": 30
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Arcane grimoire (Shattered Relics League)",
     "id": 26551,
     "version": "",
     "slot": "shield",
-    "image": "Arcane grimoire.png",
+    "image": "Arcane grimoire (Shattered Relics League).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -11130,11 +11910,11 @@
     "isTwoHanded": false
   },
   {
-    "name": "Arcane grimoire (Shattered Relics League)",
+    "name": "Arcane grimoire (Trailblazer Reloaded League)",
     "id": 26551,
     "version": "",
     "slot": "shield",
-    "image": "Arcane grimoire (Shattered Relics League).png",
+    "image": "Arcane grimoire (Trailblazer Reloaded League).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -11432,7 +12212,7 @@
   {
     "name": "Arclight",
     "id": 19675,
-    "version": "",
+    "version": "Charged",
     "slot": "weapon",
     "image": "Arclight.png",
     "speed": 4,
@@ -11447,6 +12227,36 @@
       "stab": 10,
       "slash": 38,
       "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 3,
+      "crush": 2,
+      "magic": 2,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Arclight",
+    "id": 30305,
+    "version": "Inactive",
+    "slot": "weapon",
+    "image": "Arclight (inactive).png",
+    "speed": 4,
+    "category": "Slash Sword",
+    "bonuses": {
+      "str": 13,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 10,
+      "slash": 16,
+      "crush": -2,
       "magic": 0,
       "ranged": 0
     },
@@ -12868,6 +13678,36 @@
       "ranged": 0
     },
     "isTwoHanded": false
+  },
+  {
+    "name": "Atlatl dart (Last Man Standing)",
+    "id": 29852,
+    "version": "",
+    "slot": "weapon",
+    "image": "Eclipse atlatl (Last Man Standing).png",
+    "speed": 4,
+    "category": "Bow",
+    "bonuses": {
+      "str": 40,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 87
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": true
   },
   {
     "name": "Attack cape",
@@ -15630,6 +16470,276 @@
     "isTwoHanded": false
   },
   {
+    "name": "Beige pumpkin",
+    "id": 30242,
+    "version": "Angry",
+    "slot": "head",
+    "image": "Beige pumpkin (angry).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Beige pumpkin",
+    "id": 30243,
+    "version": "Depressed",
+    "slot": "head",
+    "image": "Beige pumpkin (depressed).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Beige pumpkin",
+    "id": 30237,
+    "version": "Disgusted",
+    "slot": "head",
+    "image": "Beige pumpkin (disgusted).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Beige pumpkin",
+    "id": 30241,
+    "version": "Evil",
+    "slot": "head",
+    "image": "Beige pumpkin (evil).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Beige pumpkin",
+    "id": 30246,
+    "version": "Happy",
+    "slot": "head",
+    "image": "Beige pumpkin (happy).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Beige pumpkin",
+    "id": 30247,
+    "version": "Laughing",
+    "slot": "head",
+    "image": "Beige pumpkin (laughing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Beige pumpkin",
+    "id": 30245,
+    "version": "Sad",
+    "slot": "head",
+    "image": "Beige pumpkin (sad).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Beige pumpkin",
+    "id": 30244,
+    "version": "Shocked",
+    "slot": "head",
+    "image": "Beige pumpkin (shocked).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Beige pumpkin",
+    "id": 30239,
+    "version": "Silly",
+    "slot": "head",
+    "image": "Beige pumpkin (silly).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Bellator ring",
     "id": 28316,
     "version": "",
@@ -15695,6 +16805,36 @@
     "version": "",
     "slot": "head",
     "image": "Berserker helm.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 3,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -5,
+      "ranged": -5
+    },
+    "defensive": {
+      "stab": 31,
+      "slash": 29,
+      "crush": 33,
+      "magic": 0,
+      "ranged": 30
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Berserker helm (Last Man Standing)",
+    "id": 27169,
+    "version": "",
+    "slot": "head",
+    "image": "Berserker helm (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -15965,6 +17105,36 @@
     "version": "",
     "slot": "neck",
     "image": "Binding necklace.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Bird mask",
+    "id": 29931,
+    "version": "",
+    "slot": "head",
+    "image": "Bird mask.png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -16625,6 +17795,36 @@
     "version": "",
     "slot": "legs",
     "image": "Black d'hide chaps.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -10,
+      "ranged": 17
+    },
+    "defensive": {
+      "stab": 18,
+      "slash": 20,
+      "crush": 26,
+      "magic": 23,
+      "ranged": 26
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Black d'hide chaps (Last Man Standing)",
+    "id": 20424,
+    "version": "",
+    "slot": "legs",
+    "image": "Black d'hide chaps (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -21090,6 +22290,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Blood moon chestplate (Last Man Standing)",
+    "id": 29846,
+    "version": "",
+    "slot": "body",
+    "image": "Blood moon chestplate (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 4,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -15,
+      "ranged": -10
+    },
+    "defensive": {
+      "stab": 60,
+      "slash": 80,
+      "crush": 80,
+      "magic": 40,
+      "ranged": 79
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Blood moon helm",
     "id": 29073,
     "version": "Broken",
@@ -21155,6 +22385,36 @@
     "version": "Used",
     "slot": "head",
     "image": "Blood moon helm (used).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 4,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -6,
+      "ranged": -2
+    },
+    "defensive": {
+      "stab": 20,
+      "slash": 31,
+      "crush": 34,
+      "magic": 7,
+      "ranged": 29
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Blood moon helm (Last Man Standing)",
+    "id": 29848,
+    "version": "",
+    "slot": "head",
+    "image": "Blood moon helm (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -21270,6 +22530,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Blood moon tassets (Last Man Standing)",
+    "id": 29847,
+    "version": "",
+    "slot": "legs",
+    "image": "Blood moon tassets (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 2,
+      "ranged_str": 0,
+      "magic_str": null,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -21,
+      "ranged": -7
+    },
+    "defensive": {
+      "stab": 30,
+      "slash": 50,
+      "crush": 49,
+      "magic": 32,
+      "ranged": 46
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Blood tiara",
     "id": 5549,
     "version": "",
@@ -21300,41 +22590,11 @@
     "isTwoHanded": false
   },
   {
-    "name": "Blood'n'tar snelm (pointed)",
-    "id": 3339,
-    "version": "",
-    "slot": "head",
-    "image": "Blood'n'tar snelm (pointed).png",
-    "speed": 0,
-    "category": "",
-    "bonuses": {
-      "str": 0,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": -3,
-      "ranged": -1
-    },
-    "defensive": {
-      "stab": 7,
-      "slash": 8,
-      "crush": 6,
-      "magic": -1,
-      "ranged": 7
-    },
-    "isTwoHanded": false
-  },
-  {
-    "name": "Blood'n'tar snelm (round)",
+    "name": "Blood'n'tar snelm",
     "id": 3329,
     "version": "",
     "slot": "head",
-    "image": "Blood'n'tar snelm (round).png",
+    "image": "Blood'n'tar snelm.png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -22350,6 +23610,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Blue moon chestplate (Last Man Standing)",
+    "id": 29843,
+    "version": "",
+    "slot": "body",
+    "image": "Blue moon chestplate (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 2,
+      "ranged_str": 0,
+      "magic_str": 10,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 30,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 51,
+      "magic": 28,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Blue moon helm",
     "id": 29064,
     "version": "Broken",
@@ -22440,11 +23730,71 @@
     "isTwoHanded": false
   },
   {
+    "name": "Blue moon helm (Last Man Standing)",
+    "id": 29845,
+    "version": "",
+    "slot": "head",
+    "image": "Blue moon helm (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 3,
+      "ranged_str": 0,
+      "magic_str": 10,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 6,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 10,
+      "magic": 6,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Blue moon spear",
     "id": 28988,
     "version": "",
     "slot": "weapon",
     "image": "Blue moon spear.png",
+    "speed": 5,
+    "category": "Bladed Staff",
+    "bonuses": {
+      "str": 71,
+      "ranged_str": 0,
+      "magic_str": 50,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 70,
+      "slash": 62,
+      "crush": 62,
+      "magic": 30,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 2,
+      "slash": 3,
+      "crush": 1,
+      "magic": 15,
+      "ranged": 0
+    },
+    "isTwoHanded": true
+  },
+  {
+    "name": "Blue moon spear (Last Man Standing)",
+    "id": 29849,
+    "version": "",
+    "slot": "weapon",
+    "image": "Blue moon spear (Last Man Standing).png",
     "speed": 5,
     "category": "Bladed Staff",
     "bonuses": {
@@ -22535,6 +23885,36 @@
     "version": "Used",
     "slot": "legs",
     "image": "Blue moon tassets (used).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 1,
+      "ranged_str": 0,
+      "magic_str": 10,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 22,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 23,
+      "magic": 32,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Blue moon tassets (Last Man Standing)",
+    "id": 29844,
+    "version": "",
+    "slot": "legs",
+    "image": "Blue moon tassets (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -29400,41 +30780,11 @@
     "isTwoHanded": false
   },
   {
-    "name": "Bruise blue snelm (pointed)",
-    "id": 3343,
-    "version": "",
-    "slot": "head",
-    "image": "Bruise blue snelm (pointed).png",
-    "speed": 0,
-    "category": "",
-    "bonuses": {
-      "str": 0,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": -3,
-      "ranged": -1
-    },
-    "defensive": {
-      "stab": 7,
-      "slash": 8,
-      "crush": 6,
-      "magic": -1,
-      "ranged": 7
-    },
-    "isTwoHanded": false
-  },
-  {
-    "name": "Bruise blue snelm (round)",
+    "name": "Bruise blue snelm",
     "id": 3333,
     "version": "",
     "slot": "head",
-    "image": "Bruise blue snelm (round).png",
+    "image": "Bruise blue snelm.png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -29467,6 +30817,36 @@
     "image": "Bruma torch.png",
     "speed": 4,
     "category": "Unarmed",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Bruma torch (off-hand)",
+    "id": 29777,
+    "version": "",
+    "slot": "shield",
+    "image": "Bruma torch (off-hand).png",
+    "speed": 0,
+    "category": "",
     "bonuses": {
       "str": 0,
       "ranged_str": 0,
@@ -30148,6 +31528,96 @@
       "ranged": 0
     },
     "isTwoHanded": true
+  },
+  {
+    "name": "Butler's tray",
+    "id": 29912,
+    "version": "",
+    "slot": "weapon",
+    "image": "Butler's tray.png",
+    "speed": 4,
+    "category": "Unarmed",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": true
+  },
+  {
+    "name": "Butler's uniform (bottom)",
+    "id": 29915,
+    "version": "",
+    "slot": "legs",
+    "image": "Butler's uniform (bottom).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Butler's uniform (top)",
+    "id": 29916,
+    "version": "",
+    "slot": "body",
+    "image": "Butler's uniform (top).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
   },
   {
     "name": "Butterfly net",
@@ -38340,666 +39810,6 @@
     "isTwoHanded": true
   },
   {
-    "name": "Crystal halberd (historical)",
-    "id": 13101,
-    "version": "1/10",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 73,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 58,
-      "slash": 74,
-      "crush": 2,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 1,
-      "crush": 2,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (historical)",
-    "id": 13100,
-    "version": "2/10",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 78,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 61,
-      "slash": 78,
-      "crush": 3,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 2,
-      "crush": 3,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (historical)",
-    "id": 13099,
-    "version": "3/10",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 83,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 64,
-      "slash": 82,
-      "crush": 3,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 2,
-      "crush": 3,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (historical)",
-    "id": 13098,
-    "version": "4/10",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 88,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 67,
-      "slash": 86,
-      "crush": 3,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 2,
-      "crush": 3,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (historical)",
-    "id": 13097,
-    "version": "5/10",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 93,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 70,
-      "slash": 90,
-      "crush": 4,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 3,
-      "crush": 4,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (historical)",
-    "id": 13096,
-    "version": "6/10",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 98,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 73,
-      "slash": 94,
-      "crush": 4,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 3,
-      "crush": 4,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (historical)",
-    "id": 13095,
-    "version": "7/10",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 103,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 76,
-      "slash": 98,
-      "crush": 4,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 3,
-      "crush": 4,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (historical)",
-    "id": 13094,
-    "version": "8/10",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 108,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 79,
-      "slash": 102,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (historical)",
-    "id": 13093,
-    "version": "9/10",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 113,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 82,
-      "slash": 106,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (historical)",
-    "id": 13092,
-    "version": "Full",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (historical)",
-    "id": 13091,
-    "version": "New",
-    "slot": "weapon",
-    "image": "Crystal halberd.png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13090,
-    "version": "1/10",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13089,
-    "version": "2/10",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13088,
-    "version": "3/10",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13087,
-    "version": "4/10",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13086,
-    "version": "5/10",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13085,
-    "version": "6/10",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13084,
-    "version": "7/10",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13083,
-    "version": "8/10",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13082,
-    "version": "9/10",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13081,
-    "version": "Full",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
-    "name": "Crystal halberd (i)",
-    "id": 13080,
-    "version": "New",
-    "slot": "weapon",
-    "image": "Crystal halberd (i).png",
-    "speed": 7,
-    "category": "Polearm",
-    "bonuses": {
-      "str": 118,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 85,
-      "slash": 110,
-      "crush": 5,
-      "magic": -4,
-      "ranged": 0
-    },
-    "defensive": {
-      "stab": -1,
-      "slash": 4,
-      "crush": 5,
-      "magic": 0,
-      "ranged": 0
-    },
-    "isTwoHanded": true
-  },
-  {
     "name": "Crystal halberd (perfected)",
     "id": 23897,
     "version": "",
@@ -42240,6 +43050,276 @@
     "isTwoHanded": false
   },
   {
+    "name": "Dark green pumpkin",
+    "id": 30287,
+    "version": "Angry",
+    "slot": "head",
+    "image": "Dark green pumpkin (angry).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Dark green pumpkin",
+    "id": 30288,
+    "version": "Depressed",
+    "slot": "head",
+    "image": "Dark green pumpkin (depressed).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Dark green pumpkin",
+    "id": 30284,
+    "version": "Disgusted",
+    "slot": "head",
+    "image": "Dark green pumpkin (disgusted).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Dark green pumpkin",
+    "id": 30286,
+    "version": "Evil",
+    "slot": "head",
+    "image": "Dark green pumpkin (evil).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Dark green pumpkin",
+    "id": 30291,
+    "version": "Happy",
+    "slot": "head",
+    "image": "Dark green pumpkin (happy).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Dark green pumpkin",
+    "id": 30292,
+    "version": "Laughing",
+    "slot": "head",
+    "image": "Dark green pumpkin (laughing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Dark green pumpkin",
+    "id": 30290,
+    "version": "Sad",
+    "slot": "head",
+    "image": "Dark green pumpkin (sad).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Dark green pumpkin",
+    "id": 30289,
+    "version": "Shocked",
+    "slot": "head",
+    "image": "Dark green pumpkin (shocked).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Dark green pumpkin",
+    "id": 30285,
+    "version": "Silly",
+    "slot": "head",
+    "image": "Dark green pumpkin (silly).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Dark infinity bottoms",
     "id": 12459,
     "version": "",
@@ -44673,7 +45753,7 @@
     "name": "Defensive shield",
     "id": 8856,
     "version": "",
-    "slot": "weapon",
+    "slot": "shield",
     "image": "Defensive shield.png",
     "speed": 0,
     "category": "",
@@ -44697,7 +45777,7 @@
       "magic": 0,
       "ranged": 7
     },
-    "isTwoHanded": true
+    "isTwoHanded": false
   },
   {
     "name": "Demon feet",
@@ -48960,6 +50040,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Dragon hunter wand",
+    "id": 30070,
+    "version": "",
+    "slot": "weapon",
+    "image": "Dragon hunter wand.png",
+    "speed": 5,
+    "category": "Staff",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 100,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 16,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Dragon javelin",
     "id": 19486,
     "version": "Poison",
@@ -49267,6 +50377,36 @@
     "image": "Dragon knife.png",
     "speed": 3,
     "category": "Thrown",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 30,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 28
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Dragon knife (Last Man Standing)",
+    "id": 27157,
+    "version": "",
+    "slot": "weapon",
+    "image": "Dragon knife (Last Man Standing).png",
+    "speed": 3,
+    "category": "thrown",
     "bonuses": {
       "str": 0,
       "ranged_str": 30,
@@ -49927,6 +51067,36 @@
     "image": "Dragon scimitar.png",
     "speed": 4,
     "category": "Slash Sword",
+    "bonuses": {
+      "str": 66,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 8,
+      "slash": 67,
+      "crush": -2,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 1,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Dragon scimitar (Last Man Standing)",
+    "id": 20406,
+    "version": "",
+    "slot": "weapon",
+    "image": "Dragon scimitar (Last Man Standing).png",
+    "speed": 4,
+    "category": "slash sword",
     "bonuses": {
       "str": 66,
       "ranged_str": 0,
@@ -51240,6 +52410,36 @@
     "isTwoHanded": true
   },
   {
+    "name": "Dual macuahuitl (Last Man Standing)",
+    "id": 29850,
+    "version": "",
+    "slot": "weapon",
+    "image": "Dual macuahuitl (Last Man Standing).png",
+    "speed": 4,
+    "category": "Spiked",
+    "bonuses": {
+      "str": 81,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 115,
+      "slash": -4,
+      "crush": 121,
+      "magic": -4,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": true
+  },
+  {
     "name": "Dual sai",
     "id": 23206,
     "version": "",
@@ -51660,6 +52860,36 @@
     "isTwoHanded": true
   },
   {
+    "name": "Eclipse atlatl (Last Man Standing)",
+    "id": 29851,
+    "version": "",
+    "slot": "weapon",
+    "image": "Eclipse atlatl (Last Man Standing).png",
+    "speed": 4,
+    "category": "Bow",
+    "bonuses": {
+      "str": 40,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 87
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": true
+  },
+  {
     "name": "Eclipse moon chestplate",
     "id": 29049,
     "version": "Broken",
@@ -51725,6 +52955,36 @@
     "version": "Used",
     "slot": "body",
     "image": "Eclipse moon chestplate (used).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 3,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -15,
+      "ranged": 31
+    },
+    "defensive": {
+      "stab": 15,
+      "slash": 18,
+      "crush": 57,
+      "magic": 55,
+      "ranged": 32
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Eclipse moon chestplate (Last Man Standing)",
+    "id": 29840,
+    "version": "",
+    "slot": "body",
+    "image": "Eclipse moon chestplate (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -51840,6 +53100,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Eclipse moon helm (Last Man Standing)",
+    "id": 29842,
+    "version": "",
+    "slot": "head",
+    "image": "Eclipse moon helm (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 3,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -6,
+      "ranged": 8
+    },
+    "defensive": {
+      "stab": 2,
+      "slash": 3,
+      "crush": 14,
+      "magic": 10,
+      "ranged": 4
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Eclipse moon tassets",
     "id": 29052,
     "version": "Broken",
@@ -51905,6 +53195,36 @@
     "version": "Used",
     "slot": "legs",
     "image": "Eclipse moon tassets (used).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 1,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -15,
+      "ranged": 17
+    },
+    "defensive": {
+      "stab": 9,
+      "slash": 13,
+      "crush": 37,
+      "magic": 31,
+      "ranged": 17
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Eclipse moon tassets (Last Man Standing)",
+    "id": 29841,
+    "version": "",
+    "slot": "legs",
+    "image": "Eclipse moon tassets (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -52230,6 +53550,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Elder chaos hood (Last Man Standing)",
+    "id": 27176,
+    "version": "",
+    "slot": "head",
+    "image": "Elder chaos hood (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 10,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 5,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 4,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Elder chaos hood (or)",
     "id": 27119,
     "version": "",
@@ -52290,6 +53640,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Elder chaos robe (Last Man Standing)",
+    "id": 27175,
+    "version": "",
+    "slot": "legs",
+    "image": "Elder chaos robe (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 10,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 6,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 6,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Elder chaos robe (or)",
     "id": 27117,
     "version": "",
@@ -52325,6 +53705,36 @@
     "version": "",
     "slot": "body",
     "image": "Elder chaos top.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 10,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 10,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 8,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Elder chaos top (Last Man Standing)",
+    "id": 27174,
+    "version": "",
+    "slot": "body",
+    "image": "Elder chaos top (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -53603,7 +55013,7 @@
     "defensive": {
       "stab": 0,
       "slash": 3,
-      "crush": 0,
+      "crush": 2,
       "magic": 5,
       "ranged": 0
     },
@@ -53876,6 +55286,126 @@
       "crush": 1,
       "magic": 1,
       "ranged": 1
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Emissary hood",
+    "id": 29868,
+    "version": "",
+    "slot": "head",
+    "image": "Emissary hood.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Emissary robe bottom",
+    "id": 29872,
+    "version": "",
+    "slot": "legs",
+    "image": "Emissary robe bottom.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Emissary robe top",
+    "id": 29870,
+    "version": "",
+    "slot": "body",
+    "image": "Emissary robe top.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Emissary sandals",
+    "id": 29874,
+    "version": "",
+    "slot": "feet",
+    "image": "Emissary sandals.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
     },
     "isTwoHanded": false
   },
@@ -57780,6 +59310,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Fremennik kilt (Last Man Standing)",
+    "id": 27177,
+    "version": "",
+    "slot": "legs",
+    "image": "Fremennik kilt (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 1,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -21,
+      "ranged": -7
+    },
+    "defensive": {
+      "stab": 11,
+      "slash": 10,
+      "crush": 10,
+      "magic": -4,
+      "ranged": 10
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Fremennik pink cloak",
     "id": 3787,
     "version": "",
@@ -59400,6 +60960,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Ghostly hood (Last Man Standing)",
+    "id": 27166,
+    "version": "",
+    "slot": "head",
+    "image": "Ghostly hood (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 3,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 3,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Ghostly robe (bottom)",
     "id": 6108,
     "version": "",
@@ -59430,11 +61020,71 @@
     "isTwoHanded": false
   },
   {
+    "name": "Ghostly robe (bottom) (Last Man Standing)",
+    "id": 27168,
+    "version": "",
+    "slot": "legs",
+    "image": "Ghostly robe (bottom) (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 4,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 4,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Ghostly robe (top)",
     "id": 6107,
     "version": "",
     "slot": "body",
     "image": "Ghostly robe (top).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 5,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 5,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Ghostly robe (top) (Last Man Standing)",
+    "id": 27167,
+    "version": "",
+    "slot": "body",
+    "image": "Ghostly robe (top) (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -60418,6 +62068,36 @@
       "ranged": 0
     },
     "isTwoHanded": false
+  },
+  {
+    "name": "Glacial temotli",
+    "id": 29889,
+    "version": "",
+    "slot": "weapon",
+    "image": "Glacial temotli.png",
+    "speed": 4,
+    "category": "Spiked",
+    "bonuses": {
+      "str": 64,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 11,
+      "slash": 0,
+      "crush": 72,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": true
   },
   {
     "name": "Glarial's amulet",
@@ -62070,6 +63750,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Graceful boots (Varlamore)",
+    "id": 30062,
+    "version": "Worn",
+    "slot": "feet",
+    "image": "Graceful boots (Varlamore).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Graceful cape",
     "id": 11853,
     "version": "Worn",
@@ -62375,6 +64085,36 @@
     "version": "Worn",
     "slot": "cape",
     "image": "Graceful cape (Trailblazer).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Graceful cape (Varlamore)",
+    "id": 30050,
+    "version": "Worn",
+    "slot": "cape",
+    "image": "Graceful cape (Varlamore).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -62730,6 +64470,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Graceful gloves (Varlamore)",
+    "id": 30059,
+    "version": "Worn",
+    "slot": "hands",
+    "image": "Graceful gloves (Varlamore).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Graceful hood",
     "id": 11851,
     "version": "Worn",
@@ -63035,6 +64805,36 @@
     "version": "Worn",
     "slot": "head",
     "image": "Graceful hood (Trailblazer).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Graceful hood (Varlamore)",
+    "id": 30047,
+    "version": "Worn",
+    "slot": "head",
+    "image": "Graceful hood (Varlamore).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -63390,6 +65190,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Graceful legs (Varlamore)",
+    "id": 30056,
+    "version": "Worn",
+    "slot": "legs",
+    "image": "Graceful legs (Varlamore).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Graceful top",
     "id": 11855,
     "version": "Worn",
@@ -63720,6 +65550,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Graceful top (Varlamore)",
+    "id": 30053,
+    "version": "Worn",
+    "slot": "body",
+    "image": "Graceful top (Varlamore).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Grain (Recruitment Drive)",
     "id": 5607,
     "version": "",
@@ -63961,10 +65821,10 @@
   },
   {
     "name": "Granite maul",
-    "id": 4153,
-    "version": "Normal",
+    "id": 12848,
+    "version": "Clamp",
     "slot": "weapon",
-    "image": "Granite maul.png",
+    "image": "Granite maul (clamp).png",
     "speed": 7,
     "category": "Blunt",
     "bonuses": {
@@ -63991,10 +65851,10 @@
   },
   {
     "name": "Granite maul",
-    "id": 24225,
-    "version": "Ornate handle",
+    "id": 4153,
+    "version": "Normal",
     "slot": "weapon",
-    "image": "Granite maul (ornate handle).png",
+    "image": "Granite maul.png",
     "speed": 7,
     "category": "Blunt",
     "bonuses": {
@@ -64050,11 +65910,11 @@
     "isTwoHanded": true
   },
   {
-    "name": "Granite maul (or)",
-    "id": 12848,
-    "version": "Normal",
+    "name": "Granite maul (ornate handle)",
+    "id": 24227,
+    "version": "Clamp",
     "slot": "weapon",
-    "image": "Granite maul (or).png",
+    "image": "Granite maul (ornate handle, clamp).png",
     "speed": 7,
     "category": "Blunt",
     "bonuses": {
@@ -64080,11 +65940,11 @@
     "isTwoHanded": true
   },
   {
-    "name": "Granite maul (or)",
-    "id": 24227,
-    "version": "Ornate handle",
+    "name": "Granite maul (ornate handle)",
+    "id": 24225,
+    "version": "Normal",
     "slot": "weapon",
-    "image": "Granite maul (or) (ornate handle).png",
+    "image": "Granite maul (ornate handle).png",
     "speed": 7,
     "category": "Blunt",
     "bonuses": {
@@ -67170,6 +69030,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Guthix chaps (Last Man Standing)",
+    "id": 27180,
+    "version": "",
+    "slot": "legs",
+    "image": "Guthix chaps (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 1
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -10,
+      "ranged": 17
+    },
+    "defensive": {
+      "stab": 31,
+      "slash": 25,
+      "crush": 33,
+      "magic": 28,
+      "ranged": 31
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Guthix cloak",
     "id": 10448,
     "version": "",
@@ -67443,6 +69333,36 @@
     "name": "Guthix halo",
     "id": 12639,
     "version": "Normal",
+    "slot": "head",
+    "image": "Guthix halo.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 3
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 11,
+      "slash": 12,
+      "crush": 10,
+      "magic": 11,
+      "ranged": -1
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Guthix halo (Last Man Standing)",
+    "id": 27163,
+    "version": "",
     "slot": "head",
     "image": "Guthix halo.png",
     "speed": 0,
@@ -69600,6 +71520,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Helmet of the moon",
+    "id": 30111,
+    "version": "",
+    "slot": "head",
+    "image": "Helmet of the moon.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 3
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 3,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 6,
+      "slash": 7,
+      "crush": 5,
+      "magic": 3,
+      "ranged": 6
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Herblore cape",
     "id": 9775,
     "version": "Trimmed",
@@ -70495,6 +72445,126 @@
       "slash": 0,
       "crush": 0,
       "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Hueycoatl hide body",
+    "id": 30076,
+    "version": "",
+    "slot": "body",
+    "image": "Hueycoatl hide body.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 3
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -15,
+      "ranged": 30
+    },
+    "defensive": {
+      "stab": 55,
+      "slash": 47,
+      "crush": 60,
+      "magic": 56,
+      "ranged": 55
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Hueycoatl hide chaps",
+    "id": 30079,
+    "version": "",
+    "slot": "legs",
+    "image": "Hueycoatl hide chaps.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -10,
+      "ranged": 17
+    },
+    "defensive": {
+      "stab": 31,
+      "slash": 25,
+      "crush": 33,
+      "magic": 30,
+      "ranged": 31
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Hueycoatl hide coif",
+    "id": 30073,
+    "version": "",
+    "slot": "head",
+    "image": "Hueycoatl hide coif.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -1,
+      "ranged": 7
+    },
+    "defensive": {
+      "stab": 4,
+      "slash": 7,
+      "crush": 10,
+      "magic": 5,
+      "ranged": 8
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Hueycoatl hide vambraces",
+    "id": 30082,
+    "version": "",
+    "slot": "hands",
+    "image": "Hueycoatl hide vambraces.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 1
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -10,
+      "ranged": 11
+    },
+    "defensive": {
+      "stab": 6,
+      "slash": 5,
+      "crush": 7,
+      "magic": 8,
       "ranged": 0
     },
     "isTwoHanded": false
@@ -72270,6 +74340,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Imcando hammer (off-hand)",
+    "id": 29775,
+    "version": "",
+    "slot": "shield",
+    "image": "Imcando hammer (off-hand).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Imp mask",
     "id": 12249,
     "version": "",
@@ -72990,6 +75090,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Infinity boots (Last Man Standing)",
+    "id": 27170,
+    "version": "",
+    "slot": "feet",
+    "image": "Infinity boots (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 5,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 5,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Infinity bottoms",
     "id": 6924,
     "version": "",
@@ -73260,11 +75390,71 @@
     "isTwoHanded": false
   },
   {
+    "name": "Inquisitor's great helm (Last Man Standing)",
+    "id": 27195,
+    "version": "",
+    "slot": "head",
+    "image": "Inquisitor's great helm (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 4,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 1
+    },
+    "offensive": {
+      "stab": -2,
+      "slash": -2,
+      "crush": 8,
+      "magic": -5,
+      "ranged": -5
+    },
+    "defensive": {
+      "stab": 19,
+      "slash": 10,
+      "crush": 21,
+      "magic": 0,
+      "ranged": 12
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Inquisitor's hauberk",
     "id": 24420,
     "version": "",
     "slot": "body",
     "image": "Inquisitor's hauberk.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 4,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": -3,
+      "slash": -3,
+      "crush": 12,
+      "magic": -11,
+      "ranged": -10
+    },
+    "defensive": {
+      "stab": 67,
+      "slash": 55,
+      "crush": 71,
+      "magic": 0,
+      "ranged": 35
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Inquisitor's hauberk (Last Man Standing)",
+    "id": 27196,
+    "version": "",
+    "slot": "body",
+    "image": "Inquisitor's hauberk (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -73320,11 +75510,71 @@
     "isTwoHanded": false
   },
   {
+    "name": "Inquisitor's mace (Last Man Standing)",
+    "id": 27198,
+    "version": "",
+    "slot": "weapon",
+    "image": "Inquisitor's mace (Last Man Standing).png",
+    "speed": 4,
+    "category": "spiked",
+    "bonuses": {
+      "str": 89,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 52,
+      "slash": -4,
+      "crush": 95,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Inquisitor's plateskirt",
     "id": 24421,
     "version": "",
     "slot": "legs",
     "image": "Inquisitor's plateskirt.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 2,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": -3,
+      "slash": -3,
+      "crush": 12,
+      "magic": -9,
+      "ranged": -5
+    },
+    "defensive": {
+      "stab": 42,
+      "slash": 30,
+      "crush": 49,
+      "magic": 0,
+      "ranged": 22
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Inquisitor's plateskirt (Last Man Standing)",
+    "id": 27197,
+    "version": "",
+    "slot": "legs",
+    "image": "Inquisitor's plateskirt (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -76205,6 +78455,36 @@
     "version": "",
     "slot": "ring",
     "image": "Jade ring.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Jaguar mask",
+    "id": 29932,
+    "version": "",
+    "slot": "head",
+    "image": "Jaguar mask.png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -84210,6 +86490,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Mithril gloves (Last Man Standing)",
+    "id": 20581,
+    "version": "",
+    "slot": "hands",
+    "image": "Mithril gloves (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 6,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 6,
+      "slash": 6,
+      "crush": 6,
+      "magic": 3,
+      "ranged": 6
+    },
+    "defensive": {
+      "stab": 6,
+      "slash": 6,
+      "crush": 6,
+      "magic": 3,
+      "ranged": 6
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Mithril gloves (wrapped)",
     "id": 27110,
     "version": "",
@@ -87210,41 +89520,11 @@
     "isTwoHanded": false
   },
   {
-    "name": "Myre snelm (pointed)",
-    "id": 3337,
-    "version": "",
-    "slot": "head",
-    "image": "Myre snelm (pointed).png",
-    "speed": 0,
-    "category": "",
-    "bonuses": {
-      "str": 0,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": -3,
-      "ranged": -1
-    },
-    "defensive": {
-      "stab": 7,
-      "slash": 8,
-      "crush": 6,
-      "magic": -1,
-      "ranged": 7
-    },
-    "isTwoHanded": false
-  },
-  {
-    "name": "Myre snelm (round)",
+    "name": "Myre snelm",
     "id": 3327,
     "version": "",
     "slot": "head",
-    "image": "Myre snelm (round).png",
+    "image": "Myre snelm.png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -88080,6 +90360,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Mystic robe bottom (dark) (Last Man Standing)",
+    "id": 27159,
+    "version": "",
+    "slot": "legs",
+    "image": "Mystic robe bottom (dark) (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 15,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 15,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Mystic robe bottom (dusk)",
     "id": 23053,
     "version": "",
@@ -88115,6 +90425,36 @@
     "version": "",
     "slot": "legs",
     "image": "Mystic robe bottom (light).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 15,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 15,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Mystic robe bottom (light) (Last Man Standing)",
+    "id": 27161,
+    "version": "",
+    "slot": "legs",
+    "image": "Mystic robe bottom (light) (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -88260,6 +90600,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Mystic robe top (dark) (Last Man Standing)",
+    "id": 27158,
+    "version": "",
+    "slot": "body",
+    "image": "Mystic robe top (dark) (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 20,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 20,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Mystic robe top (dusk)",
     "id": 23050,
     "version": "",
@@ -88295,6 +90665,36 @@
     "version": "",
     "slot": "body",
     "image": "Mystic robe top (light).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 20,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 20,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Mystic robe top (light) (Last Man Standing)",
+    "id": 27160,
+    "version": "",
+    "slot": "body",
+    "image": "Mystic robe top (light) (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -88625,6 +91025,36 @@
     "version": "",
     "slot": "neck",
     "image": "Necklace of anguish.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 5,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 15
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Necklace of anguish (Last Man Standing)",
+    "id": 27172,
+    "version": "",
+    "slot": "neck",
+    "image": "Necklace of anguish (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -89128,6 +91558,36 @@
       "ranged": 0
     },
     "isTwoHanded": false
+  },
+  {
+    "name": "Noxious halberd",
+    "id": 29796,
+    "version": "",
+    "slot": "weapon",
+    "image": "Noxious halberd.png",
+    "speed": 5,
+    "category": "Polearm",
+    "bonuses": {
+      "str": 142,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 80,
+      "slash": 132,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": true
   },
   {
     "name": "Nunchaku",
@@ -89910,41 +92370,11 @@
     "isTwoHanded": false
   },
   {
-    "name": "Ochre snelm (pointed)",
-    "id": 3341,
-    "version": "",
-    "slot": "head",
-    "image": "Ochre snelm (pointed).png",
-    "speed": 0,
-    "category": "",
-    "bonuses": {
-      "str": 0,
-      "ranged_str": 0,
-      "magic_str": 0,
-      "prayer": 0
-    },
-    "offensive": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0,
-      "magic": -3,
-      "ranged": -1
-    },
-    "defensive": {
-      "stab": 7,
-      "slash": 8,
-      "crush": 6,
-      "magic": -1,
-      "ranged": 7
-    },
-    "isTwoHanded": false
-  },
-  {
-    "name": "Ochre snelm (round)",
+    "name": "Ochre snelm",
     "id": 3331,
     "version": "",
     "slot": "head",
-    "image": "Ochre snelm (round).png",
+    "image": "Ochre snelm.png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -90155,7 +92585,7 @@
     "version": "",
     "slot": "weapon",
     "image": "Oily pearl fishing rod.png",
-    "speed": 5,
+    "speed": 4,
     "category": "Unarmed",
     "bonuses": {
       "str": 0,
@@ -90690,6 +93120,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Opal dragon bolts (e) (Last Man Standing)",
+    "id": 27192,
+    "version": "",
+    "slot": "ammo",
+    "image": "Opal dragon bolts (e) 5.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 122,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Opal machete",
     "id": 6313,
     "version": "",
@@ -90875,6 +93335,276 @@
     "version": "",
     "slot": "body",
     "image": "Orange goblin mail.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Orange pumpkin",
+    "id": 30269,
+    "version": "Angry",
+    "slot": "head",
+    "image": "Orange pumpkin (angry).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Orange pumpkin",
+    "id": 30270,
+    "version": "Depressed",
+    "slot": "head",
+    "image": "Orange pumpkin (depressed).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Orange pumpkin",
+    "id": 30266,
+    "version": "Disgusted",
+    "slot": "head",
+    "image": "Orange pumpkin (disgusted).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Orange pumpkin",
+    "id": 30268,
+    "version": "Evil",
+    "slot": "head",
+    "image": "Orange pumpkin (evil).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Orange pumpkin",
+    "id": 30273,
+    "version": "Happy",
+    "slot": "head",
+    "image": "Orange pumpkin (happy).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Orange pumpkin",
+    "id": 30274,
+    "version": "Laughing",
+    "slot": "head",
+    "image": "Orange pumpkin (laughing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Orange pumpkin",
+    "id": 30272,
+    "version": "Sad",
+    "slot": "head",
+    "image": "Orange pumpkin (sad).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Orange pumpkin",
+    "id": 30271,
+    "version": "Shocked",
+    "slot": "head",
+    "image": "Orange pumpkin (shocked).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Orange pumpkin",
+    "id": 30267,
+    "version": "Silly",
+    "slot": "head",
+    "image": "Orange pumpkin (silly).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -91295,7 +94025,7 @@
     "version": "",
     "slot": "weapon",
     "image": "Pearl barbarian rod.png",
-    "speed": 5,
+    "speed": 4,
     "category": "Unarmed",
     "bonuses": {
       "str": 0,
@@ -91445,7 +94175,7 @@
     "version": "",
     "slot": "weapon",
     "image": "Pearl fishing rod.png",
-    "speed": 5,
+    "speed": 4,
     "category": "Unarmed",
     "bonuses": {
       "str": 0,
@@ -91475,7 +94205,7 @@
     "version": "",
     "slot": "weapon",
     "image": "Pearl fly fishing rod.png",
-    "speed": 5,
+    "speed": 4,
     "category": "Unarmed",
     "bonuses": {
       "str": 0,
@@ -91650,6 +94380,66 @@
     "isTwoHanded": false
   },
   {
+    "name": "Pendant of ates",
+    "id": 29893,
+    "version": "Charged",
+    "slot": "neck",
+    "image": "Pendant of ates.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 2,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 3,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Pendant of ates",
+    "id": 29892,
+    "version": "Inert",
+    "slot": "neck",
+    "image": "Pendant of ates (inert).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 2,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 3,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Pendant of lucien",
     "id": 86,
     "version": "",
@@ -91775,7 +94565,7 @@
     "version": "Charged",
     "slot": "weapon",
     "image": "Pharaoh's sceptre (1).png",
-    "speed": 4,
+    "speed": 5,
     "category": "Polestaff",
     "bonuses": {
       "str": 32,
@@ -91805,7 +94595,7 @@
     "version": "Uncharged",
     "slot": "weapon",
     "image": "Pharaoh's sceptre (uncharged).png",
-    "speed": 4,
+    "speed": 5,
     "category": "Polestaff",
     "bonuses": {
       "str": 32,
@@ -93150,11 +95940,401 @@
     "isTwoHanded": false
   },
   {
+    "name": "Pointed blood'n'tar snelm",
+    "id": 3339,
+    "version": "",
+    "slot": "head",
+    "image": "Pointed blood'n'tar snelm.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -3,
+      "ranged": -1
+    },
+    "defensive": {
+      "stab": 7,
+      "slash": 8,
+      "crush": 6,
+      "magic": -1,
+      "ranged": 7
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Pointed bruise blue snelm",
+    "id": 3343,
+    "version": "",
+    "slot": "head",
+    "image": "Pointed bruise blue snelm.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -3,
+      "ranged": -1
+    },
+    "defensive": {
+      "stab": 7,
+      "slash": 8,
+      "crush": 6,
+      "magic": -1,
+      "ranged": 7
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Pointed myre snelm",
+    "id": 3337,
+    "version": "",
+    "slot": "head",
+    "image": "Pointed myre snelm.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -3,
+      "ranged": -1
+    },
+    "defensive": {
+      "stab": 7,
+      "slash": 8,
+      "crush": 6,
+      "magic": -1,
+      "ranged": 7
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Pointed ochre snelm",
+    "id": 3341,
+    "version": "",
+    "slot": "head",
+    "image": "Pointed ochre snelm.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -3,
+      "ranged": -1
+    },
+    "defensive": {
+      "stab": 7,
+      "slash": 8,
+      "crush": 6,
+      "magic": -1,
+      "ranged": 7
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Portable waystone",
     "id": 26549,
     "version": "",
     "slot": "neck",
     "image": "Portable waystone.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Powder grey pumpkin",
+    "id": 30296,
+    "version": "Angry",
+    "slot": "head",
+    "image": "Powder grey pumpkin (angry).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Powder grey pumpkin",
+    "id": 30297,
+    "version": "Depressed",
+    "slot": "head",
+    "image": "Powder grey pumpkin (depressed).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Powder grey pumpkin",
+    "id": 30293,
+    "version": "Disgusted",
+    "slot": "head",
+    "image": "Powder grey pumpkin (disgusted).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Powder grey pumpkin",
+    "id": 30295,
+    "version": "Evil",
+    "slot": "head",
+    "image": "Powder grey pumpkin (evil).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Powder grey pumpkin",
+    "id": 30300,
+    "version": "Happy",
+    "slot": "head",
+    "image": "Powder grey pumpkin (happy).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Powder grey pumpkin",
+    "id": 30301,
+    "version": "Laughing",
+    "slot": "head",
+    "image": "Powder grey pumpkin (laughing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Powder grey pumpkin",
+    "id": 30299,
+    "version": "Sad",
+    "slot": "head",
+    "image": "Powder grey pumpkin (sad).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Powder grey pumpkin",
+    "id": 30298,
+    "version": "Shocked",
+    "slot": "head",
+    "image": "Powder grey pumpkin (shocked).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Powder grey pumpkin",
+    "id": 30294,
+    "version": "Silly",
+    "slot": "head",
+    "image": "Powder grey pumpkin (silly).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -93328,6 +96508,66 @@
       "ranged": 0
     },
     "isTwoHanded": true
+  },
+  {
+    "name": "Prescription goggles",
+    "id": 29976,
+    "version": "Focused",
+    "slot": "head",
+    "image": "Prescription goggles (focused).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Prescription goggles",
+    "id": 29974,
+    "version": "Unfocused",
+    "slot": "head",
+    "image": "Prescription goggles (unfocused).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
   },
   {
     "name": "Priest gown (bottom)",
@@ -93557,6 +96797,36 @@
       "stab": -100,
       "slash": -100,
       "crush": -50,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Prop sword (Death on the Isle)",
+    "id": 29911,
+    "version": "",
+    "slot": "weapon",
+    "image": "Prop sword (Death on the Isle).png",
+    "speed": 4,
+    "category": "Blunt",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
       "magic": 0,
       "ranged": 0
     },
@@ -96060,6 +99330,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Ram mask",
+    "id": 29929,
+    "version": "",
+    "slot": "head",
+    "image": "Ram mask.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Ram skull helm",
     "id": 7917,
     "version": "",
@@ -96275,6 +99575,36 @@
     "version": "",
     "slot": "body",
     "image": "Rangers' tunic.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -15,
+      "ranged": 15
+    },
+    "defensive": {
+      "stab": 6,
+      "slash": 9,
+      "crush": 12,
+      "magic": 6,
+      "ranged": 6
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rangers' tunic (Last Man Standing)",
+    "id": 27179,
+    "version": "",
+    "slot": "body",
+    "image": "Rangers' tunic (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -97505,6 +100835,276 @@
     "version": "",
     "slot": "head",
     "image": "Red partyhat.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Red pumpkin",
+    "id": 30278,
+    "version": "Angry",
+    "slot": "head",
+    "image": "Red pumpkin (angry).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Red pumpkin",
+    "id": 30279,
+    "version": "Depressed",
+    "slot": "head",
+    "image": "Red pumpkin (depressed).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Red pumpkin",
+    "id": 30275,
+    "version": "Disgusted",
+    "slot": "head",
+    "image": "Red pumpkin (disgusted).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Red pumpkin",
+    "id": 30277,
+    "version": "Evil",
+    "slot": "head",
+    "image": "Red pumpkin (evil).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Red pumpkin",
+    "id": 30282,
+    "version": "Happy",
+    "slot": "head",
+    "image": "Red pumpkin (happy).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Red pumpkin",
+    "id": 30283,
+    "version": "Laughing",
+    "slot": "head",
+    "image": "Red pumpkin (laughing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Red pumpkin",
+    "id": 30281,
+    "version": "Sad",
+    "slot": "head",
+    "image": "Red pumpkin (sad).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Red pumpkin",
+    "id": 30280,
+    "version": "Shocked",
+    "slot": "head",
+    "image": "Red pumpkin (shocked).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Red pumpkin",
+    "id": 30276,
+    "version": "Silly",
+    "slot": "head",
+    "image": "Red pumpkin (silly).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -101943,6 +105543,36 @@
     "name": "Rune defender",
     "id": 8850,
     "version": "Normal",
+    "slot": "shield",
+    "image": "Rune defender.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 5,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 20,
+      "slash": 19,
+      "crush": 18,
+      "magic": -3,
+      "ranged": -2
+    },
+    "defensive": {
+      "stab": 20,
+      "slash": 19,
+      "crush": 18,
+      "magic": -3,
+      "ranged": -2
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Rune defender (Last Man Standing)",
+    "id": 27185,
+    "version": "",
     "slot": "shield",
     "image": "Rune defender.png",
     "speed": 0,
@@ -107220,6 +110850,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Saradomin chaps (Last Man Standing)",
+    "id": 27182,
+    "version": "",
+    "slot": "legs",
+    "image": "Saradomin chaps (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 1
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -10,
+      "ranged": 17
+    },
+    "defensive": {
+      "stab": 31,
+      "slash": 25,
+      "crush": 33,
+      "magic": 28,
+      "ranged": 31
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Saradomin cloak",
     "id": 10446,
     "version": "",
@@ -107553,6 +111213,36 @@
     "name": "Saradomin halo",
     "id": 12637,
     "version": "Normal",
+    "slot": "head",
+    "image": "Saradomin halo.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 3
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 11,
+      "slash": 12,
+      "crush": 10,
+      "magic": 11,
+      "ranged": -1
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Saradomin halo (Last Man Standing)",
+    "id": 27165,
+    "version": "",
     "slot": "head",
     "image": "Saradomin halo.png",
     "speed": 0,
@@ -108035,6 +111725,36 @@
     "version": "",
     "slot": "head",
     "image": "Saucepan.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Scarecrow shirt",
+    "id": 30232,
+    "version": "",
+    "slot": "body",
+    "image": "Scarecrow shirt.png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -113370,6 +117090,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Snake mask",
+    "id": 29933,
+    "version": "",
+    "slot": "head",
+    "image": "Snake mask.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Snakeskin bandana",
     "id": 6326,
     "version": "",
@@ -114395,6 +118145,36 @@
     "version": "",
     "slot": "feet",
     "image": "Spiked manacles.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 4,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -3,
+      "ranged": -1
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -4,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Spiked manacles (Last Man Standing)",
+    "id": 27178,
+    "version": "",
+    "slot": "feet",
+    "image": "Spiked manacles (Last Man Standing).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -122910,6 +126690,66 @@
     "isTwoHanded": false
   },
   {
+    "name": "Tome of earth",
+    "id": 30064,
+    "version": "Charged",
+    "slot": "shield",
+    "image": "Tome of earth.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 8,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 8,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Tome of earth",
+    "id": 30066,
+    "version": "Empty",
+    "slot": "shield",
+    "image": "Tome of earth (empty).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 8,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 8,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Tome of fire",
     "id": 20714,
     "version": "Charged",
@@ -122945,6 +126785,36 @@
     "version": "Empty",
     "slot": "shield",
     "image": "Tome of fire (empty).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 8,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 8,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Tome of fire (Last Man Standing)",
+    "id": 27358,
+    "version": "",
+    "slot": "shield",
+    "image": "Tome of fire.png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -124200,6 +128070,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Tormented bracelet (Last Man Standing)",
+    "id": 27171,
+    "version": "",
+    "slot": "hands",
+    "image": "Tormented bracelet (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 50,
+      "prayer": 2
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 10,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Tormented bracelet (or)",
     "id": 23444,
     "version": "",
@@ -124260,6 +128160,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Torva full helm (unobtainable item)",
+    "id": 30302,
+    "version": "",
+    "slot": "head",
+    "image": "Torva full helm (unobtainable item).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Torva platebody",
     "id": 26384,
     "version": "Restored",
@@ -124290,6 +128220,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Torva platebody (unobtainable item)",
+    "id": 30303,
+    "version": "",
+    "slot": "body",
+    "image": "Torva platebody (unobtainable item).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Torva platelegs",
     "id": 26386,
     "version": "Restored",
@@ -124316,6 +128276,36 @@
       "crush": 79,
       "magic": -9,
       "ranged": 102
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Torva platelegs (unobtainable item)",
+    "id": 30304,
+    "version": "",
+    "slot": "legs",
+    "image": "Torva platelegs (unobtainable item).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
     },
     "isTwoHanded": false
   },
@@ -128942,6 +132932,36 @@
   {
     "name": "Unholy book",
     "id": 3842,
+    "version": "",
+    "slot": "shield",
+    "image": "Unholy book.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 5
+    },
+    "offensive": {
+      "stab": 8,
+      "slash": 8,
+      "crush": 8,
+      "magic": 8,
+      "ranged": 8
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Unholy book (Last Man Standing)",
+    "id": 27191,
     "version": "",
     "slot": "shield",
     "image": "Unholy book.png",
@@ -135270,6 +139290,276 @@
     "isTwoHanded": false
   },
   {
+    "name": "White pumpkin",
+    "id": 30251,
+    "version": "Angry",
+    "slot": "head",
+    "image": "White pumpkin (angry).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "White pumpkin",
+    "id": 30252,
+    "version": "Depressed",
+    "slot": "head",
+    "image": "White pumpkin (depressed).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "White pumpkin",
+    "id": 30248,
+    "version": "Disgusted",
+    "slot": "head",
+    "image": "White pumpkin (disgusted).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "White pumpkin",
+    "id": 30250,
+    "version": "Evil",
+    "slot": "head",
+    "image": "White pumpkin (evil).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "White pumpkin",
+    "id": 30255,
+    "version": "Happy",
+    "slot": "head",
+    "image": "White pumpkin (happy).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "White pumpkin",
+    "id": 30256,
+    "version": "Laughing",
+    "slot": "head",
+    "image": "White pumpkin (laughing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "White pumpkin",
+    "id": 30254,
+    "version": "Sad",
+    "slot": "head",
+    "image": "White pumpkin (sad).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "White pumpkin",
+    "id": 30253,
+    "version": "Shocked",
+    "slot": "head",
+    "image": "White pumpkin (shocked).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "White pumpkin",
+    "id": 30249,
+    "version": "Silly",
+    "slot": "head",
+    "image": "White pumpkin (silly).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "White scimitar",
     "id": 6611,
     "version": "",
@@ -136320,6 +140610,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Wizard boots (Last Man Standing)",
+    "id": 27162,
+    "version": "",
+    "slot": "feet",
+    "image": "Wizard boots (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 4,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 4,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Wizard hat",
     "id": 1017,
     "version": "",
@@ -136385,6 +140705,36 @@
     "version": "",
     "slot": "head",
     "image": "Wolf mask.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Wolf mask (Death on the Isle)",
+    "id": 29930,
+    "version": "",
+    "slot": "head",
+    "image": "Wolf mask (Death on the Isle).png",
     "speed": 0,
     "category": "",
     "bonuses": {
@@ -137730,6 +142080,276 @@
     "isTwoHanded": false
   },
   {
+    "name": "Yellow pumpkin",
+    "id": 30260,
+    "version": "Angry",
+    "slot": "head",
+    "image": "Yellow pumpkin (angry).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Yellow pumpkin",
+    "id": 30261,
+    "version": "Depressed",
+    "slot": "head",
+    "image": "Yellow pumpkin (depressed).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Yellow pumpkin",
+    "id": 30257,
+    "version": "Disgusted",
+    "slot": "head",
+    "image": "Yellow pumpkin (disgusted).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Yellow pumpkin",
+    "id": 30259,
+    "version": "Evil",
+    "slot": "head",
+    "image": "Yellow pumpkin (evil).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Yellow pumpkin",
+    "id": 30264,
+    "version": "Happy",
+    "slot": "head",
+    "image": "Yellow pumpkin (happy).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Yellow pumpkin",
+    "id": 30265,
+    "version": "Laughing",
+    "slot": "head",
+    "image": "Yellow pumpkin (laughing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Yellow pumpkin",
+    "id": 30263,
+    "version": "Sad",
+    "slot": "head",
+    "image": "Yellow pumpkin (sad).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Yellow pumpkin",
+    "id": 30262,
+    "version": "Shocked",
+    "slot": "head",
+    "image": "Yellow pumpkin (shocked).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Yellow pumpkin",
+    "id": 30258,
+    "version": "Silly",
+    "slot": "head",
+    "image": "Yellow pumpkin (silly).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Yellow robe bottoms",
     "id": 2918,
     "version": "",
@@ -138090,6 +142710,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Zamorak chaps (Last Man Standing)",
+    "id": 27181,
+    "version": "",
+    "slot": "legs",
+    "image": "Zamorak chaps (Last Man Standing).png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 1
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": -10,
+      "ranged": 17
+    },
+    "defensive": {
+      "stab": 31,
+      "slash": 25,
+      "crush": 33,
+      "magic": 28,
+      "ranged": 31
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Zamorak cloak",
     "id": 10450,
     "version": "",
@@ -138423,6 +143073,36 @@
     "name": "Zamorak halo",
     "id": 12638,
     "version": "Normal",
+    "slot": "head",
+    "image": "Zamorak halo.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 3
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 0
+    },
+    "defensive": {
+      "stab": 11,
+      "slash": 12,
+      "crush": 10,
+      "magic": 11,
+      "ranged": -1
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Zamorak halo (Last Man Standing)",
+    "id": 27164,
+    "version": "",
     "slot": "head",
     "image": "Zamorak halo.png",
     "speed": 0,
@@ -139020,6 +143700,36 @@
     "isTwoHanded": false
   },
   {
+    "name": "Zaryte crossbow (Last Man Standing)",
+    "id": 27186,
+    "version": "",
+    "slot": "weapon",
+    "image": "Zaryte crossbow (Last Man Standing).png",
+    "speed": 6,
+    "category": "crossbow",
+    "bonuses": {
+      "str": 0,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 1
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0,
+      "magic": 0,
+      "ranged": 110
+    },
+    "defensive": {
+      "stab": 14,
+      "slash": 14,
+      "crush": 12,
+      "magic": 15,
+      "ranged": 16
+    },
+    "isTwoHanded": false
+  },
+  {
     "name": "Zaryte vambraces",
     "id": 26235,
     "version": "",
@@ -139406,6 +144116,36 @@
       "crush": 0,
       "magic": 0,
       "ranged": 0
+    },
+    "isTwoHanded": false
+  },
+  {
+    "name": "Zombie helmet",
+    "id": 30321,
+    "version": "",
+    "slot": "head",
+    "image": "Zombie helmet.png",
+    "speed": 0,
+    "category": "",
+    "bonuses": {
+      "str": 2,
+      "ranged_str": 0,
+      "magic_str": 0,
+      "prayer": 0
+    },
+    "offensive": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 8,
+      "magic": -4,
+      "ranged": -2
+    },
+    "defensive": {
+      "stab": 30,
+      "slash": 32,
+      "crush": 38,
+      "magic": 0,
+      "ranged": 30
     },
     "isTwoHanded": false
   },
