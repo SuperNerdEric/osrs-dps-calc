@@ -28,6 +28,7 @@ import {
   fetchPlayerSkills,
   fetchShortlinkData,
   getCombatStylesForCategory,
+  isDefined,
   PotionMap,
 } from '@/utils';
 import { ComputeBasicRequest, ComputeReverseRequest, WorkerRequestType } from '@/worker/CalcWorkerTypes';
@@ -36,7 +37,7 @@ import { availableEquipment, calculateEquipmentBonusesFromGear } from '@/lib/Equ
 import { CalcWorker } from '@/worker/CalcWorker';
 import { spellByName } from '@/types/Spell';
 import {
-  DEFAULT_ATTACK_SPEED,
+  DEFAULT_ATTACK_SPEED, INFINITE_HEALTH_MONSTERS,
   NUMBER_OF_LOADOUTS,
 } from '@/lib/constants';
 import { EquipmentCategory } from './enums/EquipmentCategory';
@@ -203,6 +204,9 @@ class GlobalState implements State {
     },
     attributes: [MonsterAttribute.DEMON],
     weakness: null,
+    immunities: {
+      burn: null,
+    },
     inputs: { ...INITIAL_MONSTER_INPUTS },
   };
 
@@ -478,6 +482,20 @@ class GlobalState implements State {
           /* eslint-enable @typescript-eslint/dot-notation */
           /* eslint-enable @typescript-eslint/no-explicit-any */
         });
+
+      case 6:
+        // partyAvgMiningLevel becomes partySumMiningLevel
+        if (isDefined(data.monster.inputs.partyAvgMiningLevel)) {
+          data.monster.inputs.partySumMiningLevel = data.monster.inputs.partyAvgMiningLevel * data.monster.inputs.partySize;
+          delete data.monster.inputs.partyAvgMiningLevel;
+        }
+
+      case 7:
+        if (!isDefined(data.monster.immunities)) {
+          data.monster.immunities = {
+            burn: null,
+          };
+        }
 
       default:
     }
@@ -817,7 +835,7 @@ class GlobalState implements State {
       request(WorkerRequestType.COMPUTE_REVERSE),
     );
 
-    if (this.prefs.showTtkComparison) {
+    if (this.prefs.showTtkComparison && !INFINITE_HEALTH_MONSTERS.includes(this.monster.id)) {
       promises.push(
         (async () => {
           const parallel = process.env.NEXT_PUBLIC_SERIAL_TTK !== 'true';

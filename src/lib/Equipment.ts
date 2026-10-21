@@ -208,7 +208,17 @@ export const getCanonicalItem = (equipmentPiece: EquipmentPiece): EquipmentPiece
     return equipmentPiece;
   }
 
-  return availableEquipment.find((e) => e.id === canonicalId) || equipmentPiece;
+  const canonicalItem = availableEquipment.find((e) => e.id === canonicalId);
+  if (!canonicalItem) {
+    return equipmentPiece;
+  }
+
+  return {
+    ...canonicalItem,
+    itemVars: {
+      ...equipmentPiece.itemVars,
+    },
+  };
 };
 
 export const getCanonicalEquipment = (inputEq: PlayerEquipment) => {
@@ -288,13 +298,10 @@ export const calculateEquipmentBonusesFromGear = (player: Player, monster: Monst
   const playerEquipment: PlayerEquipment = getCanonicalEquipment(player.equipment);
 
   keys(playerEquipment).forEach((slot) => {
-    let piece = playerEquipment[slot]!;
+    const piece = playerEquipment[slot]!;
     if (!piece) {
       return;
     }
-
-    // canonicalize the item first
-    piece = getCanonicalItem(piece);
 
     // skip over ammo slot's ranged bonuses if it is not used by the bow
     const applyRangedStats = piece.slot !== 'ammo' || ammoApplicability(playerEquipment.weapon?.id, piece.id) === AmmoApplicability.INCLUDED;
@@ -327,8 +334,13 @@ export const calculateEquipmentBonusesFromGear = (player: Player, monster: Monst
 
   if (playerEquipment.weapon?.name === "Tumeken's shadow" && player.style.stance !== 'Manual Cast') {
     const factor = TOMBS_OF_AMASCUT_MONSTER_IDS.includes(monster.id) ? 4 : 3;
-    totals.bonuses.magic_str *= factor;
+    totals.bonuses.magic_str = Math.min(1000, totals.bonuses.magic_str * factor);
     totals.offensive.magic *= factor;
+  }
+
+  if (playerEquipment.weapon?.name === 'Keris partisan of amascut' && !TOMBS_OF_AMASCUT_MONSTER_IDS.includes(monster.id)) {
+    totals.bonuses.str -= 22;
+    totals.offensive.stab -= 50;
   }
 
   if (playerEquipment.weapon?.name === "Dinh's bulwark" || playerEquipment.weapon?.name === "Dinh's blazing bulwark") {
@@ -376,11 +388,13 @@ export const WEAPON_SPEC_COSTS: { [canonicalName: string]: number } = {
   'Scorching bow': 25,
   'Dragon knife': 25,
   'Purging staff': 25,
+  'Rosewood blowpipe': 25,
 
   'Dawnbringer': 30,
   'Dragon halberd': 30,
   'Crystal halberd': 30,
   'Burning claws': 30,
+  'Arkan blade': 30,
 
   'Magic longbow': 35,
   'Magic comp bow': 35,
@@ -407,6 +421,8 @@ export const WEAPON_SPEC_COSTS: { [canonicalName: string]: number } = {
   'Zamorak godsword': 50,
   'Abyssal bludgeon': 50,
   'Abyssal whip': 50,
+  'Barrelchest anchor': 50,
+  'Eye of ayak': 50,
 
   'Magic shortbow': 55,
   'Dark bow': 55,
@@ -414,13 +430,66 @@ export const WEAPON_SPEC_COSTS: { [canonicalName: string]: number } = {
   'Volatile nightmare staff': 55,
   'Dragon scimitar': 55,
 
+  'Granite hammer': 60,
+
   'Heavy ballista': 65,
   'Light ballista': 65,
   "Saradomin's blessed sword": 65,
 
+  'Brine sabre': 75,
   'Zaryte crossbow': 75,
 
   'Saradomin sword': 100,
   'Seercull': 100,
 };
 /* eslint-enable quote-props */
+
+export const GAUNTLET_EQUIPMENT_IDS = [
+  23861, // Crystal sceptre
+  23862, // Crystal axe (The Gauntlet)
+  23863, // Crystal pickaxe (The Gauntlet)
+  23864, // Crystal harpoon (The Gauntlet)
+  23886, // Crystal helm (basic)
+  23887, // Crystal helm (attuned)
+  23888, // Crystal helm (perfected)
+  23889, // Crystal body (basic)
+  23890, // Crystal body (attuned)
+  23891, // Crystal body (perfected)
+  23892, // Crystal legs (basic)
+  23893, // Crystal legs (attuned)
+  23894, // Crystal legs (perfected)
+  23895, // Crystal halberd (basic)
+  23896, // Crystal halberd (attuned)
+  23897, // Crystal halberd (perfected)
+  23898, // Crystal staff (basic)
+  23899, // Crystal staff (attuned)
+  23900, // Crystal staff (perfected)
+  23901, // Crystal bow (basic)
+  23902, // Crystal bow (attuned)
+  23903, // Crystal bow (perfected)
+];
+
+export const CORRUPTED_GAUNTLET_EQUIPMENT_IDS = [
+  23820, // Corrupted sceptre
+  23821, // Corrupted axe
+  23822, // Corrupted pickaxe
+  23823, // Corrupted harpoon
+  23840, // Corrupted helm (basic)
+  23841, // Corrupted helm (attuned)
+  23842, // Corrupted helm (perfected)
+  23843, // Corrupted body (basic)
+  23844, // Corrupted body (attuned)
+  23845, // Corrupted body (perfected)
+  23846, // Corrupted legs (basic)
+  23847, // Corrupted legs (attuned)
+  23848, // Corrupted legs (perfected)
+  23849, // Corrupted halberd (basic)
+  23850, // Corrupted halberd (attuned)
+  23851, // Corrupted halberd (perfected)
+  23852, // Corrupted staff (basic)
+  23853, // Corrupted staff (attuned)
+  23854, // Corrupted staff (perfected)
+  23855, // Corrupted bow (basic)
+  23856, // Corrupted bow (attuned)
+  23857, // Corrupted bow (perfected)
+];
