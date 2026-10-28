@@ -39,14 +39,14 @@ const computePvMValues: Handler<WorkerRequestType.COMPUTE_BASIC> = async (data) 
       maxHit: calc.getDistribution().getMax(),
       expectedHit: calc.getDistribution().getExpectedDamage(),
       maxAttackRoll: calc.getMaxAttackRoll(),
-      accuracy: calc.getHitChance(),
+      accuracy: calc.getDisplayHitChance(),
       dps: calc.getDps(),
       ttk: calc.getTtk(),
       hitDist: calc.getDistribution().asHistogram(calcOpts.hitDistHideMisses),
       details: calc.details,
       userIssues: calc.userIssues,
 
-      specAccuracy: specCalc?.getHitChance(),
+      specAccuracy: specCalc?.getDisplayHitChance(),
       specMaxHit: specCalc?.getMax(),
       specExpected: specCalc?.getExpectedDamage(),
       specMomentDps: specCalc?.getDps(),
@@ -70,13 +70,13 @@ const computeMvPValues: Handler<WorkerRequestType.COMPUTE_REVERSE> = async (data
     const loadoutName = (i + 1).toString();
     const start = self.performance.now();
     const calc = new NPCVsPlayerCalc(p, monster, {
-      loadoutName,
+      loadoutName: `${loadoutName}/reverse`,
       detailedOutput: calcOpts.detailedOutput,
       disableMonsterScaling: calcOpts.disableMonsterScaling,
     });
     res.push({
       npcMaxAttackRoll: calc.getNPCMaxAttackRoll(),
-      npcMaxHit: calc.getNPCMaxHit(),
+      npcMaxHit: calc.getDistribution().getMax(),
       npcDps: calc.getDps(),
       npcAccuracy: calc.getHitChance(),
       playerDefRoll: calc.getPlayerDefenceRoll(),

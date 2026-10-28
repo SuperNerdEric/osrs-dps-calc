@@ -7,6 +7,7 @@ import ranged_standard from '@/public/img/bonuses/ranged_standard.webp';
 import ranged_heavy from '@/public/img/bonuses/ranged_heavy.webp';
 import magic from '@/public/img/bonuses/magic.png';
 import ranged from '@/public/img/bonuses/ranged.png';
+import demon from '@/public/img/bonuses/demon.png';
 import hitpoints from '@/public/img/bonuses/hitpoints.png';
 import attack from '@/public/img/bonuses/attack.png';
 import strength from '@/public/img/bonuses/strength.png';
@@ -26,6 +27,7 @@ import PresetAttributeButton from '@/app/components/monster/PresetAttributeButto
 import NumberInput from '@/app/components/generic/NumberInput';
 import {
   GUARDIAN_IDS,
+  INFINITE_HEALTH_MONSTERS,
   MONSTER_PHASES_BY_ID,
   PARTY_SIZE_REQUIRED_MONSTER_IDS,
   TOMBS_OF_AMASCUT_MONSTER_IDS,
@@ -285,21 +287,29 @@ const MonsterContainer: React.FC = observer(() => {
       );
     }
 
-    if ((GUARDIAN_IDS.includes(monster.id)) || isCustomMonster) {
+    if (GUARDIAN_IDS.includes(monster.id)) {
       comps.push(
         <div key="cox-guardian">
           <h4 className="font-bold font-serif">
             <img src={mining.src} alt="" className="inline-block" />
             {' '}
-            Party&apos;s average mining level
+            Party&apos;s sum of mining levels
+            {' '}
+            <span
+              className="align-super underline decoration-dotted cursor-help text-xs text-gray-300"
+              data-tooltip-id="tooltip"
+              data-tooltip-content="Does NOT include 'fake' board-scaling players."
+            >
+              ?
+            </span>
           </h4>
           <div className="mt-2">
             <NumberInput
-              value={monster.inputs.partyAvgMiningLevel}
+              value={monster.inputs.partySumMiningLevel}
               min={1}
-              max={99}
+              max={9900}
               step={1}
-              onChange={(v) => store.updateMonster({ inputs: { partyAvgMiningLevel: v } })}
+              onChange={(v) => store.updateMonster({ inputs: { partySumMiningLevel: v } })}
               required
             />
           </div>
@@ -322,6 +332,28 @@ const MonsterContainer: React.FC = observer(() => {
               resetAfterSelect
               onSelectedItemChange={(v) => store.updateMonster({ inputs: { phase: v?.label } })}
             />
+          </div>
+        </div>,
+      );
+    }
+
+    if (monster.attributes.includes(MonsterAttribute.DEMON) && isCustomMonster) {
+      comps.push(
+        <div key="demonbane-effectiveness">
+          <h4 className="font-bold font-serif">
+            <img src={demon.src} alt="" className="inline-block" />
+            {' '}
+            Demonbane effectiveness
+          </h4>
+          <div className="mt-2">
+            <NumberInput
+              value={monster.inputs.demonbaneVulnerability || 100}
+              min={0}
+              max={10000}
+              step={1}
+              onChange={(v) => store.updateMonster({ inputs: { demonbaneVulnerability: v } })}
+            />
+            %
           </div>
         </div>,
       );
@@ -427,6 +459,7 @@ const MonsterContainer: React.FC = observer(() => {
                         disabled={!isCustomMonster}
                         image={hitpoints}
                         value={displayMonster.skills.hp}
+                        displayValue={INFINITE_HEALTH_MONSTERS.includes(displayMonster.id) ? 'Inf.' : undefined}
                         onChange={(v) => store.updateMonster({ skills: { hp: v } })}
                         required
                       />
